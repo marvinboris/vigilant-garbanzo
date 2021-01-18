@@ -240,28 +240,6 @@ export const getDashboard = () => async (dispatch, getState) => {
     }
 };
 
-export const postDashboardIssuesMark = id => async (dispatch, getState) => {
-    dispatch(dashboardStart());
-    const { role } = getState().auth;
-
-    try {
-        const token = localStorage.getItem('token');
-        const res = await fetch(`${prefix + role}/issues/${id}/mark`, {
-            method: 'POST',
-            headers: {
-                Authorization: token
-            }
-        });
-        const resData = await res.json();
-        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
-        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
-        dispatch(dashboardSuccess(resData));
-    } catch (error) {
-        console.log(error);
-        dispatch(dashboardFail(error));
-    }
-};
-
 
 
 export const resetFeatures = () => ({ type: actionTypes.FEATURES_RESET });
@@ -380,97 +358,75 @@ export const deleteFeatures = id => async (dispatch, getState) => {
 
 
 
-export const resetIssues = () => ({ type: actionTypes.ISSUES_RESET });
-const issuesStart = () => ({ type: actionTypes.ISSUES_START });
-const issuesSuccess = data => ({ type: actionTypes.ISSUES_SUCCESS, ...data });
-const issuesFail = error => ({ type: actionTypes.ISSUES_FAIL, error });
-export const getIssues = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
-    dispatch(issuesStart());
+export const resetClaims = () => ({ type: actionTypes.CLAIMS_RESET });
+const claimsStart = () => ({ type: actionTypes.CLAIMS_START });
+const claimsSuccess = data => ({ type: actionTypes.CLAIMS_SUCCESS, ...data });
+const claimsFail = error => ({ type: actionTypes.CLAIMS_FAIL, error });
+export const getClaims = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
+    dispatch(claimsStart());
     const { role } = getState().auth;
 
     try {
         const token = localStorage.getItem('token');
-        const res = await fetch(`${prefix + role}/issues?page=${page}&show=${show}&search=${search}`, {
+        const res = await fetch(`${prefix + role}/claims?page=${page}&show=${show}&search=${search}`, {
             headers: {
                 Authorization: token
             }
         });
         const resData = await res.json();
-        dispatch(issuesSuccess(resData));
+        dispatch(claimsSuccess(resData));
     } catch (error) {
         console.log(error);
-        dispatch(issuesFail(error));
+        dispatch(claimsFail(error));
     }
 };
 
-export const getIssuesInfo = () => async (dispatch, getState) => {
-    dispatch(issuesStart());
+export const getClaimsInfo = () => async (dispatch, getState) => {
+    dispatch(claimsStart());
     const { role } = getState().auth;
 
     try {
         const token = localStorage.getItem('token');
-        const res = await fetch(`${prefix + role}/issues/info`, {
+        const res = await fetch(`${prefix + role}/claims/info`, {
             headers: {
                 Authorization: token
             }
         });
         const resData = await res.json();
-        dispatch(issuesSuccess(resData));
+        dispatch(claimsSuccess(resData));
     } catch (error) {
         console.log(error);
-        dispatch(issuesFail(error));
+        dispatch(claimsFail(error));
     }
 };
 
-export const postIssuesMark = id => async (dispatch, getState) => {
-    dispatch(issuesStart());
+export const getClaim = id => async (dispatch, getState) => {
+    dispatch(claimsStart());
     const { role } = getState().auth;
 
     try {
         const token = localStorage.getItem('token');
-        const res = await fetch(`${prefix + role}/issues/${id}/mark`, {
-            method: 'POST',
+        const res = await fetch(`${prefix + role}/claims/${id}`, {
             headers: {
                 Authorization: token
             }
         });
         const resData = await res.json();
-        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
-        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
-        dispatch(issuesSuccess(resData));
+        dispatch(claimsSuccess(resData));
     } catch (error) {
         console.log(error);
-        dispatch(issuesFail(error));
+        dispatch(claimsFail(error));
     }
 };
 
-export const getIssue = id => async (dispatch, getState) => {
-    dispatch(issuesStart());
-    const { role } = getState().auth;
-
-    try {
-        const token = localStorage.getItem('token');
-        const res = await fetch(`${prefix + role}/issues/${id}`, {
-            headers: {
-                Authorization: token
-            }
-        });
-        const resData = await res.json();
-        dispatch(issuesSuccess(resData));
-    } catch (error) {
-        console.log(error);
-        dispatch(issuesFail(error));
-    }
-};
-
-export const postIssues = data => async (dispatch, getState) => {
-    dispatch(issuesStart());
+export const postClaims = data => async (dispatch, getState) => {
+    dispatch(claimsStart());
     const { role } = getState().auth;
 
     try {
         const token = localStorage.getItem('token');
         const form = new FormData(data);
-        const res = await fetch(`${prefix + role}/issues`, {
+        const res = await fetch(`${prefix + role}/claims`, {
             method: 'POST',
             body: form,
             headers: {
@@ -480,21 +436,21 @@ export const postIssues = data => async (dispatch, getState) => {
         const resData = await res.json();
         if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
         else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
-        dispatch(issuesSuccess(resData));
+        dispatch(claimsSuccess(resData));
     } catch (error) {
         console.log(error);
-        dispatch(issuesFail(error));
+        dispatch(claimsFail(error));
     }
 };
 
-export const patchIssues = (id, data) => async (dispatch, getState) => {
-    dispatch(issuesStart());
+export const patchClaims = (id, data) => async (dispatch, getState) => {
+    dispatch(claimsStart());
     const { role } = getState().auth;
 
     try {
         const token = localStorage.getItem('token');
         const form = new FormData(data);
-        const res = await fetch(`${prefix + role}/issues/${id}`, {
+        const res = await fetch(`${prefix + role}/claims/${id}`, {
             method: 'POST',
             body: form,
             headers: {
@@ -503,15 +459,15 @@ export const patchIssues = (id, data) => async (dispatch, getState) => {
         });
         const resData = await res.json();
         if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
-        dispatch(issuesSuccess(resData));
+        dispatch(claimsSuccess(resData));
     } catch (error) {
         console.log(error);
-        dispatch(issuesFail(error));
+        dispatch(claimsFail(error));
     }
 };
 
-export const deleteIssues = id => async (dispatch, getState) => {
-    dispatch(issuesStart());
+export const deleteClaims = id => async (dispatch, getState) => {
+    dispatch(claimsStart());
     const { role } = getState().auth;
 
     try {
@@ -520,7 +476,7 @@ export const deleteIssues = id => async (dispatch, getState) => {
         const search = document.getElementById('table-search').value;
 
         const token = localStorage.getItem('token');
-        const res = await fetch(`${prefix + role}/issues/${id}?page=${page}&show=${show}&search=${search}`, {
+        const res = await fetch(`${prefix + role}/claims/${id}?page=${page}&show=${show}&search=${search}`, {
             method: 'DELETE',
             headers: {
                 Authorization: token
@@ -528,10 +484,832 @@ export const deleteIssues = id => async (dispatch, getState) => {
         });
         const resData = await res.json();
         if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
-        dispatch(issuesSuccess(resData));
+        dispatch(claimsSuccess(resData));
     } catch (error) {
         console.log(error);
-        dispatch(issuesFail(error));
+        dispatch(claimsFail(error));
+    }
+};
+
+
+
+export const resetDebts = () => ({ type: actionTypes.DEBTS_RESET });
+const debtsStart = () => ({ type: actionTypes.DEBTS_START });
+const debtsSuccess = data => ({ type: actionTypes.DEBTS_SUCCESS, ...data });
+const debtsFail = error => ({ type: actionTypes.DEBTS_FAIL, error });
+export const getDebts = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
+    dispatch(debtsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/debts?page=${page}&show=${show}&search=${search}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(debtsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(debtsFail(error));
+    }
+};
+
+export const getDebtsInfo = () => async (dispatch, getState) => {
+    dispatch(debtsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/debts/info`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(debtsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(debtsFail(error));
+    }
+};
+
+export const getDebt = id => async (dispatch, getState) => {
+    dispatch(debtsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/debts/${id}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(debtsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(debtsFail(error));
+    }
+};
+
+export const postDebts = data => async (dispatch, getState) => {
+    dispatch(debtsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/debts`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
+        dispatch(debtsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(debtsFail(error));
+    }
+};
+
+export const patchDebts = (id, data) => async (dispatch, getState) => {
+    dispatch(debtsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/debts/${id}`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token,
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(debtsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(debtsFail(error));
+    }
+};
+
+export const deleteDebts = id => async (dispatch, getState) => {
+    dispatch(debtsStart());
+    const { role } = getState().auth;
+
+    try {
+        const page = document.getElementById('table-page').value;
+        const show = document.getElementById('table-show').value;
+        const search = document.getElementById('table-search').value;
+
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/debts/${id}?page=${page}&show=${show}&search=${search}`, {
+            method: 'DELETE',
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(debtsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(debtsFail(error));
+    }
+};
+
+
+
+export const resetEntries = () => ({ type: actionTypes.ENTRIES_RESET });
+const entriesStart = () => ({ type: actionTypes.ENTRIES_START });
+const entriesSuccess = data => ({ type: actionTypes.ENTRIES_SUCCESS, ...data });
+const entriesFail = error => ({ type: actionTypes.ENTRIES_FAIL, error });
+export const getEntries = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
+    dispatch(entriesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/entries?page=${page}&show=${show}&search=${search}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(entriesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(entriesFail(error));
+    }
+};
+
+export const getEntriesInfo = () => async (dispatch, getState) => {
+    dispatch(entriesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/entries/info`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(entriesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(entriesFail(error));
+    }
+};
+
+export const getEntry = id => async (dispatch, getState) => {
+    dispatch(entriesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/entries/${id}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(entriesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(entriesFail(error));
+    }
+};
+
+export const postEntries = data => async (dispatch, getState) => {
+    dispatch(entriesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/entries`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
+        dispatch(entriesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(entriesFail(error));
+    }
+};
+
+export const patchEntries = (id, data) => async (dispatch, getState) => {
+    dispatch(entriesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/entries/${id}`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token,
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(entriesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(entriesFail(error));
+    }
+};
+
+export const deleteEntries = id => async (dispatch, getState) => {
+    dispatch(entriesStart());
+    const { role } = getState().auth;
+
+    try {
+        const page = document.getElementById('table-page').value;
+        const show = document.getElementById('table-show').value;
+        const search = document.getElementById('table-search').value;
+
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/entries/${id}?page=${page}&show=${show}&search=${search}`, {
+            method: 'DELETE',
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(entriesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(entriesFail(error));
+    }
+};
+
+
+
+export const resetExpenses = () => ({ type: actionTypes.EXPENSES_RESET });
+const expensesStart = () => ({ type: actionTypes.EXPENSES_START });
+const expensesSuccess = data => ({ type: actionTypes.EXPENSES_SUCCESS, ...data });
+const expensesFail = error => ({ type: actionTypes.EXPENSES_FAIL, error });
+export const getExpenses = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
+    dispatch(expensesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/expenses?page=${page}&show=${show}&search=${search}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(expensesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(expensesFail(error));
+    }
+};
+
+export const getExpensesInfo = () => async (dispatch, getState) => {
+    dispatch(expensesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/expenses/info`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(expensesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(expensesFail(error));
+    }
+};
+
+export const getExpense = id => async (dispatch, getState) => {
+    dispatch(expensesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/expenses/${id}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(expensesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(expensesFail(error));
+    }
+};
+
+export const postExpenses = data => async (dispatch, getState) => {
+    dispatch(expensesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/expenses`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
+        dispatch(expensesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(expensesFail(error));
+    }
+};
+
+export const patchExpenses = (id, data) => async (dispatch, getState) => {
+    dispatch(expensesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/expenses/${id}`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token,
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(expensesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(expensesFail(error));
+    }
+};
+
+export const deleteExpenses = id => async (dispatch, getState) => {
+    dispatch(expensesStart());
+    const { role } = getState().auth;
+
+    try {
+        const page = document.getElementById('table-page').value;
+        const show = document.getElementById('table-show').value;
+        const search = document.getElementById('table-search').value;
+
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/expenses/${id}?page=${page}&show=${show}&search=${search}`, {
+            method: 'DELETE',
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(expensesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(expensesFail(error));
+    }
+};
+
+
+
+export const resetInvestments = () => ({ type: actionTypes.INVESTMENTS_RESET });
+const investmentsStart = () => ({ type: actionTypes.INVESTMENTS_START });
+const investmentsSuccess = data => ({ type: actionTypes.INVESTMENTS_SUCCESS, ...data });
+const investmentsFail = error => ({ type: actionTypes.INVESTMENTS_FAIL, error });
+export const getInvestments = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
+    dispatch(investmentsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/investments?page=${page}&show=${show}&search=${search}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(investmentsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(investmentsFail(error));
+    }
+};
+
+export const getInvestmentsInfo = () => async (dispatch, getState) => {
+    dispatch(investmentsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/investments/info`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(investmentsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(investmentsFail(error));
+    }
+};
+
+export const getInvestment = id => async (dispatch, getState) => {
+    dispatch(investmentsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/investments/${id}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(investmentsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(investmentsFail(error));
+    }
+};
+
+export const postInvestments = data => async (dispatch, getState) => {
+    dispatch(investmentsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/investments`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
+        dispatch(investmentsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(investmentsFail(error));
+    }
+};
+
+export const patchInvestments = (id, data) => async (dispatch, getState) => {
+    dispatch(investmentsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/investments/${id}`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token,
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(investmentsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(investmentsFail(error));
+    }
+};
+
+export const deleteInvestments = id => async (dispatch, getState) => {
+    dispatch(investmentsStart());
+    const { role } = getState().auth;
+
+    try {
+        const page = document.getElementById('table-page').value;
+        const show = document.getElementById('table-show').value;
+        const search = document.getElementById('table-search').value;
+
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/investments/${id}?page=${page}&show=${show}&search=${search}`, {
+            method: 'DELETE',
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(investmentsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(investmentsFail(error));
+    }
+};
+
+
+
+export const resetSupports = () => ({ type: actionTypes.SUPPORTS_RESET });
+const supportsStart = () => ({ type: actionTypes.SUPPORTS_START });
+const supportsSuccess = data => ({ type: actionTypes.SUPPORTS_SUCCESS, ...data });
+const supportsFail = error => ({ type: actionTypes.SUPPORTS_FAIL, error });
+export const getSupports = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
+    dispatch(supportsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/supports?page=${page}&show=${show}&search=${search}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(supportsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(supportsFail(error));
+    }
+};
+
+export const getSupportsInfo = () => async (dispatch, getState) => {
+    dispatch(supportsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/supports/info`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(supportsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(supportsFail(error));
+    }
+};
+
+export const getSupport = id => async (dispatch, getState) => {
+    dispatch(supportsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/supports/${id}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(supportsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(supportsFail(error));
+    }
+};
+
+export const postSupports = data => async (dispatch, getState) => {
+    dispatch(supportsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/supports`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
+        dispatch(supportsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(supportsFail(error));
+    }
+};
+
+export const patchSupports = (id, data) => async (dispatch, getState) => {
+    dispatch(supportsStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/supports/${id}`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token,
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(supportsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(supportsFail(error));
+    }
+};
+
+export const deleteSupports = id => async (dispatch, getState) => {
+    dispatch(supportsStart());
+    const { role } = getState().auth;
+
+    try {
+        const page = document.getElementById('table-page').value;
+        const show = document.getElementById('table-show').value;
+        const search = document.getElementById('table-search').value;
+
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/supports/${id}?page=${page}&show=${show}&search=${search}`, {
+            method: 'DELETE',
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(supportsSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(supportsFail(error));
+    }
+};
+
+
+
+export const resetCurrencies = () => ({ type: actionTypes.CURRENCIES_RESET });
+const currenciesStart = () => ({ type: actionTypes.CURRENCIES_START });
+const currenciesSuccess = data => ({ type: actionTypes.CURRENCIES_SUCCESS, ...data });
+const currenciesFail = error => ({ type: actionTypes.CURRENCIES_FAIL, error });
+export const getCurrencies = (page = 1, show = 10, search = '') => async (dispatch, getState) => {
+    dispatch(currenciesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/currencies?page=${page}&show=${show}&search=${search}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(currenciesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(currenciesFail(error));
+    }
+};
+
+export const getCurrency = id => async (dispatch, getState) => {
+    dispatch(currenciesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/currencies/${id}`, {
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        dispatch(currenciesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(currenciesFail(error));
+    }
+};
+
+export const postCurrencies = data => async (dispatch, getState) => {
+    dispatch(currenciesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/currencies`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
+        dispatch(currenciesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(currenciesFail(error));
+    }
+};
+
+export const patchCurrencies = (id, data) => async (dispatch, getState) => {
+    dispatch(currenciesStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/currencies/${id}`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token,
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(currenciesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(currenciesFail(error));
+    }
+};
+
+export const deleteCurrencies = id => async (dispatch, getState) => {
+    dispatch(currenciesStart());
+    const { role } = getState().auth;
+
+    try {
+        const page = document.getElementById('table-page').value;
+        const show = document.getElementById('table-show').value;
+        const search = document.getElementById('table-search').value;
+
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${prefix + role}/currencies/${id}?page=${page}&show=${show}&search=${search}`, {
+            method: 'DELETE',
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        dispatch(currenciesSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(currenciesFail(error));
+    }
+};
+
+
+
+export const resetReport = () => ({ type: actionTypes.REPORT_RESET });
+const reportStart = () => ({ type: actionTypes.REPORT_START });
+const reportSuccess = data => ({ type: actionTypes.REPORT_SUCCESS, ...data });
+const reportFail = error => ({ type: actionTypes.REPORT_FAIL, error });
+
+export const postReport = data => async (dispatch, getState) => {
+    dispatch(reportStart());
+    const { role } = getState().auth;
+
+    try {
+        const token = localStorage.getItem('token');
+        const form = new FormData(data);
+        const res = await fetch(`${prefix + role}/report`, {
+            method: 'POST',
+            body: form,
+            headers: {
+                Authorization: token
+            }
+        });
+        const resData = await res.json();
+        if (res.status === 422) throw new Error(Object.values(resData.errors).join('\n'));
+        else if (res.status !== 200 && res.status !== 201) throw new Error(resData.error.message);
+        dispatch(reportSuccess(resData));
+    } catch (error) {
+        console.log(error);
+        dispatch(reportFail(error));
     }
 };
 

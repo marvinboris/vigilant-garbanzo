@@ -6,7 +6,7 @@ import DateTimeInput from './DateTimeInput/DateTimeInput';
 
 import { checkValidity } from '../../../../shared/utility';
 
-export default ({ icon, addon, onChange, className = '', name, type = 'text', required, readonly, placeholder, value = '', defaultValue = '', validation = {}, append, children }) => {
+export default ({ icon, addon, onChange, className = '', id, name, type = 'text', required, readonly, placeholder, value = '', defaultValue = null, validation = {}, append, children }) => {
     const [touched, setTouched] = useState(false);
 
     const inputChangedHandler = e => {
@@ -16,7 +16,7 @@ export default ({ icon, addon, onChange, className = '', name, type = 'text', re
 
     let content;
 
-    if (type === 'datetime-local') content = <DateTimeInput id={name} name={name} required={required} readOnly={readonly} className={"w-100 d-flex text-small h-100"} value={value} defaultValue={value ? null : defaultValue} placeholder={placeholder} />
+    if (type === 'datetime-local') content = <DateTimeInput id={id} name={name} required={required} readOnly={readonly} className={"w-100 d-flex text-small h-100"} value={value} defaultValue={value ? null : defaultValue} placeholder={placeholder} />
     else content = <InputGroup size="lg">
         <InputGroupAddon addonType="prepend">
             <InputGroupText>
@@ -25,9 +25,9 @@ export default ({ icon, addon, onChange, className = '', name, type = 'text', re
         </InputGroupAddon>
 
         {children ?
-            <CustomInput valid={touched && checkValidity(value, validation)} invalid={touched && !checkValidity(value, validation)} onChange={inputChangedHandler} type={type} id={name} name={name} required={required} readOnly={readonly} value={value} defaultValue={value ? null : defaultValue} className={"text-small h-100 px-4 py-3"} placeholder={placeholder}>{children}</CustomInput>
+            <CustomInput valid={touched && checkValidity(value, validation)} invalid={touched && !checkValidity(value, validation)} onChange={inputChangedHandler} type={type} id={id} name={name} required={required} readOnly={readonly} value={value} defaultValue={defaultValue} className={"text-small h-100 px-4 py-3"} placeholder={placeholder}>{children}</CustomInput>
             :
-            <Input valid={touched && checkValidity(value, validation)} invalid={touched && !checkValidity(value, validation)} onChange={inputChangedHandler} type={type} id={name} name={name} required={required} readOnly={readonly} value={value} defaultValue={value ? null : defaultValue} className={"text-small h-100 px-4 py-3"} placeholder={placeholder} />
+            <Input valid={touched && checkValidity(value, validation)} invalid={touched && !checkValidity(value, validation)} onChange={inputChangedHandler} type={type} id={id} name={name} required={required} readOnly={readonly} value={value} defaultValue={defaultValue} className={"text-small h-100 px-4 py-3"} placeholder={placeholder} />
         }
 
         {append ? <InputGroupAddon addonType="append">

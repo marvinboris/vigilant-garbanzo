@@ -168,7 +168,8 @@ __webpack_require__.r(__webpack_exports__);
       title = _ref.title,
       _ref$className = _ref.className,
       className = _ref$className === void 0 ? '' : _ref$className,
-      dark = _ref.dark,
+      _ref$dark = _ref.dark,
+      dark = _ref$dark === void 0 ? true : _ref$dark,
       _ref$innerClassName = _ref.innerClassName,
       innerClassName = _ref$innerClassName === void 0 ? '' : _ref$innerClassName,
       _ref$outerClassName = _ref.outerClassName,
@@ -187,19 +188,19 @@ __webpack_require__.r(__webpack_exports__);
     xl: xl,
     className: outerClassName,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-      className: "rounded-4 d-flex justify-content-between align-items-center mb-5 mt-3 py-4 px-4 text-large bg-greenblue-10 ".concat(className),
+      className: "rounded-4 d-flex justify-content-between align-items-center mb-5 mt-3 py-4 px-4 text-large bg-grayblue ".concat(className),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-        className: "d-inline-flex align-items-center text-700 text-dark",
+        className: "d-inline-flex align-items-center text-700 text-light",
         children: [icon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {
           fixedWidth: true,
-          className: "mr-2 text-greenblue",
+          className: "mr-2 text-blue",
           icon: icon,
           size: "lg"
         }) : null, title]
       }), list ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
         to: link,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(reactstrap__WEBPACK_IMPORTED_MODULE_5__.default, {
-          color: "greenblue",
+          color: "blue",
           size: "lg",
           className: "rounded-2",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {
@@ -210,7 +211,7 @@ __webpack_require__.r(__webpack_exports__);
         })
       }) : null]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-      className: "d-flex flex-column ".concat(dark ? "text-light " : " ").concat(className),
+      className: "d-flex flex-column bg-grayblue ".concat(dark ? "text-light " : " ").concat(className),
       style: style,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: "flex-fill d-flex flex-column ".concat(!p0 ? "p-4" : "p-0"),
@@ -354,6 +355,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
       onChange = _ref.onChange,
       _ref$className = _ref.className,
       className = _ref$className === void 0 ? '' : _ref$className,
+      id = _ref.id,
       name = _ref.name,
       _ref$type = _ref.type,
       type = _ref$type === void 0 ? 'text' : _ref$type,
@@ -363,7 +365,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
       _ref$value = _ref.value,
       value = _ref$value === void 0 ? '' : _ref$value,
       _ref$defaultValue = _ref.defaultValue,
-      defaultValue = _ref$defaultValue === void 0 ? '' : _ref$defaultValue,
+      defaultValue = _ref$defaultValue === void 0 ? null : _ref$defaultValue,
       _ref$validation = _ref.validation,
       validation = _ref$validation === void 0 ? {} : _ref$validation,
       append = _ref.append,
@@ -381,7 +383,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
   var content;
   if (type === 'datetime-local') content = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_DateTimeInput_DateTimeInput__WEBPACK_IMPORTED_MODULE_3__.default, {
-    id: name,
+    id: id,
     name: name,
     required: required,
     readOnly: readonly,
@@ -405,12 +407,12 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
       invalid: touched && !(0,_shared_utility__WEBPACK_IMPORTED_MODULE_4__.checkValidity)(value, validation),
       onChange: inputChangedHandler,
       type: type,
-      id: name,
+      id: id,
       name: name,
       required: required,
       readOnly: readonly,
       value: value,
-      defaultValue: value ? null : defaultValue,
+      defaultValue: defaultValue,
       className: "text-small h-100 px-4 py-3",
       placeholder: placeholder,
       children: children
@@ -419,12 +421,12 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
       invalid: touched && !(0,_shared_utility__WEBPACK_IMPORTED_MODULE_4__.checkValidity)(value, validation),
       onChange: inputChangedHandler,
       type: type,
-      id: name,
+      id: id,
       name: name,
       required: required,
       readOnly: readonly,
       value: value,
-      defaultValue: value ? null : defaultValue,
+      defaultValue: defaultValue,
       className: "text-small h-100 px-4 py-3",
       placeholder: placeholder
     }), append ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(reactstrap__WEBPACK_IMPORTED_MODULE_6__.default, {

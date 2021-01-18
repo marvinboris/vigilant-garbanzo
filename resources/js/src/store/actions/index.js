@@ -30,7 +30,6 @@ export {
 
     resetDashboard,
     getDashboard,
-    postDashboardIssuesMark,
 
     resetFeatures,
     getFeatures,
@@ -39,14 +38,67 @@ export {
     patchFeatures,
     deleteFeatures,
 
-    resetIssues,
-    getIssues,
-    getIssuesInfo,
-    postIssuesMark,
-    getIssue,
-    postIssues,
-    patchIssues,
-    deleteIssues,
+
+
+    resetClaims,
+    getClaims,
+    getClaimsInfo,
+    getClaim,
+    postClaims,
+    patchClaims,
+    deleteClaims,
+    
+    resetDebts,
+    getDebts,
+    getDebtsInfo,
+    getDebt,
+    postDebts,
+    patchDebts,
+    deleteDebts,
+    
+    resetEntries,
+    getEntries,
+    getEntriesInfo,
+    getEntry,
+    postEntries,
+    patchEntries,
+    deleteEntries,
+    
+    resetExpenses,
+    getExpenses,
+    getExpensesInfo,
+    getExpense,
+    postExpenses,
+    patchExpenses,
+    deleteExpenses,
+    
+    resetInvestments,
+    getInvestments,
+    getInvestmentsInfo,
+    getInvestment,
+    postInvestments,
+    patchInvestments,
+    deleteInvestments,
+    
+    resetSupports,
+    getSupports,
+    getSupportsInfo,
+    getSupport,
+    postSupports,
+    patchSupports,
+    deleteSupports,
+    
+    resetCurrencies,
+    getCurrencies,
+    getCurrency,
+    postCurrencies,
+    patchCurrencies,
+    deleteCurrencies,
+    
+    resetReport,
+    postReport,
+
+
 
     resetLanguages,
     getLanguages,

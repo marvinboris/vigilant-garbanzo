@@ -32,16 +32,6 @@ class Admin extends Authenticatable
 
     public function language()
     {
-        return $this->belongsTo('App\Models\Language');
-    }
-
-    public function issues()
-    {
-        return $this->morphMany('App\Models\Issue', 'author');
-    }
-
-    public function comments()
-    {
-        return $this->morphMany('App\Models\Comment', 'author');
+        return $this->belongsTo(Language::class);
     }
 }

@@ -47,6 +47,44 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
             });
         });
 
+        Route::prefix('claims')->name('claims.')->group(function () {
+            Route::get('info', 'ClaimController@info')->name('info');
+            Route::get('{claim}', 'ClaimController@show')->name('show');
+        });
+
+        Route::prefix('debts')->name('debts.')->group(function () {
+            Route::get('info', 'DebtController@info')->name('info');
+            Route::get('{debt}', 'DebtController@show')->name('show');
+        });
+
+        Route::prefix('entries')->name('entries.')->group(function () {
+            Route::get('info', 'EntryController@info')->name('info');
+            Route::get('{entry}', 'EntryController@show')->name('show');
+        });
+
+        Route::prefix('expenses')->name('expenses.')->group(function () {
+            Route::get('info', 'ExpenseController@info')->name('info');
+            Route::get('{expense}', 'ExpenseController@show')->name('show');
+        });
+
+        Route::prefix('investments')->name('investments.')->group(function () {
+            Route::get('info', 'InvestmentController@info')->name('info');
+            Route::get('{investment}', 'InvestmentController@show')->name('show');
+        });
+
+        Route::prefix('supports')->name('supports.')->group(function () {
+            Route::get('info', 'SupportController@info')->name('info');
+            Route::get('{support}', 'SupportController@show')->name('show');
+        });
+    
+        Route::prefix('currencies')->name('currencies.')->group(function () {
+            Route::get('{currency}', 'CurrencyController@show')->name('show');
+        });
+
+        Route::prefix('report')->name('report')->group(function () {
+            Route::post('', 'ReportController@report')->name('report');
+        });
+
         Route::prefix('features')->name('features.')->group(function () {
             Route::get('{feature}', 'FeatureController@show')->name('show');
         });
@@ -71,6 +109,14 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
             'roles' => 'RoleController',
             'features' => 'FeatureController',
             'languages' => 'LanguageController',
+
+            'claims' => 'ClaimController',
+            'debts' => 'DebtController',
+            'entries' => 'EntryController',
+            'expenses' => 'ExpenseController',
+            'investments' => 'InvestmentController',
+            'supports' => 'SupportController',
+            'currencies' => 'CurrencyController',
         ]);
     });
 });
@@ -103,6 +149,44 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
                 });
             });
 
+            Route::prefix('claims')->name('claims.')->group(function () {
+                Route::get('info', 'ClaimController@info')->name('info');
+                Route::get('{claim}', 'ClaimController@show')->name('show');
+            });
+    
+            Route::prefix('debts')->name('debts.')->group(function () {
+                Route::get('info', 'DebtController@info')->name('info');
+                Route::get('{debt}', 'DebtController@show')->name('show');
+            });
+    
+            Route::prefix('entries')->name('entries.')->group(function () {
+                Route::get('info', 'EntryController@info')->name('info');
+                Route::get('{entry}', 'EntryController@show')->name('show');
+            });
+    
+            Route::prefix('expenses')->name('expenses.')->group(function () {
+                Route::get('info', 'ExpenseController@info')->name('info');
+                Route::get('{expense}', 'ExpenseController@show')->name('show');
+            });
+    
+            Route::prefix('investments')->name('investments.')->group(function () {
+                Route::get('info', 'InvestmentController@info')->name('info');
+                Route::get('{investment}', 'InvestmentController@show')->name('show');
+            });
+    
+            Route::prefix('supports')->name('supports.')->group(function () {
+                Route::get('info', 'SupportController@info')->name('info');
+                Route::get('{support}', 'SupportController@show')->name('show');
+            });
+    
+            Route::prefix('currencies')->name('currencies.')->group(function () {
+                Route::get('{currency}', 'CurrencyController@show')->name('show');
+            });
+
+            Route::prefix('report')->name('report')->group(function () {
+                Route::post('', 'ReportController@report')->name('report');
+            });
+
             Route::prefix('features')->name('features.')->group(function () {
                 Route::get('{feature}', 'FeatureController@show')->name('show');
             });
@@ -126,6 +210,14 @@ Route::namespace('User')->prefix('user')->name('user.')->group(function () {
                 'roles' => 'RoleController',
                 'features' => 'FeatureController',
                 'languages' => 'LanguageController',
+
+                'claims' => 'ClaimController',
+                'debts' => 'DebtController',
+                'entries' => 'EntryController',
+                'expenses' => 'ExpenseController',
+                'investments' => 'InvestmentController',
+                'supports' => 'SupportController',
+                'currencies' => 'CurrencyController',
             ]);
         });
     });
@@ -180,9 +272,12 @@ Route::prefix('content')->name('content.')->group(function () {
         $jsonString = file_get_contents(base_path('cms.json'));
         $cmsFile = json_decode($jsonString, true);
 
+        $abbr = $lang;
+        if (Language::whereAbbr($lang)->count() === 0) $abbr = env('MIX_DEFAULT_LANG');
+
         $cms = [
             'global' => $cmsFile['global'],
-            'pages' => $cmsFile['pages'][$lang],
+            'pages' => $cmsFile['pages'][$abbr],
         ];
 
         return response()->json([

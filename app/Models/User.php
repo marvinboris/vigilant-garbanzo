@@ -20,7 +20,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'photo', 'phone', 'role_id', 'language_id',
+        'name', 'email', 'password', 'photo', 'phone', 'role_id', 'language_id', 'currency_id',
     ];
 
     /**
@@ -48,7 +48,7 @@ class User extends Authenticatable
 
     public function role()
     {
-        return $this->belongsTo('App\Models\Role');
+        return $this->belongsTo(Role::class);
     }
 
     public static function generateNewRef()
@@ -75,16 +75,46 @@ class User extends Authenticatable
 
     public function language()
     {
-        return $this->belongsTo('App\Models\Language');
+        return $this->belongsTo(Language::class);
     }
 
-    public function issues()
+    public function claims()
     {
-        return $this->morphMany('App\Models\Issue', 'author');
+        return $this->hasManyThrough(Claim::class, Support::class);
     }
 
-    public function comments()
+    public function debts()
     {
-        return $this->morphMany('App\Models\Comment', 'author');
+        return $this->hasManyThrough(Debt::class, Support::class);
+    }
+
+    public function entries()
+    {
+        return $this->hasManyThrough(Entry::class, Support::class);
+    }
+
+    public function expenses()
+    {
+        return $this->hasManyThrough(Expense::class, Support::class);
+    }
+
+    public function investments()
+    {
+        return $this->hasManyThrough(Investment::class, Support::class);
+    }
+
+    public function supports()
+    {
+        return $this->hasMany(Support::class);
+    }
+
+    public function currencies()
+    {
+        return $this->hasMany(Currency::class);
+    }
+
+    public function currency()
+    {
+        return $this->belongsTo(Currency::class);
     }
 }

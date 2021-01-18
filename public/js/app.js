@@ -13291,15 +13291,6 @@ var asyncUserFeaturesAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORT
 var asyncUserFeaturesEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
   return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Features_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Features/Edit */ "./resources/js/src/containers/Backend/User/Features/Edit.js"));
 });
-var asyncUserIssues = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
-  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Issues_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Issues */ "./resources/js/src/containers/Backend/User/Issues/index.js"));
-});
-var asyncUserIssuesAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
-  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Issues_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Issues/Add */ "./resources/js/src/containers/Backend/User/Issues/Add.js"));
-});
-var asyncUserIssuesEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
-  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Issues_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Issues/Edit */ "./resources/js/src/containers/Backend/User/Issues/Edit.js"));
-});
 var asyncUserLanguages = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
   return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Languages_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Languages */ "./resources/js/src/containers/Backend/User/Languages/index.js"));
 });
@@ -13308,15 +13299,6 @@ var asyncUserLanguagesAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPOR
 });
 var asyncUserLanguagesEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
   return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Languages_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Languages/Edit */ "./resources/js/src/containers/Backend/User/Languages/Edit.js"));
-});
-var asyncUserPlatforms = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
-  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Platforms_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Platforms */ "./resources/js/src/containers/Backend/User/Platforms/index.js"));
-});
-var asyncUserPlatformsAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
-  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Platforms_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Platforms/Add */ "./resources/js/src/containers/Backend/User/Platforms/Add.js"));
-});
-var asyncUserPlatformsEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
-  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Platforms_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Platforms/Edit */ "./resources/js/src/containers/Backend/User/Platforms/Edit.js"));
 });
 var asyncUserRoles = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
   return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Roles_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Roles */ "./resources/js/src/containers/Backend/User/Roles/index.js"));
@@ -13338,6 +13320,72 @@ var asyncUserUsersAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_
 });
 var asyncUserUsersEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
   return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Users_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Users/Edit */ "./resources/js/src/containers/Backend/User/Users/Edit.js"));
+});
+var asyncUserClaims = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Claims_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Claims */ "./resources/js/src/containers/Backend/User/Claims/index.js"));
+});
+var asyncUserClaimsAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Claims_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Claims/Add */ "./resources/js/src/containers/Backend/User/Claims/Add.js"));
+});
+var asyncUserClaimsEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Claims_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Claims/Edit */ "./resources/js/src/containers/Backend/User/Claims/Edit.js"));
+});
+var asyncUserDebts = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Debts_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Debts */ "./resources/js/src/containers/Backend/User/Debts/index.js"));
+});
+var asyncUserDebtsAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Debts_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Debts/Add */ "./resources/js/src/containers/Backend/User/Debts/Add.js"));
+});
+var asyncUserDebtsEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Debts_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Debts/Edit */ "./resources/js/src/containers/Backend/User/Debts/Edit.js"));
+});
+var asyncUserEntries = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Entries_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Entries */ "./resources/js/src/containers/Backend/User/Entries/index.js"));
+});
+var asyncUserEntriesAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Entries_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Entries/Add */ "./resources/js/src/containers/Backend/User/Entries/Add.js"));
+});
+var asyncUserEntriesEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Entries_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Entries/Edit */ "./resources/js/src/containers/Backend/User/Entries/Edit.js"));
+});
+var asyncUserExpenses = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Expenses_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Expenses */ "./resources/js/src/containers/Backend/User/Expenses/index.js"));
+});
+var asyncUserExpensesAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Expenses_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Expenses/Add */ "./resources/js/src/containers/Backend/User/Expenses/Add.js"));
+});
+var asyncUserExpensesEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Expenses_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Expenses/Edit */ "./resources/js/src/containers/Backend/User/Expenses/Edit.js"));
+});
+var asyncUserInvestments = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Investments_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Investments */ "./resources/js/src/containers/Backend/User/Investments/index.js"));
+});
+var asyncUserInvestmentsAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Investments_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Investments/Add */ "./resources/js/src/containers/Backend/User/Investments/Add.js"));
+});
+var asyncUserInvestmentsEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Investments_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Investments/Edit */ "./resources/js/src/containers/Backend/User/Investments/Edit.js"));
+});
+var asyncUserSupports = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Supports_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Supports */ "./resources/js/src/containers/Backend/User/Supports/index.js"));
+});
+var asyncUserSupportsAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Supports_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Supports/Add */ "./resources/js/src/containers/Backend/User/Supports/Add.js"));
+});
+var asyncUserSupportsEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Supports_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Supports/Edit */ "./resources/js/src/containers/Backend/User/Supports/Edit.js"));
+});
+var asyncUserCurrencies = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Currencies_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Currencies */ "./resources/js/src/containers/Backend/User/Currencies/index.js"));
+});
+var asyncUserCurrenciesAdd = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Currencies_Add_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Currencies/Add */ "./resources/js/src/containers/Backend/User/Currencies/Add.js"));
+});
+var asyncUserCurrenciesEdit = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Currencies_Edit_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Currencies/Edit */ "./resources/js/src/containers/Backend/User/Currencies/Edit.js"));
+});
+var asyncUserReport = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_src_containers_Backend_User_Report_index_js").then(__webpack_require__.bind(__webpack_require__, /*! ./containers/Backend/User/Report */ "./resources/js/src/containers/Backend/User/Report/index.js"));
 }); // Admin routes
 
 var asyncAdminAdmins = (0,_hoc_asyncComponent_asyncComponent__WEBPACK_IMPORTED_MODULE_5__.default)(function () {
@@ -13501,14 +13549,71 @@ var App = /*#__PURE__*/function (_Component) {
             path: "/user/features",
             component: asyncUserFeatures
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-            path: "/user/issues/:issueId/edit",
-            component: asyncUserIssuesEdit
+            path: "/user/claims/:claimId/edit",
+            component: asyncUserClaimsEdit
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-            path: "/user/issues/add",
-            component: asyncUserIssuesAdd
+            path: "/user/claims/add",
+            component: asyncUserClaimsAdd
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-            path: "/user/issues",
-            component: asyncUserIssues
+            path: "/user/claims",
+            component: asyncUserClaims
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/debts/:debtId/edit",
+            component: asyncUserDebtsEdit
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/debts/add",
+            component: asyncUserDebtsAdd
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/debts",
+            component: asyncUserDebts
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/entries/:entryId/edit",
+            component: asyncUserEntriesEdit
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/entries/add",
+            component: asyncUserEntriesAdd
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/entries",
+            component: asyncUserEntries
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/expenses/:expenseId/edit",
+            component: asyncUserExpensesEdit
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/expenses/add",
+            component: asyncUserExpensesAdd
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/expenses",
+            component: asyncUserExpenses
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/investments/:investmentId/edit",
+            component: asyncUserInvestmentsEdit
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/investments/add",
+            component: asyncUserInvestmentsAdd
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/investments",
+            component: asyncUserInvestments
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/supports/:supportId/edit",
+            component: asyncUserSupportsEdit
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/supports/add",
+            component: asyncUserSupportsAdd
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/supports",
+            component: asyncUserSupports
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/currencies/:currencyId/edit",
+            component: asyncUserCurrenciesEdit
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/currencies/add",
+            component: asyncUserCurrenciesAdd
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/currencies",
+            component: asyncUserCurrencies
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+            path: "/user/report",
+            component: asyncUserReport
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
             path: "/user/languages/:languageId/edit",
             component: asyncUserLanguagesEdit
@@ -13518,15 +13623,6 @@ var App = /*#__PURE__*/function (_Component) {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
             path: "/user/languages",
             component: asyncUserLanguages
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-            path: "/user/platforms/:platformId/edit",
-            component: asyncUserPlatformsEdit
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-            path: "/user/platforms/add",
-            component: asyncUserPlatformsAdd
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-            path: "/user/platforms",
-            component: asyncUserPlatforms
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
             path: "/user/roles/:roleId/edit",
             component: asyncUserRolesEdit
@@ -14097,8 +14193,14 @@ __webpack_require__.r(__webpack_exports__);
       roles = _cms$pages$backend$si2.roles,
       features = _cms$pages$backend$si2.features,
       languages = _cms$pages$backend$si2.languages,
-      platforms = _cms$pages$backend$si2.platforms,
-      issues = _cms$pages$backend$si2.issues,
+      claims = _cms$pages$backend$si2.claims,
+      debts = _cms$pages$backend$si2.debts,
+      entries = _cms$pages$backend$si2.entries,
+      expenses = _cms$pages$backend$si2.expenses,
+      investments = _cms$pages$backend$si2.investments,
+      supports = _cms$pages$backend$si2.supports,
+      currencies = _cms$pages$backend$si2.currencies,
+      report = _cms$pages$backend$si2.report,
       cms_ = _cms$pages$backend$si2.cms,
       notifications_ = _cms$pages$backend$si2.notifications,
       settings = _cms$pages$backend$si2.settings;
@@ -14202,7 +14304,7 @@ __webpack_require__.r(__webpack_exports__);
         })
       });
       sideDrawerItems = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [sideDrawerItem(true, dashboard, null, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTachometerAlt, "/user/dashboard"), sideDrawerItem(false, null, users, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUser, "/user/users"), sideDrawerItem(false, null, roles, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUserTag, "/user/roles"), sideDrawerItem(false, null, features, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTools, "/user/features"), sideDrawerItem(false, null, languages, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faLanguage, "/user/languages"), sideDrawerItem(false, null, platforms, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faBorderNone, "/user/platforms"), sideDrawerItem(false, null, issues, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faExclamationCircle, "/user/issues"), sideDrawerItem(false, null, cms_, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faWrench, "/user/cms", [{
+        children: [sideDrawerItem(true, dashboard, null, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTachometerAlt, "/user/dashboard"), sideDrawerItem(false, null, users, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUser, "/user/users"), sideDrawerItem(false, null, roles, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUserTag, "/user/roles"), sideDrawerItem(false, null, features, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTools, "/user/features"), sideDrawerItem(false, null, languages, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faLanguage, "/user/languages"), sideDrawerItem(false, null, claims, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faHandHoldingUsd, "/user/claims"), sideDrawerItem(false, null, debts, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faMoneyBillWaveAlt, "/user/debts"), sideDrawerItem(false, null, entries, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faMoneyCheckAlt, "/user/entries"), sideDrawerItem(false, null, expenses, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faMoneyCheck, "/user/expenses"), sideDrawerItem(false, null, investments, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faSearchDollar, "/user/investments"), sideDrawerItem(false, null, supports, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faBorderNone, "/user/supports"), sideDrawerItem(false, null, currencies, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faDollarSign, "/user/currencies"), sideDrawerItem(false, report, null, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faFile, "/user/report"), sideDrawerItem(false, null, cms_, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faWrench, "/user/cms", [{
           link: '/global',
           text: cms_.global
         }, {
@@ -14249,7 +14351,7 @@ __webpack_require__.r(__webpack_exports__);
 
     case 'admin':
       sideDrawerItems = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [sideDrawerItem(true, dashboard, null, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTachometerAlt, "/admin/dashboard"), sideDrawerItem(true, null, admins, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUserCog, "/admin/admins"), sideDrawerItem(true, null, users, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUser, "/admin/users"), sideDrawerItem(true, null, roles, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUserTag, "/admin/roles"), sideDrawerItem(true, null, features, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTools, "/admin/features"), sideDrawerItem(true, null, languages, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faLanguage, "/admin/languages"), sideDrawerItem(true, null, platforms, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faBorderNone, "/admin/platforms"), sideDrawerItem(true, null, issues, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faExclamationCircle, "/admin/issues"), sideDrawerItem(true, null, cms_, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faWrench, "/admin/cms", [{
+        children: [sideDrawerItem(true, dashboard, null, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTachometerAlt, "/admin/dashboard"), sideDrawerItem(true, null, admins, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUserCog, "/admin/admins"), sideDrawerItem(true, null, users, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUser, "/admin/users"), sideDrawerItem(true, null, roles, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faUserTag, "/admin/roles"), sideDrawerItem(true, null, features, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faTools, "/admin/features"), sideDrawerItem(true, null, languages, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faLanguage, "/admin/languages"), sideDrawerItem(true, null, claims, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faHandHoldingUsd, "/admin/claims"), sideDrawerItem(true, null, debts, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faMoneyBillWaveAlt, "/admin/debts"), sideDrawerItem(true, null, entries, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faMoneyCheckAlt, "/admin/entries"), sideDrawerItem(true, null, expenses, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faMoneyCheck, "/admin/expenses"), sideDrawerItem(true, null, investments, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faSearchDollar, "/admin/investments"), sideDrawerItem(true, null, supports, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faBorderNone, "/admin/supports"), sideDrawerItem(true, null, currencies, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faDollarSign, "/admin/currencies"), sideDrawerItem(true, report, null, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faFile, "/admin/report"), sideDrawerItem(true, null, cms_, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faWrench, "/admin/cms", [{
           link: '/global',
           text: cms_.global
         }, {
@@ -15819,7 +15921,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "USERS_RESET": () => /* binding */ USERS_RESET,
 /* harmony export */   "USERS_START": () => /* binding */ USERS_START,
 /* harmony export */   "USERS_SUCCESS": () => /* binding */ USERS_SUCCESS,
-/* harmony export */   "USERS_FAIL": () => /* binding */ USERS_FAIL
+/* harmony export */   "USERS_FAIL": () => /* binding */ USERS_FAIL,
+/* harmony export */   "CLAIMS_RESET": () => /* binding */ CLAIMS_RESET,
+/* harmony export */   "CLAIMS_START": () => /* binding */ CLAIMS_START,
+/* harmony export */   "CLAIMS_SUCCESS": () => /* binding */ CLAIMS_SUCCESS,
+/* harmony export */   "CLAIMS_FAIL": () => /* binding */ CLAIMS_FAIL,
+/* harmony export */   "DEBTS_RESET": () => /* binding */ DEBTS_RESET,
+/* harmony export */   "DEBTS_START": () => /* binding */ DEBTS_START,
+/* harmony export */   "DEBTS_SUCCESS": () => /* binding */ DEBTS_SUCCESS,
+/* harmony export */   "DEBTS_FAIL": () => /* binding */ DEBTS_FAIL,
+/* harmony export */   "ENTRIES_RESET": () => /* binding */ ENTRIES_RESET,
+/* harmony export */   "ENTRIES_START": () => /* binding */ ENTRIES_START,
+/* harmony export */   "ENTRIES_SUCCESS": () => /* binding */ ENTRIES_SUCCESS,
+/* harmony export */   "ENTRIES_FAIL": () => /* binding */ ENTRIES_FAIL,
+/* harmony export */   "EXPENSES_RESET": () => /* binding */ EXPENSES_RESET,
+/* harmony export */   "EXPENSES_START": () => /* binding */ EXPENSES_START,
+/* harmony export */   "EXPENSES_SUCCESS": () => /* binding */ EXPENSES_SUCCESS,
+/* harmony export */   "EXPENSES_FAIL": () => /* binding */ EXPENSES_FAIL,
+/* harmony export */   "INVESTMENTS_RESET": () => /* binding */ INVESTMENTS_RESET,
+/* harmony export */   "INVESTMENTS_START": () => /* binding */ INVESTMENTS_START,
+/* harmony export */   "INVESTMENTS_SUCCESS": () => /* binding */ INVESTMENTS_SUCCESS,
+/* harmony export */   "INVESTMENTS_FAIL": () => /* binding */ INVESTMENTS_FAIL,
+/* harmony export */   "SUPPORTS_RESET": () => /* binding */ SUPPORTS_RESET,
+/* harmony export */   "SUPPORTS_START": () => /* binding */ SUPPORTS_START,
+/* harmony export */   "SUPPORTS_SUCCESS": () => /* binding */ SUPPORTS_SUCCESS,
+/* harmony export */   "SUPPORTS_FAIL": () => /* binding */ SUPPORTS_FAIL,
+/* harmony export */   "CURRENCIES_RESET": () => /* binding */ CURRENCIES_RESET,
+/* harmony export */   "CURRENCIES_START": () => /* binding */ CURRENCIES_START,
+/* harmony export */   "CURRENCIES_SUCCESS": () => /* binding */ CURRENCIES_SUCCESS,
+/* harmony export */   "CURRENCIES_FAIL": () => /* binding */ CURRENCIES_FAIL,
+/* harmony export */   "REPORT_RESET": () => /* binding */ REPORT_RESET,
+/* harmony export */   "REPORT_START": () => /* binding */ REPORT_START,
+/* harmony export */   "REPORT_SUCCESS": () => /* binding */ REPORT_SUCCESS,
+/* harmony export */   "REPORT_FAIL": () => /* binding */ REPORT_FAIL
 /* harmony export */ });
 // Auth action types
 var AUTH_START = 'AUTH_START';
@@ -15873,6 +16007,38 @@ var USERS_RESET = 'USERS_RESET';
 var USERS_START = 'USERS_START';
 var USERS_SUCCESS = 'USERS_SUCCESS';
 var USERS_FAIL = 'USERS_FAIL';
+var CLAIMS_RESET = 'CLAIMS_RESET';
+var CLAIMS_START = 'CLAIMS_START';
+var CLAIMS_SUCCESS = 'CLAIMS_SUCCESS';
+var CLAIMS_FAIL = 'CLAIMS_FAIL';
+var DEBTS_RESET = 'DEBTS_RESET';
+var DEBTS_START = 'DEBTS_START';
+var DEBTS_SUCCESS = 'DEBTS_SUCCESS';
+var DEBTS_FAIL = 'DEBTS_FAIL';
+var ENTRIES_RESET = 'ENTRIES_RESET';
+var ENTRIES_START = 'ENTRIES_START';
+var ENTRIES_SUCCESS = 'ENTRIES_SUCCESS';
+var ENTRIES_FAIL = 'ENTRIES_FAIL';
+var EXPENSES_RESET = 'EXPENSES_RESET';
+var EXPENSES_START = 'EXPENSES_START';
+var EXPENSES_SUCCESS = 'EXPENSES_SUCCESS';
+var EXPENSES_FAIL = 'EXPENSES_FAIL';
+var INVESTMENTS_RESET = 'INVESTMENTS_RESET';
+var INVESTMENTS_START = 'INVESTMENTS_START';
+var INVESTMENTS_SUCCESS = 'INVESTMENTS_SUCCESS';
+var INVESTMENTS_FAIL = 'INVESTMENTS_FAIL';
+var SUPPORTS_RESET = 'SUPPORTS_RESET';
+var SUPPORTS_START = 'SUPPORTS_START';
+var SUPPORTS_SUCCESS = 'SUPPORTS_SUCCESS';
+var SUPPORTS_FAIL = 'SUPPORTS_FAIL';
+var CURRENCIES_RESET = 'CURRENCIES_RESET';
+var CURRENCIES_START = 'CURRENCIES_START';
+var CURRENCIES_SUCCESS = 'CURRENCIES_SUCCESS';
+var CURRENCIES_FAIL = 'CURRENCIES_FAIL';
+var REPORT_RESET = 'REPORT_RESET';
+var REPORT_START = 'REPORT_START';
+var REPORT_SUCCESS = 'REPORT_SUCCESS';
+var REPORT_FAIL = 'REPORT_FAIL';
 
 /***/ }),
 
@@ -16442,21 +16608,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "deleteCms": () => /* binding */ deleteCms,
 /* harmony export */   "resetDashboard": () => /* binding */ resetDashboard,
 /* harmony export */   "getDashboard": () => /* binding */ getDashboard,
-/* harmony export */   "postDashboardIssuesMark": () => /* binding */ postDashboardIssuesMark,
 /* harmony export */   "resetFeatures": () => /* binding */ resetFeatures,
 /* harmony export */   "getFeatures": () => /* binding */ getFeatures,
 /* harmony export */   "getFeature": () => /* binding */ getFeature,
 /* harmony export */   "postFeatures": () => /* binding */ postFeatures,
 /* harmony export */   "patchFeatures": () => /* binding */ patchFeatures,
 /* harmony export */   "deleteFeatures": () => /* binding */ deleteFeatures,
-/* harmony export */   "resetIssues": () => /* binding */ resetIssues,
-/* harmony export */   "getIssues": () => /* binding */ getIssues,
-/* harmony export */   "getIssuesInfo": () => /* binding */ getIssuesInfo,
-/* harmony export */   "postIssuesMark": () => /* binding */ postIssuesMark,
-/* harmony export */   "getIssue": () => /* binding */ getIssue,
-/* harmony export */   "postIssues": () => /* binding */ postIssues,
-/* harmony export */   "patchIssues": () => /* binding */ patchIssues,
-/* harmony export */   "deleteIssues": () => /* binding */ deleteIssues,
+/* harmony export */   "resetClaims": () => /* binding */ resetClaims,
+/* harmony export */   "getClaims": () => /* binding */ getClaims,
+/* harmony export */   "getClaimsInfo": () => /* binding */ getClaimsInfo,
+/* harmony export */   "getClaim": () => /* binding */ getClaim,
+/* harmony export */   "postClaims": () => /* binding */ postClaims,
+/* harmony export */   "patchClaims": () => /* binding */ patchClaims,
+/* harmony export */   "deleteClaims": () => /* binding */ deleteClaims,
+/* harmony export */   "resetDebts": () => /* binding */ resetDebts,
+/* harmony export */   "getDebts": () => /* binding */ getDebts,
+/* harmony export */   "getDebtsInfo": () => /* binding */ getDebtsInfo,
+/* harmony export */   "getDebt": () => /* binding */ getDebt,
+/* harmony export */   "postDebts": () => /* binding */ postDebts,
+/* harmony export */   "patchDebts": () => /* binding */ patchDebts,
+/* harmony export */   "deleteDebts": () => /* binding */ deleteDebts,
+/* harmony export */   "resetEntries": () => /* binding */ resetEntries,
+/* harmony export */   "getEntries": () => /* binding */ getEntries,
+/* harmony export */   "getEntriesInfo": () => /* binding */ getEntriesInfo,
+/* harmony export */   "getEntry": () => /* binding */ getEntry,
+/* harmony export */   "postEntries": () => /* binding */ postEntries,
+/* harmony export */   "patchEntries": () => /* binding */ patchEntries,
+/* harmony export */   "deleteEntries": () => /* binding */ deleteEntries,
+/* harmony export */   "resetExpenses": () => /* binding */ resetExpenses,
+/* harmony export */   "getExpenses": () => /* binding */ getExpenses,
+/* harmony export */   "getExpensesInfo": () => /* binding */ getExpensesInfo,
+/* harmony export */   "getExpense": () => /* binding */ getExpense,
+/* harmony export */   "postExpenses": () => /* binding */ postExpenses,
+/* harmony export */   "patchExpenses": () => /* binding */ patchExpenses,
+/* harmony export */   "deleteExpenses": () => /* binding */ deleteExpenses,
+/* harmony export */   "resetInvestments": () => /* binding */ resetInvestments,
+/* harmony export */   "getInvestments": () => /* binding */ getInvestments,
+/* harmony export */   "getInvestmentsInfo": () => /* binding */ getInvestmentsInfo,
+/* harmony export */   "getInvestment": () => /* binding */ getInvestment,
+/* harmony export */   "postInvestments": () => /* binding */ postInvestments,
+/* harmony export */   "patchInvestments": () => /* binding */ patchInvestments,
+/* harmony export */   "deleteInvestments": () => /* binding */ deleteInvestments,
+/* harmony export */   "resetSupports": () => /* binding */ resetSupports,
+/* harmony export */   "getSupports": () => /* binding */ getSupports,
+/* harmony export */   "getSupportsInfo": () => /* binding */ getSupportsInfo,
+/* harmony export */   "getSupport": () => /* binding */ getSupport,
+/* harmony export */   "postSupports": () => /* binding */ postSupports,
+/* harmony export */   "patchSupports": () => /* binding */ patchSupports,
+/* harmony export */   "deleteSupports": () => /* binding */ deleteSupports,
+/* harmony export */   "resetCurrencies": () => /* binding */ resetCurrencies,
+/* harmony export */   "getCurrencies": () => /* binding */ getCurrencies,
+/* harmony export */   "getCurrency": () => /* binding */ getCurrency,
+/* harmony export */   "postCurrencies": () => /* binding */ postCurrencies,
+/* harmony export */   "patchCurrencies": () => /* binding */ patchCurrencies,
+/* harmony export */   "deleteCurrencies": () => /* binding */ deleteCurrencies,
+/* harmony export */   "resetReport": () => /* binding */ resetReport,
+/* harmony export */   "postReport": () => /* binding */ postReport,
 /* harmony export */   "resetLanguages": () => /* binding */ resetLanguages,
 /* harmony export */   "getLanguages": () => /* binding */ getLanguages,
 /* harmony export */   "getLanguage": () => /* binding */ getLanguage,
@@ -17159,73 +17366,6 @@ var getDashboard = function getDashboard() {
     };
   }();
 };
-var postDashboardIssuesMark = function postDashboardIssuesMark(id) {
-  return /*#__PURE__*/function () {
-    var _ref11 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee11(dispatch, getState) {
-      var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee11$(_context11) {
-        while (1) {
-          switch (_context11.prev = _context11.next) {
-            case 0:
-              dispatch(dashboardStart());
-              role = getState().auth.role;
-              _context11.prev = 2;
-              token = localStorage.getItem('token');
-              _context11.next = 6;
-              return fetch("".concat(prefix + role, "/issues/").concat(id, "/mark"), {
-                method: 'POST',
-                headers: {
-                  Authorization: token
-                }
-              });
-
-            case 6:
-              res = _context11.sent;
-              _context11.next = 9;
-              return res.json();
-
-            case 9:
-              resData = _context11.sent;
-
-              if (!(res.status === 422)) {
-                _context11.next = 14;
-                break;
-              }
-
-              throw new Error(Object.values(resData.errors).join('\n'));
-
-            case 14:
-              if (!(res.status !== 200 && res.status !== 201)) {
-                _context11.next = 16;
-                break;
-              }
-
-              throw new Error(resData.error.message);
-
-            case 16:
-              dispatch(dashboardSuccess(resData));
-              _context11.next = 23;
-              break;
-
-            case 19:
-              _context11.prev = 19;
-              _context11.t0 = _context11["catch"](2);
-              console.log(_context11.t0);
-              dispatch(dashboardFail(_context11.t0));
-
-            case 23:
-            case "end":
-              return _context11.stop();
-          }
-        }
-      }, _callee11, null, [[2, 19]]);
-    }));
-
-    return function (_x21, _x22) {
-      return _ref11.apply(this, arguments);
-    };
-  }();
-};
 var resetFeatures = function resetFeatures() {
   return {
     type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.FEATURES_RESET
@@ -17256,6 +17396,55 @@ var getFeatures = function getFeatures() {
   var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
   var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   return /*#__PURE__*/function () {
+    var _ref11 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee11(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee11$(_context11) {
+        while (1) {
+          switch (_context11.prev = _context11.next) {
+            case 0:
+              dispatch(featuresStart());
+              role = getState().auth.role;
+              _context11.prev = 2;
+              token = localStorage.getItem('token');
+              _context11.next = 6;
+              return fetch("".concat(prefix + role, "/features?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context11.sent;
+              _context11.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context11.sent;
+              dispatch(featuresSuccess(resData));
+              _context11.next = 17;
+              break;
+
+            case 13:
+              _context11.prev = 13;
+              _context11.t0 = _context11["catch"](2);
+              console.log(_context11.t0);
+              dispatch(featuresFail(_context11.t0));
+
+            case 17:
+            case "end":
+              return _context11.stop();
+          }
+        }
+      }, _callee11, null, [[2, 13]]);
+    }));
+
+    return function (_x21, _x22) {
+      return _ref11.apply(this, arguments);
+    };
+  }();
+};
+var getFeature = function getFeature(id) {
+  return /*#__PURE__*/function () {
     var _ref12 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee12(dispatch, getState) {
       var role, token, res, resData;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee12$(_context12) {
@@ -17267,7 +17456,7 @@ var getFeatures = function getFeatures() {
               _context12.prev = 2;
               token = localStorage.getItem('token');
               _context12.next = 6;
-              return fetch("".concat(prefix + role, "/features?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+              return fetch("".concat(prefix + role, "/features/").concat(id), {
                 headers: {
                   Authorization: token
                 }
@@ -17303,10 +17492,10 @@ var getFeatures = function getFeatures() {
     };
   }();
 };
-var getFeature = function getFeature(id) {
+var postFeatures = function postFeatures(data) {
   return /*#__PURE__*/function () {
     var _ref13 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee13(dispatch, getState) {
-      var role, token, res, resData;
+      var role, token, form, res, resData;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee13$(_context13) {
         while (1) {
           switch (_context13.prev = _context13.next) {
@@ -17315,36 +17504,56 @@ var getFeature = function getFeature(id) {
               role = getState().auth.role;
               _context13.prev = 2;
               token = localStorage.getItem('token');
-              _context13.next = 6;
-              return fetch("".concat(prefix + role, "/features/").concat(id), {
+              form = new FormData(data);
+              _context13.next = 7;
+              return fetch("".concat(prefix + role, "/features"), {
+                method: 'POST',
+                body: form,
                 headers: {
                   Authorization: token
                 }
               });
 
-            case 6:
+            case 7:
               res = _context13.sent;
-              _context13.next = 9;
+              _context13.next = 10;
               return res.json();
 
-            case 9:
+            case 10:
               resData = _context13.sent;
+
+              if (!(res.status === 422)) {
+                _context13.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context13.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
               dispatch(featuresSuccess(resData));
-              _context13.next = 17;
+              _context13.next = 24;
               break;
 
-            case 13:
-              _context13.prev = 13;
+            case 20:
+              _context13.prev = 20;
               _context13.t0 = _context13["catch"](2);
               console.log(_context13.t0);
               dispatch(featuresFail(_context13.t0));
 
-            case 17:
+            case 24:
             case "end":
               return _context13.stop();
           }
         }
-      }, _callee13, null, [[2, 13]]);
+      }, _callee13, null, [[2, 20]]);
     }));
 
     return function (_x25, _x26) {
@@ -17352,7 +17561,7 @@ var getFeature = function getFeature(id) {
     };
   }();
 };
-var postFeatures = function postFeatures(data) {
+var patchFeatures = function patchFeatures(id, data) {
   return /*#__PURE__*/function () {
     var _ref14 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee14(dispatch, getState) {
       var role, token, form, res, resData;
@@ -17366,7 +17575,7 @@ var postFeatures = function postFeatures(data) {
               token = localStorage.getItem('token');
               form = new FormData(data);
               _context14.next = 7;
-              return fetch("".concat(prefix + role, "/features"), {
+              return fetch("".concat(prefix + role, "/features/").concat(id), {
                 method: 'POST',
                 body: form,
                 headers: {
@@ -17383,76 +17592,7 @@ var postFeatures = function postFeatures(data) {
               resData = _context14.sent;
 
               if (!(res.status === 422)) {
-                _context14.next = 15;
-                break;
-              }
-
-              throw new Error(Object.values(resData.errors).join('\n'));
-
-            case 15:
-              if (!(res.status !== 200 && res.status !== 201)) {
-                _context14.next = 17;
-                break;
-              }
-
-              throw new Error(resData.error.message);
-
-            case 17:
-              dispatch(featuresSuccess(resData));
-              _context14.next = 24;
-              break;
-
-            case 20:
-              _context14.prev = 20;
-              _context14.t0 = _context14["catch"](2);
-              console.log(_context14.t0);
-              dispatch(featuresFail(_context14.t0));
-
-            case 24:
-            case "end":
-              return _context14.stop();
-          }
-        }
-      }, _callee14, null, [[2, 20]]);
-    }));
-
-    return function (_x27, _x28) {
-      return _ref14.apply(this, arguments);
-    };
-  }();
-};
-var patchFeatures = function patchFeatures(id, data) {
-  return /*#__PURE__*/function () {
-    var _ref15 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee15(dispatch, getState) {
-      var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee15$(_context15) {
-        while (1) {
-          switch (_context15.prev = _context15.next) {
-            case 0:
-              dispatch(featuresStart());
-              role = getState().auth.role;
-              _context15.prev = 2;
-              token = localStorage.getItem('token');
-              form = new FormData(data);
-              _context15.next = 7;
-              return fetch("".concat(prefix + role, "/features/").concat(id), {
-                method: 'POST',
-                body: form,
-                headers: {
-                  Authorization: token
-                }
-              });
-
-            case 7:
-              res = _context15.sent;
-              _context15.next = 10;
-              return res.json();
-
-            case 10:
-              resData = _context15.sent;
-
-              if (!(res.status === 422)) {
-                _context15.next = 13;
+                _context14.next = 13;
                 break;
               }
 
@@ -17460,44 +17600,44 @@ var patchFeatures = function patchFeatures(id, data) {
 
             case 13:
               dispatch(featuresSuccess(resData));
-              _context15.next = 20;
+              _context14.next = 20;
               break;
 
             case 16:
-              _context15.prev = 16;
-              _context15.t0 = _context15["catch"](2);
-              console.log(_context15.t0);
-              dispatch(featuresFail(_context15.t0));
+              _context14.prev = 16;
+              _context14.t0 = _context14["catch"](2);
+              console.log(_context14.t0);
+              dispatch(featuresFail(_context14.t0));
 
             case 20:
             case "end":
-              return _context15.stop();
+              return _context14.stop();
           }
         }
-      }, _callee15, null, [[2, 16]]);
+      }, _callee14, null, [[2, 16]]);
     }));
 
-    return function (_x29, _x30) {
-      return _ref15.apply(this, arguments);
+    return function (_x27, _x28) {
+      return _ref14.apply(this, arguments);
     };
   }();
 };
 var deleteFeatures = function deleteFeatures(id) {
   return /*#__PURE__*/function () {
-    var _ref16 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee16(dispatch, getState) {
+    var _ref15 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee15(dispatch, getState) {
       var role, page, show, search, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee16$(_context16) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee15$(_context15) {
         while (1) {
-          switch (_context16.prev = _context16.next) {
+          switch (_context15.prev = _context15.next) {
             case 0:
               dispatch(featuresStart());
               role = getState().auth.role;
-              _context16.prev = 2;
+              _context15.prev = 2;
               page = document.getElementById('table-page').value;
               show = document.getElementById('table-show').value;
               search = document.getElementById('table-search').value;
               token = localStorage.getItem('token');
-              _context16.next = 9;
+              _context15.next = 9;
               return fetch("".concat(prefix + role, "/features/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 method: 'DELETE',
                 headers: {
@@ -17506,15 +17646,15 @@ var deleteFeatures = function deleteFeatures(id) {
               });
 
             case 9:
-              res = _context16.sent;
-              _context16.next = 12;
+              res = _context15.sent;
+              _context15.next = 12;
               return res.json();
 
             case 12:
-              resData = _context16.sent;
+              resData = _context15.sent;
 
               if (!(res.status === 422)) {
-                _context16.next = 15;
+                _context15.next = 15;
                 break;
               }
 
@@ -17522,21 +17662,98 @@ var deleteFeatures = function deleteFeatures(id) {
 
             case 15:
               dispatch(featuresSuccess(resData));
-              _context16.next = 22;
+              _context15.next = 22;
               break;
 
             case 18:
-              _context16.prev = 18;
-              _context16.t0 = _context16["catch"](2);
-              console.log(_context16.t0);
-              dispatch(featuresFail(_context16.t0));
+              _context15.prev = 18;
+              _context15.t0 = _context15["catch"](2);
+              console.log(_context15.t0);
+              dispatch(featuresFail(_context15.t0));
 
             case 22:
+            case "end":
+              return _context15.stop();
+          }
+        }
+      }, _callee15, null, [[2, 18]]);
+    }));
+
+    return function (_x29, _x30) {
+      return _ref15.apply(this, arguments);
+    };
+  }();
+};
+var resetClaims = function resetClaims() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CLAIMS_RESET
+  };
+};
+
+var claimsStart = function claimsStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CLAIMS_START
+  };
+};
+
+var claimsSuccess = function claimsSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CLAIMS_SUCCESS
+  }, data);
+};
+
+var claimsFail = function claimsFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CLAIMS_FAIL,
+    error: error
+  };
+};
+
+var getClaims = function getClaims() {
+  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+  return /*#__PURE__*/function () {
+    var _ref16 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee16(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee16$(_context16) {
+        while (1) {
+          switch (_context16.prev = _context16.next) {
+            case 0:
+              dispatch(claimsStart());
+              role = getState().auth.role;
+              _context16.prev = 2;
+              token = localStorage.getItem('token');
+              _context16.next = 6;
+              return fetch("".concat(prefix + role, "/claims?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context16.sent;
+              _context16.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context16.sent;
+              dispatch(claimsSuccess(resData));
+              _context16.next = 17;
+              break;
+
+            case 13:
+              _context16.prev = 13;
+              _context16.t0 = _context16["catch"](2);
+              console.log(_context16.t0);
+              dispatch(claimsFail(_context16.t0));
+
+            case 17:
             case "end":
               return _context16.stop();
           }
         }
-      }, _callee16, null, [[2, 18]]);
+      }, _callee16, null, [[2, 13]]);
     }));
 
     return function (_x31, _x32) {
@@ -17544,35 +17761,7 @@ var deleteFeatures = function deleteFeatures(id) {
     };
   }();
 };
-var resetIssues = function resetIssues() {
-  return {
-    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ISSUES_RESET
-  };
-};
-
-var issuesStart = function issuesStart() {
-  return {
-    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ISSUES_START
-  };
-};
-
-var issuesSuccess = function issuesSuccess(data) {
-  return _objectSpread({
-    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ISSUES_SUCCESS
-  }, data);
-};
-
-var issuesFail = function issuesFail(error) {
-  return {
-    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ISSUES_FAIL,
-    error: error
-  };
-};
-
-var getIssues = function getIssues() {
-  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
-  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+var getClaimsInfo = function getClaimsInfo() {
   return /*#__PURE__*/function () {
     var _ref17 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee17(dispatch, getState) {
       var role, token, res, resData;
@@ -17580,12 +17769,12 @@ var getIssues = function getIssues() {
         while (1) {
           switch (_context17.prev = _context17.next) {
             case 0:
-              dispatch(issuesStart());
+              dispatch(claimsStart());
               role = getState().auth.role;
               _context17.prev = 2;
               token = localStorage.getItem('token');
               _context17.next = 6;
-              return fetch("".concat(prefix + role, "/issues?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+              return fetch("".concat(prefix + role, "/claims/info"), {
                 headers: {
                   Authorization: token
                 }
@@ -17598,7 +17787,7 @@ var getIssues = function getIssues() {
 
             case 9:
               resData = _context17.sent;
-              dispatch(issuesSuccess(resData));
+              dispatch(claimsSuccess(resData));
               _context17.next = 17;
               break;
 
@@ -17606,7 +17795,7 @@ var getIssues = function getIssues() {
               _context17.prev = 13;
               _context17.t0 = _context17["catch"](2);
               console.log(_context17.t0);
-              dispatch(issuesFail(_context17.t0));
+              dispatch(claimsFail(_context17.t0));
 
             case 17:
             case "end":
@@ -17621,7 +17810,7 @@ var getIssues = function getIssues() {
     };
   }();
 };
-var getIssuesInfo = function getIssuesInfo() {
+var getClaim = function getClaim(id) {
   return /*#__PURE__*/function () {
     var _ref18 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee18(dispatch, getState) {
       var role, token, res, resData;
@@ -17629,12 +17818,12 @@ var getIssuesInfo = function getIssuesInfo() {
         while (1) {
           switch (_context18.prev = _context18.next) {
             case 0:
-              dispatch(issuesStart());
+              dispatch(claimsStart());
               role = getState().auth.role;
               _context18.prev = 2;
               token = localStorage.getItem('token');
               _context18.next = 6;
-              return fetch("".concat(prefix + role, "/issues/info"), {
+              return fetch("".concat(prefix + role, "/claims/").concat(id), {
                 headers: {
                   Authorization: token
                 }
@@ -17647,7 +17836,7 @@ var getIssuesInfo = function getIssuesInfo() {
 
             case 9:
               resData = _context18.sent;
-              dispatch(issuesSuccess(resData));
+              dispatch(claimsSuccess(resData));
               _context18.next = 17;
               break;
 
@@ -17655,7 +17844,7 @@ var getIssuesInfo = function getIssuesInfo() {
               _context18.prev = 13;
               _context18.t0 = _context18["catch"](2);
               console.log(_context18.t0);
-              dispatch(issuesFail(_context18.t0));
+              dispatch(claimsFail(_context18.t0));
 
             case 17:
             case "end":
@@ -17670,137 +17859,21 @@ var getIssuesInfo = function getIssuesInfo() {
     };
   }();
 };
-var postIssuesMark = function postIssuesMark(id) {
+var postClaims = function postClaims(data) {
   return /*#__PURE__*/function () {
     var _ref19 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee19(dispatch, getState) {
-      var role, token, res, resData;
+      var role, token, form, res, resData;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee19$(_context19) {
         while (1) {
           switch (_context19.prev = _context19.next) {
             case 0:
-              dispatch(issuesStart());
+              dispatch(claimsStart());
               role = getState().auth.role;
               _context19.prev = 2;
               token = localStorage.getItem('token');
-              _context19.next = 6;
-              return fetch("".concat(prefix + role, "/issues/").concat(id, "/mark"), {
-                method: 'POST',
-                headers: {
-                  Authorization: token
-                }
-              });
-
-            case 6:
-              res = _context19.sent;
-              _context19.next = 9;
-              return res.json();
-
-            case 9:
-              resData = _context19.sent;
-
-              if (!(res.status === 422)) {
-                _context19.next = 14;
-                break;
-              }
-
-              throw new Error(Object.values(resData.errors).join('\n'));
-
-            case 14:
-              if (!(res.status !== 200 && res.status !== 201)) {
-                _context19.next = 16;
-                break;
-              }
-
-              throw new Error(resData.error.message);
-
-            case 16:
-              dispatch(issuesSuccess(resData));
-              _context19.next = 23;
-              break;
-
-            case 19:
-              _context19.prev = 19;
-              _context19.t0 = _context19["catch"](2);
-              console.log(_context19.t0);
-              dispatch(issuesFail(_context19.t0));
-
-            case 23:
-            case "end":
-              return _context19.stop();
-          }
-        }
-      }, _callee19, null, [[2, 19]]);
-    }));
-
-    return function (_x37, _x38) {
-      return _ref19.apply(this, arguments);
-    };
-  }();
-};
-var getIssue = function getIssue(id) {
-  return /*#__PURE__*/function () {
-    var _ref20 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee20(dispatch, getState) {
-      var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee20$(_context20) {
-        while (1) {
-          switch (_context20.prev = _context20.next) {
-            case 0:
-              dispatch(issuesStart());
-              role = getState().auth.role;
-              _context20.prev = 2;
-              token = localStorage.getItem('token');
-              _context20.next = 6;
-              return fetch("".concat(prefix + role, "/issues/").concat(id), {
-                headers: {
-                  Authorization: token
-                }
-              });
-
-            case 6:
-              res = _context20.sent;
-              _context20.next = 9;
-              return res.json();
-
-            case 9:
-              resData = _context20.sent;
-              dispatch(issuesSuccess(resData));
-              _context20.next = 17;
-              break;
-
-            case 13:
-              _context20.prev = 13;
-              _context20.t0 = _context20["catch"](2);
-              console.log(_context20.t0);
-              dispatch(issuesFail(_context20.t0));
-
-            case 17:
-            case "end":
-              return _context20.stop();
-          }
-        }
-      }, _callee20, null, [[2, 13]]);
-    }));
-
-    return function (_x39, _x40) {
-      return _ref20.apply(this, arguments);
-    };
-  }();
-};
-var postIssues = function postIssues(data) {
-  return /*#__PURE__*/function () {
-    var _ref21 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee21(dispatch, getState) {
-      var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee21$(_context21) {
-        while (1) {
-          switch (_context21.prev = _context21.next) {
-            case 0:
-              dispatch(issuesStart());
-              role = getState().auth.role;
-              _context21.prev = 2;
-              token = localStorage.getItem('token');
               form = new FormData(data);
-              _context21.next = 7;
-              return fetch("".concat(prefix + role, "/issues"), {
+              _context19.next = 7;
+              return fetch("".concat(prefix + role, "/claims"), {
                 method: 'POST',
                 body: form,
                 headers: {
@@ -17809,11 +17882,142 @@ var postIssues = function postIssues(data) {
               });
 
             case 7:
-              res = _context21.sent;
-              _context21.next = 10;
+              res = _context19.sent;
+              _context19.next = 10;
               return res.json();
 
             case 10:
+              resData = _context19.sent;
+
+              if (!(res.status === 422)) {
+                _context19.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context19.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(claimsSuccess(resData));
+              _context19.next = 24;
+              break;
+
+            case 20:
+              _context19.prev = 20;
+              _context19.t0 = _context19["catch"](2);
+              console.log(_context19.t0);
+              dispatch(claimsFail(_context19.t0));
+
+            case 24:
+            case "end":
+              return _context19.stop();
+          }
+        }
+      }, _callee19, null, [[2, 20]]);
+    }));
+
+    return function (_x37, _x38) {
+      return _ref19.apply(this, arguments);
+    };
+  }();
+};
+var patchClaims = function patchClaims(id, data) {
+  return /*#__PURE__*/function () {
+    var _ref20 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee20(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee20$(_context20) {
+        while (1) {
+          switch (_context20.prev = _context20.next) {
+            case 0:
+              dispatch(claimsStart());
+              role = getState().auth.role;
+              _context20.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context20.next = 7;
+              return fetch("".concat(prefix + role, "/claims/").concat(id), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context20.sent;
+              _context20.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context20.sent;
+
+              if (!(res.status === 422)) {
+                _context20.next = 13;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 13:
+              dispatch(claimsSuccess(resData));
+              _context20.next = 20;
+              break;
+
+            case 16:
+              _context20.prev = 16;
+              _context20.t0 = _context20["catch"](2);
+              console.log(_context20.t0);
+              dispatch(claimsFail(_context20.t0));
+
+            case 20:
+            case "end":
+              return _context20.stop();
+          }
+        }
+      }, _callee20, null, [[2, 16]]);
+    }));
+
+    return function (_x39, _x40) {
+      return _ref20.apply(this, arguments);
+    };
+  }();
+};
+var deleteClaims = function deleteClaims(id) {
+  return /*#__PURE__*/function () {
+    var _ref21 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee21(dispatch, getState) {
+      var role, page, show, search, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee21$(_context21) {
+        while (1) {
+          switch (_context21.prev = _context21.next) {
+            case 0:
+              dispatch(claimsStart());
+              role = getState().auth.role;
+              _context21.prev = 2;
+              page = document.getElementById('table-page').value;
+              show = document.getElementById('table-show').value;
+              search = document.getElementById('table-search').value;
+              token = localStorage.getItem('token');
+              _context21.next = 9;
+              return fetch("".concat(prefix + role, "/claims/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                method: 'DELETE',
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 9:
+              res = _context21.sent;
+              _context21.next = 12;
+              return res.json();
+
+            case 12:
               resData = _context21.sent;
 
               if (!(res.status === 422)) {
@@ -17824,30 +18028,22 @@ var postIssues = function postIssues(data) {
               throw new Error(Object.values(resData.errors).join('\n'));
 
             case 15:
-              if (!(res.status !== 200 && res.status !== 201)) {
-                _context21.next = 17;
-                break;
-              }
-
-              throw new Error(resData.error.message);
-
-            case 17:
-              dispatch(issuesSuccess(resData));
-              _context21.next = 24;
+              dispatch(claimsSuccess(resData));
+              _context21.next = 22;
               break;
 
-            case 20:
-              _context21.prev = 20;
+            case 18:
+              _context21.prev = 18;
               _context21.t0 = _context21["catch"](2);
               console.log(_context21.t0);
-              dispatch(issuesFail(_context21.t0));
+              dispatch(claimsFail(_context21.t0));
 
-            case 24:
+            case 22:
             case "end":
               return _context21.stop();
           }
         }
-      }, _callee21, null, [[2, 20]]);
+      }, _callee21, null, [[2, 18]]);
     }));
 
     return function (_x41, _x42) {
@@ -17855,21 +18051,196 @@ var postIssues = function postIssues(data) {
     };
   }();
 };
-var patchIssues = function patchIssues(id, data) {
+var resetDebts = function resetDebts() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.DEBTS_RESET
+  };
+};
+
+var debtsStart = function debtsStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.DEBTS_START
+  };
+};
+
+var debtsSuccess = function debtsSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.DEBTS_SUCCESS
+  }, data);
+};
+
+var debtsFail = function debtsFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.DEBTS_FAIL,
+    error: error
+  };
+};
+
+var getDebts = function getDebts() {
+  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   return /*#__PURE__*/function () {
     var _ref22 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee22(dispatch, getState) {
-      var role, token, form, res, resData;
+      var role, token, res, resData;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee22$(_context22) {
         while (1) {
           switch (_context22.prev = _context22.next) {
             case 0:
-              dispatch(issuesStart());
+              dispatch(debtsStart());
               role = getState().auth.role;
               _context22.prev = 2;
               token = localStorage.getItem('token');
+              _context22.next = 6;
+              return fetch("".concat(prefix + role, "/debts?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context22.sent;
+              _context22.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context22.sent;
+              dispatch(debtsSuccess(resData));
+              _context22.next = 17;
+              break;
+
+            case 13:
+              _context22.prev = 13;
+              _context22.t0 = _context22["catch"](2);
+              console.log(_context22.t0);
+              dispatch(debtsFail(_context22.t0));
+
+            case 17:
+            case "end":
+              return _context22.stop();
+          }
+        }
+      }, _callee22, null, [[2, 13]]);
+    }));
+
+    return function (_x43, _x44) {
+      return _ref22.apply(this, arguments);
+    };
+  }();
+};
+var getDebtsInfo = function getDebtsInfo() {
+  return /*#__PURE__*/function () {
+    var _ref23 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee23(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee23$(_context23) {
+        while (1) {
+          switch (_context23.prev = _context23.next) {
+            case 0:
+              dispatch(debtsStart());
+              role = getState().auth.role;
+              _context23.prev = 2;
+              token = localStorage.getItem('token');
+              _context23.next = 6;
+              return fetch("".concat(prefix + role, "/debts/info"), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context23.sent;
+              _context23.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context23.sent;
+              dispatch(debtsSuccess(resData));
+              _context23.next = 17;
+              break;
+
+            case 13:
+              _context23.prev = 13;
+              _context23.t0 = _context23["catch"](2);
+              console.log(_context23.t0);
+              dispatch(debtsFail(_context23.t0));
+
+            case 17:
+            case "end":
+              return _context23.stop();
+          }
+        }
+      }, _callee23, null, [[2, 13]]);
+    }));
+
+    return function (_x45, _x46) {
+      return _ref23.apply(this, arguments);
+    };
+  }();
+};
+var getDebt = function getDebt(id) {
+  return /*#__PURE__*/function () {
+    var _ref24 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee24(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee24$(_context24) {
+        while (1) {
+          switch (_context24.prev = _context24.next) {
+            case 0:
+              dispatch(debtsStart());
+              role = getState().auth.role;
+              _context24.prev = 2;
+              token = localStorage.getItem('token');
+              _context24.next = 6;
+              return fetch("".concat(prefix + role, "/debts/").concat(id), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context24.sent;
+              _context24.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context24.sent;
+              dispatch(debtsSuccess(resData));
+              _context24.next = 17;
+              break;
+
+            case 13:
+              _context24.prev = 13;
+              _context24.t0 = _context24["catch"](2);
+              console.log(_context24.t0);
+              dispatch(debtsFail(_context24.t0));
+
+            case 17:
+            case "end":
+              return _context24.stop();
+          }
+        }
+      }, _callee24, null, [[2, 13]]);
+    }));
+
+    return function (_x47, _x48) {
+      return _ref24.apply(this, arguments);
+    };
+  }();
+};
+var postDebts = function postDebts(data) {
+  return /*#__PURE__*/function () {
+    var _ref25 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee25(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee25$(_context25) {
+        while (1) {
+          switch (_context25.prev = _context25.next) {
+            case 0:
+              dispatch(debtsStart());
+              role = getState().auth.role;
+              _context25.prev = 2;
+              token = localStorage.getItem('token');
               form = new FormData(data);
-              _context22.next = 7;
-              return fetch("".concat(prefix + role, "/issues/").concat(id), {
+              _context25.next = 7;
+              return fetch("".concat(prefix + role, "/debts"), {
                 method: 'POST',
                 body: form,
                 headers: {
@@ -17878,61 +18249,130 @@ var patchIssues = function patchIssues(id, data) {
               });
 
             case 7:
-              res = _context22.sent;
-              _context22.next = 10;
+              res = _context25.sent;
+              _context25.next = 10;
               return res.json();
 
             case 10:
-              resData = _context22.sent;
+              resData = _context25.sent;
 
               if (!(res.status === 422)) {
-                _context22.next = 13;
+                _context25.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context25.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(debtsSuccess(resData));
+              _context25.next = 24;
+              break;
+
+            case 20:
+              _context25.prev = 20;
+              _context25.t0 = _context25["catch"](2);
+              console.log(_context25.t0);
+              dispatch(debtsFail(_context25.t0));
+
+            case 24:
+            case "end":
+              return _context25.stop();
+          }
+        }
+      }, _callee25, null, [[2, 20]]);
+    }));
+
+    return function (_x49, _x50) {
+      return _ref25.apply(this, arguments);
+    };
+  }();
+};
+var patchDebts = function patchDebts(id, data) {
+  return /*#__PURE__*/function () {
+    var _ref26 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee26(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee26$(_context26) {
+        while (1) {
+          switch (_context26.prev = _context26.next) {
+            case 0:
+              dispatch(debtsStart());
+              role = getState().auth.role;
+              _context26.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context26.next = 7;
+              return fetch("".concat(prefix + role, "/debts/").concat(id), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context26.sent;
+              _context26.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context26.sent;
+
+              if (!(res.status === 422)) {
+                _context26.next = 13;
                 break;
               }
 
               throw new Error(Object.values(resData.errors).join('\n'));
 
             case 13:
-              dispatch(issuesSuccess(resData));
-              _context22.next = 20;
+              dispatch(debtsSuccess(resData));
+              _context26.next = 20;
               break;
 
             case 16:
-              _context22.prev = 16;
-              _context22.t0 = _context22["catch"](2);
-              console.log(_context22.t0);
-              dispatch(issuesFail(_context22.t0));
+              _context26.prev = 16;
+              _context26.t0 = _context26["catch"](2);
+              console.log(_context26.t0);
+              dispatch(debtsFail(_context26.t0));
 
             case 20:
             case "end":
-              return _context22.stop();
+              return _context26.stop();
           }
         }
-      }, _callee22, null, [[2, 16]]);
+      }, _callee26, null, [[2, 16]]);
     }));
 
-    return function (_x43, _x44) {
-      return _ref22.apply(this, arguments);
+    return function (_x51, _x52) {
+      return _ref26.apply(this, arguments);
     };
   }();
 };
-var deleteIssues = function deleteIssues(id) {
+var deleteDebts = function deleteDebts(id) {
   return /*#__PURE__*/function () {
-    var _ref23 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee23(dispatch, getState) {
+    var _ref27 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee27(dispatch, getState) {
       var role, page, show, search, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee23$(_context23) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee27$(_context27) {
         while (1) {
-          switch (_context23.prev = _context23.next) {
+          switch (_context27.prev = _context27.next) {
             case 0:
-              dispatch(issuesStart());
+              dispatch(debtsStart());
               role = getState().auth.role;
-              _context23.prev = 2;
+              _context27.prev = 2;
               page = document.getElementById('table-page').value;
               show = document.getElementById('table-show').value;
               search = document.getElementById('table-search').value;
               token = localStorage.getItem('token');
-              _context23.next = 9;
-              return fetch("".concat(prefix + role, "/issues/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+              _context27.next = 9;
+              return fetch("".concat(prefix + role, "/debts/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 method: 'DELETE',
                 headers: {
                   Authorization: token
@@ -17940,41 +18380,1921 @@ var deleteIssues = function deleteIssues(id) {
               });
 
             case 9:
-              res = _context23.sent;
-              _context23.next = 12;
+              res = _context27.sent;
+              _context27.next = 12;
               return res.json();
 
             case 12:
-              resData = _context23.sent;
+              resData = _context27.sent;
 
               if (!(res.status === 422)) {
-                _context23.next = 15;
+                _context27.next = 15;
                 break;
               }
 
               throw new Error(Object.values(resData.errors).join('\n'));
 
             case 15:
-              dispatch(issuesSuccess(resData));
-              _context23.next = 22;
+              dispatch(debtsSuccess(resData));
+              _context27.next = 22;
               break;
 
             case 18:
-              _context23.prev = 18;
-              _context23.t0 = _context23["catch"](2);
-              console.log(_context23.t0);
-              dispatch(issuesFail(_context23.t0));
+              _context27.prev = 18;
+              _context27.t0 = _context27["catch"](2);
+              console.log(_context27.t0);
+              dispatch(debtsFail(_context27.t0));
 
             case 22:
             case "end":
-              return _context23.stop();
+              return _context27.stop();
           }
         }
-      }, _callee23, null, [[2, 18]]);
+      }, _callee27, null, [[2, 18]]);
     }));
 
-    return function (_x45, _x46) {
-      return _ref23.apply(this, arguments);
+    return function (_x53, _x54) {
+      return _ref27.apply(this, arguments);
+    };
+  }();
+};
+var resetEntries = function resetEntries() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ENTRIES_RESET
+  };
+};
+
+var entriesStart = function entriesStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ENTRIES_START
+  };
+};
+
+var entriesSuccess = function entriesSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ENTRIES_SUCCESS
+  }, data);
+};
+
+var entriesFail = function entriesFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.ENTRIES_FAIL,
+    error: error
+  };
+};
+
+var getEntries = function getEntries() {
+  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+  return /*#__PURE__*/function () {
+    var _ref28 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee28(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee28$(_context28) {
+        while (1) {
+          switch (_context28.prev = _context28.next) {
+            case 0:
+              dispatch(entriesStart());
+              role = getState().auth.role;
+              _context28.prev = 2;
+              token = localStorage.getItem('token');
+              _context28.next = 6;
+              return fetch("".concat(prefix + role, "/entries?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context28.sent;
+              _context28.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context28.sent;
+              dispatch(entriesSuccess(resData));
+              _context28.next = 17;
+              break;
+
+            case 13:
+              _context28.prev = 13;
+              _context28.t0 = _context28["catch"](2);
+              console.log(_context28.t0);
+              dispatch(entriesFail(_context28.t0));
+
+            case 17:
+            case "end":
+              return _context28.stop();
+          }
+        }
+      }, _callee28, null, [[2, 13]]);
+    }));
+
+    return function (_x55, _x56) {
+      return _ref28.apply(this, arguments);
+    };
+  }();
+};
+var getEntriesInfo = function getEntriesInfo() {
+  return /*#__PURE__*/function () {
+    var _ref29 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee29(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee29$(_context29) {
+        while (1) {
+          switch (_context29.prev = _context29.next) {
+            case 0:
+              dispatch(entriesStart());
+              role = getState().auth.role;
+              _context29.prev = 2;
+              token = localStorage.getItem('token');
+              _context29.next = 6;
+              return fetch("".concat(prefix + role, "/entries/info"), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context29.sent;
+              _context29.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context29.sent;
+              dispatch(entriesSuccess(resData));
+              _context29.next = 17;
+              break;
+
+            case 13:
+              _context29.prev = 13;
+              _context29.t0 = _context29["catch"](2);
+              console.log(_context29.t0);
+              dispatch(entriesFail(_context29.t0));
+
+            case 17:
+            case "end":
+              return _context29.stop();
+          }
+        }
+      }, _callee29, null, [[2, 13]]);
+    }));
+
+    return function (_x57, _x58) {
+      return _ref29.apply(this, arguments);
+    };
+  }();
+};
+var getEntry = function getEntry(id) {
+  return /*#__PURE__*/function () {
+    var _ref30 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee30(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee30$(_context30) {
+        while (1) {
+          switch (_context30.prev = _context30.next) {
+            case 0:
+              dispatch(entriesStart());
+              role = getState().auth.role;
+              _context30.prev = 2;
+              token = localStorage.getItem('token');
+              _context30.next = 6;
+              return fetch("".concat(prefix + role, "/entries/").concat(id), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context30.sent;
+              _context30.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context30.sent;
+              dispatch(entriesSuccess(resData));
+              _context30.next = 17;
+              break;
+
+            case 13:
+              _context30.prev = 13;
+              _context30.t0 = _context30["catch"](2);
+              console.log(_context30.t0);
+              dispatch(entriesFail(_context30.t0));
+
+            case 17:
+            case "end":
+              return _context30.stop();
+          }
+        }
+      }, _callee30, null, [[2, 13]]);
+    }));
+
+    return function (_x59, _x60) {
+      return _ref30.apply(this, arguments);
+    };
+  }();
+};
+var postEntries = function postEntries(data) {
+  return /*#__PURE__*/function () {
+    var _ref31 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee31(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee31$(_context31) {
+        while (1) {
+          switch (_context31.prev = _context31.next) {
+            case 0:
+              dispatch(entriesStart());
+              role = getState().auth.role;
+              _context31.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context31.next = 7;
+              return fetch("".concat(prefix + role, "/entries"), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context31.sent;
+              _context31.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context31.sent;
+
+              if (!(res.status === 422)) {
+                _context31.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context31.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(entriesSuccess(resData));
+              _context31.next = 24;
+              break;
+
+            case 20:
+              _context31.prev = 20;
+              _context31.t0 = _context31["catch"](2);
+              console.log(_context31.t0);
+              dispatch(entriesFail(_context31.t0));
+
+            case 24:
+            case "end":
+              return _context31.stop();
+          }
+        }
+      }, _callee31, null, [[2, 20]]);
+    }));
+
+    return function (_x61, _x62) {
+      return _ref31.apply(this, arguments);
+    };
+  }();
+};
+var patchEntries = function patchEntries(id, data) {
+  return /*#__PURE__*/function () {
+    var _ref32 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee32(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee32$(_context32) {
+        while (1) {
+          switch (_context32.prev = _context32.next) {
+            case 0:
+              dispatch(entriesStart());
+              role = getState().auth.role;
+              _context32.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context32.next = 7;
+              return fetch("".concat(prefix + role, "/entries/").concat(id), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context32.sent;
+              _context32.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context32.sent;
+
+              if (!(res.status === 422)) {
+                _context32.next = 13;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 13:
+              dispatch(entriesSuccess(resData));
+              _context32.next = 20;
+              break;
+
+            case 16:
+              _context32.prev = 16;
+              _context32.t0 = _context32["catch"](2);
+              console.log(_context32.t0);
+              dispatch(entriesFail(_context32.t0));
+
+            case 20:
+            case "end":
+              return _context32.stop();
+          }
+        }
+      }, _callee32, null, [[2, 16]]);
+    }));
+
+    return function (_x63, _x64) {
+      return _ref32.apply(this, arguments);
+    };
+  }();
+};
+var deleteEntries = function deleteEntries(id) {
+  return /*#__PURE__*/function () {
+    var _ref33 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee33(dispatch, getState) {
+      var role, page, show, search, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee33$(_context33) {
+        while (1) {
+          switch (_context33.prev = _context33.next) {
+            case 0:
+              dispatch(entriesStart());
+              role = getState().auth.role;
+              _context33.prev = 2;
+              page = document.getElementById('table-page').value;
+              show = document.getElementById('table-show').value;
+              search = document.getElementById('table-search').value;
+              token = localStorage.getItem('token');
+              _context33.next = 9;
+              return fetch("".concat(prefix + role, "/entries/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                method: 'DELETE',
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 9:
+              res = _context33.sent;
+              _context33.next = 12;
+              return res.json();
+
+            case 12:
+              resData = _context33.sent;
+
+              if (!(res.status === 422)) {
+                _context33.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              dispatch(entriesSuccess(resData));
+              _context33.next = 22;
+              break;
+
+            case 18:
+              _context33.prev = 18;
+              _context33.t0 = _context33["catch"](2);
+              console.log(_context33.t0);
+              dispatch(entriesFail(_context33.t0));
+
+            case 22:
+            case "end":
+              return _context33.stop();
+          }
+        }
+      }, _callee33, null, [[2, 18]]);
+    }));
+
+    return function (_x65, _x66) {
+      return _ref33.apply(this, arguments);
+    };
+  }();
+};
+var resetExpenses = function resetExpenses() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.EXPENSES_RESET
+  };
+};
+
+var expensesStart = function expensesStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.EXPENSES_START
+  };
+};
+
+var expensesSuccess = function expensesSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.EXPENSES_SUCCESS
+  }, data);
+};
+
+var expensesFail = function expensesFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.EXPENSES_FAIL,
+    error: error
+  };
+};
+
+var getExpenses = function getExpenses() {
+  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+  return /*#__PURE__*/function () {
+    var _ref34 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee34(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee34$(_context34) {
+        while (1) {
+          switch (_context34.prev = _context34.next) {
+            case 0:
+              dispatch(expensesStart());
+              role = getState().auth.role;
+              _context34.prev = 2;
+              token = localStorage.getItem('token');
+              _context34.next = 6;
+              return fetch("".concat(prefix + role, "/expenses?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context34.sent;
+              _context34.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context34.sent;
+              dispatch(expensesSuccess(resData));
+              _context34.next = 17;
+              break;
+
+            case 13:
+              _context34.prev = 13;
+              _context34.t0 = _context34["catch"](2);
+              console.log(_context34.t0);
+              dispatch(expensesFail(_context34.t0));
+
+            case 17:
+            case "end":
+              return _context34.stop();
+          }
+        }
+      }, _callee34, null, [[2, 13]]);
+    }));
+
+    return function (_x67, _x68) {
+      return _ref34.apply(this, arguments);
+    };
+  }();
+};
+var getExpensesInfo = function getExpensesInfo() {
+  return /*#__PURE__*/function () {
+    var _ref35 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee35(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee35$(_context35) {
+        while (1) {
+          switch (_context35.prev = _context35.next) {
+            case 0:
+              dispatch(expensesStart());
+              role = getState().auth.role;
+              _context35.prev = 2;
+              token = localStorage.getItem('token');
+              _context35.next = 6;
+              return fetch("".concat(prefix + role, "/expenses/info"), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context35.sent;
+              _context35.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context35.sent;
+              dispatch(expensesSuccess(resData));
+              _context35.next = 17;
+              break;
+
+            case 13:
+              _context35.prev = 13;
+              _context35.t0 = _context35["catch"](2);
+              console.log(_context35.t0);
+              dispatch(expensesFail(_context35.t0));
+
+            case 17:
+            case "end":
+              return _context35.stop();
+          }
+        }
+      }, _callee35, null, [[2, 13]]);
+    }));
+
+    return function (_x69, _x70) {
+      return _ref35.apply(this, arguments);
+    };
+  }();
+};
+var getExpense = function getExpense(id) {
+  return /*#__PURE__*/function () {
+    var _ref36 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee36(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee36$(_context36) {
+        while (1) {
+          switch (_context36.prev = _context36.next) {
+            case 0:
+              dispatch(expensesStart());
+              role = getState().auth.role;
+              _context36.prev = 2;
+              token = localStorage.getItem('token');
+              _context36.next = 6;
+              return fetch("".concat(prefix + role, "/expenses/").concat(id), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context36.sent;
+              _context36.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context36.sent;
+              dispatch(expensesSuccess(resData));
+              _context36.next = 17;
+              break;
+
+            case 13:
+              _context36.prev = 13;
+              _context36.t0 = _context36["catch"](2);
+              console.log(_context36.t0);
+              dispatch(expensesFail(_context36.t0));
+
+            case 17:
+            case "end":
+              return _context36.stop();
+          }
+        }
+      }, _callee36, null, [[2, 13]]);
+    }));
+
+    return function (_x71, _x72) {
+      return _ref36.apply(this, arguments);
+    };
+  }();
+};
+var postExpenses = function postExpenses(data) {
+  return /*#__PURE__*/function () {
+    var _ref37 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee37(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee37$(_context37) {
+        while (1) {
+          switch (_context37.prev = _context37.next) {
+            case 0:
+              dispatch(expensesStart());
+              role = getState().auth.role;
+              _context37.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context37.next = 7;
+              return fetch("".concat(prefix + role, "/expenses"), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context37.sent;
+              _context37.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context37.sent;
+
+              if (!(res.status === 422)) {
+                _context37.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context37.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(expensesSuccess(resData));
+              _context37.next = 24;
+              break;
+
+            case 20:
+              _context37.prev = 20;
+              _context37.t0 = _context37["catch"](2);
+              console.log(_context37.t0);
+              dispatch(expensesFail(_context37.t0));
+
+            case 24:
+            case "end":
+              return _context37.stop();
+          }
+        }
+      }, _callee37, null, [[2, 20]]);
+    }));
+
+    return function (_x73, _x74) {
+      return _ref37.apply(this, arguments);
+    };
+  }();
+};
+var patchExpenses = function patchExpenses(id, data) {
+  return /*#__PURE__*/function () {
+    var _ref38 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee38(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee38$(_context38) {
+        while (1) {
+          switch (_context38.prev = _context38.next) {
+            case 0:
+              dispatch(expensesStart());
+              role = getState().auth.role;
+              _context38.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context38.next = 7;
+              return fetch("".concat(prefix + role, "/expenses/").concat(id), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context38.sent;
+              _context38.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context38.sent;
+
+              if (!(res.status === 422)) {
+                _context38.next = 13;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 13:
+              dispatch(expensesSuccess(resData));
+              _context38.next = 20;
+              break;
+
+            case 16:
+              _context38.prev = 16;
+              _context38.t0 = _context38["catch"](2);
+              console.log(_context38.t0);
+              dispatch(expensesFail(_context38.t0));
+
+            case 20:
+            case "end":
+              return _context38.stop();
+          }
+        }
+      }, _callee38, null, [[2, 16]]);
+    }));
+
+    return function (_x75, _x76) {
+      return _ref38.apply(this, arguments);
+    };
+  }();
+};
+var deleteExpenses = function deleteExpenses(id) {
+  return /*#__PURE__*/function () {
+    var _ref39 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee39(dispatch, getState) {
+      var role, page, show, search, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee39$(_context39) {
+        while (1) {
+          switch (_context39.prev = _context39.next) {
+            case 0:
+              dispatch(expensesStart());
+              role = getState().auth.role;
+              _context39.prev = 2;
+              page = document.getElementById('table-page').value;
+              show = document.getElementById('table-show').value;
+              search = document.getElementById('table-search').value;
+              token = localStorage.getItem('token');
+              _context39.next = 9;
+              return fetch("".concat(prefix + role, "/expenses/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                method: 'DELETE',
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 9:
+              res = _context39.sent;
+              _context39.next = 12;
+              return res.json();
+
+            case 12:
+              resData = _context39.sent;
+
+              if (!(res.status === 422)) {
+                _context39.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              dispatch(expensesSuccess(resData));
+              _context39.next = 22;
+              break;
+
+            case 18:
+              _context39.prev = 18;
+              _context39.t0 = _context39["catch"](2);
+              console.log(_context39.t0);
+              dispatch(expensesFail(_context39.t0));
+
+            case 22:
+            case "end":
+              return _context39.stop();
+          }
+        }
+      }, _callee39, null, [[2, 18]]);
+    }));
+
+    return function (_x77, _x78) {
+      return _ref39.apply(this, arguments);
+    };
+  }();
+};
+var resetInvestments = function resetInvestments() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.INVESTMENTS_RESET
+  };
+};
+
+var investmentsStart = function investmentsStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.INVESTMENTS_START
+  };
+};
+
+var investmentsSuccess = function investmentsSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.INVESTMENTS_SUCCESS
+  }, data);
+};
+
+var investmentsFail = function investmentsFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.INVESTMENTS_FAIL,
+    error: error
+  };
+};
+
+var getInvestments = function getInvestments() {
+  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+  return /*#__PURE__*/function () {
+    var _ref40 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee40(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee40$(_context40) {
+        while (1) {
+          switch (_context40.prev = _context40.next) {
+            case 0:
+              dispatch(investmentsStart());
+              role = getState().auth.role;
+              _context40.prev = 2;
+              token = localStorage.getItem('token');
+              _context40.next = 6;
+              return fetch("".concat(prefix + role, "/investments?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context40.sent;
+              _context40.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context40.sent;
+              dispatch(investmentsSuccess(resData));
+              _context40.next = 17;
+              break;
+
+            case 13:
+              _context40.prev = 13;
+              _context40.t0 = _context40["catch"](2);
+              console.log(_context40.t0);
+              dispatch(investmentsFail(_context40.t0));
+
+            case 17:
+            case "end":
+              return _context40.stop();
+          }
+        }
+      }, _callee40, null, [[2, 13]]);
+    }));
+
+    return function (_x79, _x80) {
+      return _ref40.apply(this, arguments);
+    };
+  }();
+};
+var getInvestmentsInfo = function getInvestmentsInfo() {
+  return /*#__PURE__*/function () {
+    var _ref41 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee41(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee41$(_context41) {
+        while (1) {
+          switch (_context41.prev = _context41.next) {
+            case 0:
+              dispatch(investmentsStart());
+              role = getState().auth.role;
+              _context41.prev = 2;
+              token = localStorage.getItem('token');
+              _context41.next = 6;
+              return fetch("".concat(prefix + role, "/investments/info"), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context41.sent;
+              _context41.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context41.sent;
+              dispatch(investmentsSuccess(resData));
+              _context41.next = 17;
+              break;
+
+            case 13:
+              _context41.prev = 13;
+              _context41.t0 = _context41["catch"](2);
+              console.log(_context41.t0);
+              dispatch(investmentsFail(_context41.t0));
+
+            case 17:
+            case "end":
+              return _context41.stop();
+          }
+        }
+      }, _callee41, null, [[2, 13]]);
+    }));
+
+    return function (_x81, _x82) {
+      return _ref41.apply(this, arguments);
+    };
+  }();
+};
+var getInvestment = function getInvestment(id) {
+  return /*#__PURE__*/function () {
+    var _ref42 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee42(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee42$(_context42) {
+        while (1) {
+          switch (_context42.prev = _context42.next) {
+            case 0:
+              dispatch(investmentsStart());
+              role = getState().auth.role;
+              _context42.prev = 2;
+              token = localStorage.getItem('token');
+              _context42.next = 6;
+              return fetch("".concat(prefix + role, "/investments/").concat(id), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context42.sent;
+              _context42.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context42.sent;
+              dispatch(investmentsSuccess(resData));
+              _context42.next = 17;
+              break;
+
+            case 13:
+              _context42.prev = 13;
+              _context42.t0 = _context42["catch"](2);
+              console.log(_context42.t0);
+              dispatch(investmentsFail(_context42.t0));
+
+            case 17:
+            case "end":
+              return _context42.stop();
+          }
+        }
+      }, _callee42, null, [[2, 13]]);
+    }));
+
+    return function (_x83, _x84) {
+      return _ref42.apply(this, arguments);
+    };
+  }();
+};
+var postInvestments = function postInvestments(data) {
+  return /*#__PURE__*/function () {
+    var _ref43 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee43(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee43$(_context43) {
+        while (1) {
+          switch (_context43.prev = _context43.next) {
+            case 0:
+              dispatch(investmentsStart());
+              role = getState().auth.role;
+              _context43.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context43.next = 7;
+              return fetch("".concat(prefix + role, "/investments"), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context43.sent;
+              _context43.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context43.sent;
+
+              if (!(res.status === 422)) {
+                _context43.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context43.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(investmentsSuccess(resData));
+              _context43.next = 24;
+              break;
+
+            case 20:
+              _context43.prev = 20;
+              _context43.t0 = _context43["catch"](2);
+              console.log(_context43.t0);
+              dispatch(investmentsFail(_context43.t0));
+
+            case 24:
+            case "end":
+              return _context43.stop();
+          }
+        }
+      }, _callee43, null, [[2, 20]]);
+    }));
+
+    return function (_x85, _x86) {
+      return _ref43.apply(this, arguments);
+    };
+  }();
+};
+var patchInvestments = function patchInvestments(id, data) {
+  return /*#__PURE__*/function () {
+    var _ref44 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee44(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee44$(_context44) {
+        while (1) {
+          switch (_context44.prev = _context44.next) {
+            case 0:
+              dispatch(investmentsStart());
+              role = getState().auth.role;
+              _context44.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context44.next = 7;
+              return fetch("".concat(prefix + role, "/investments/").concat(id), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context44.sent;
+              _context44.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context44.sent;
+
+              if (!(res.status === 422)) {
+                _context44.next = 13;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 13:
+              dispatch(investmentsSuccess(resData));
+              _context44.next = 20;
+              break;
+
+            case 16:
+              _context44.prev = 16;
+              _context44.t0 = _context44["catch"](2);
+              console.log(_context44.t0);
+              dispatch(investmentsFail(_context44.t0));
+
+            case 20:
+            case "end":
+              return _context44.stop();
+          }
+        }
+      }, _callee44, null, [[2, 16]]);
+    }));
+
+    return function (_x87, _x88) {
+      return _ref44.apply(this, arguments);
+    };
+  }();
+};
+var deleteInvestments = function deleteInvestments(id) {
+  return /*#__PURE__*/function () {
+    var _ref45 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee45(dispatch, getState) {
+      var role, page, show, search, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee45$(_context45) {
+        while (1) {
+          switch (_context45.prev = _context45.next) {
+            case 0:
+              dispatch(investmentsStart());
+              role = getState().auth.role;
+              _context45.prev = 2;
+              page = document.getElementById('table-page').value;
+              show = document.getElementById('table-show').value;
+              search = document.getElementById('table-search').value;
+              token = localStorage.getItem('token');
+              _context45.next = 9;
+              return fetch("".concat(prefix + role, "/investments/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                method: 'DELETE',
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 9:
+              res = _context45.sent;
+              _context45.next = 12;
+              return res.json();
+
+            case 12:
+              resData = _context45.sent;
+
+              if (!(res.status === 422)) {
+                _context45.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              dispatch(investmentsSuccess(resData));
+              _context45.next = 22;
+              break;
+
+            case 18:
+              _context45.prev = 18;
+              _context45.t0 = _context45["catch"](2);
+              console.log(_context45.t0);
+              dispatch(investmentsFail(_context45.t0));
+
+            case 22:
+            case "end":
+              return _context45.stop();
+          }
+        }
+      }, _callee45, null, [[2, 18]]);
+    }));
+
+    return function (_x89, _x90) {
+      return _ref45.apply(this, arguments);
+    };
+  }();
+};
+var resetSupports = function resetSupports() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.SUPPORTS_RESET
+  };
+};
+
+var supportsStart = function supportsStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.SUPPORTS_START
+  };
+};
+
+var supportsSuccess = function supportsSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.SUPPORTS_SUCCESS
+  }, data);
+};
+
+var supportsFail = function supportsFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.SUPPORTS_FAIL,
+    error: error
+  };
+};
+
+var getSupports = function getSupports() {
+  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+  return /*#__PURE__*/function () {
+    var _ref46 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee46(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee46$(_context46) {
+        while (1) {
+          switch (_context46.prev = _context46.next) {
+            case 0:
+              dispatch(supportsStart());
+              role = getState().auth.role;
+              _context46.prev = 2;
+              token = localStorage.getItem('token');
+              _context46.next = 6;
+              return fetch("".concat(prefix + role, "/supports?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context46.sent;
+              _context46.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context46.sent;
+              dispatch(supportsSuccess(resData));
+              _context46.next = 17;
+              break;
+
+            case 13:
+              _context46.prev = 13;
+              _context46.t0 = _context46["catch"](2);
+              console.log(_context46.t0);
+              dispatch(supportsFail(_context46.t0));
+
+            case 17:
+            case "end":
+              return _context46.stop();
+          }
+        }
+      }, _callee46, null, [[2, 13]]);
+    }));
+
+    return function (_x91, _x92) {
+      return _ref46.apply(this, arguments);
+    };
+  }();
+};
+var getSupportsInfo = function getSupportsInfo() {
+  return /*#__PURE__*/function () {
+    var _ref47 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee47(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee47$(_context47) {
+        while (1) {
+          switch (_context47.prev = _context47.next) {
+            case 0:
+              dispatch(supportsStart());
+              role = getState().auth.role;
+              _context47.prev = 2;
+              token = localStorage.getItem('token');
+              _context47.next = 6;
+              return fetch("".concat(prefix + role, "/supports/info"), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context47.sent;
+              _context47.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context47.sent;
+              dispatch(supportsSuccess(resData));
+              _context47.next = 17;
+              break;
+
+            case 13:
+              _context47.prev = 13;
+              _context47.t0 = _context47["catch"](2);
+              console.log(_context47.t0);
+              dispatch(supportsFail(_context47.t0));
+
+            case 17:
+            case "end":
+              return _context47.stop();
+          }
+        }
+      }, _callee47, null, [[2, 13]]);
+    }));
+
+    return function (_x93, _x94) {
+      return _ref47.apply(this, arguments);
+    };
+  }();
+};
+var getSupport = function getSupport(id) {
+  return /*#__PURE__*/function () {
+    var _ref48 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee48(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee48$(_context48) {
+        while (1) {
+          switch (_context48.prev = _context48.next) {
+            case 0:
+              dispatch(supportsStart());
+              role = getState().auth.role;
+              _context48.prev = 2;
+              token = localStorage.getItem('token');
+              _context48.next = 6;
+              return fetch("".concat(prefix + role, "/supports/").concat(id), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context48.sent;
+              _context48.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context48.sent;
+              dispatch(supportsSuccess(resData));
+              _context48.next = 17;
+              break;
+
+            case 13:
+              _context48.prev = 13;
+              _context48.t0 = _context48["catch"](2);
+              console.log(_context48.t0);
+              dispatch(supportsFail(_context48.t0));
+
+            case 17:
+            case "end":
+              return _context48.stop();
+          }
+        }
+      }, _callee48, null, [[2, 13]]);
+    }));
+
+    return function (_x95, _x96) {
+      return _ref48.apply(this, arguments);
+    };
+  }();
+};
+var postSupports = function postSupports(data) {
+  return /*#__PURE__*/function () {
+    var _ref49 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee49(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee49$(_context49) {
+        while (1) {
+          switch (_context49.prev = _context49.next) {
+            case 0:
+              dispatch(supportsStart());
+              role = getState().auth.role;
+              _context49.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context49.next = 7;
+              return fetch("".concat(prefix + role, "/supports"), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context49.sent;
+              _context49.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context49.sent;
+
+              if (!(res.status === 422)) {
+                _context49.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context49.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(supportsSuccess(resData));
+              _context49.next = 24;
+              break;
+
+            case 20:
+              _context49.prev = 20;
+              _context49.t0 = _context49["catch"](2);
+              console.log(_context49.t0);
+              dispatch(supportsFail(_context49.t0));
+
+            case 24:
+            case "end":
+              return _context49.stop();
+          }
+        }
+      }, _callee49, null, [[2, 20]]);
+    }));
+
+    return function (_x97, _x98) {
+      return _ref49.apply(this, arguments);
+    };
+  }();
+};
+var patchSupports = function patchSupports(id, data) {
+  return /*#__PURE__*/function () {
+    var _ref50 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee50(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee50$(_context50) {
+        while (1) {
+          switch (_context50.prev = _context50.next) {
+            case 0:
+              dispatch(supportsStart());
+              role = getState().auth.role;
+              _context50.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context50.next = 7;
+              return fetch("".concat(prefix + role, "/supports/").concat(id), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context50.sent;
+              _context50.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context50.sent;
+
+              if (!(res.status === 422)) {
+                _context50.next = 13;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 13:
+              dispatch(supportsSuccess(resData));
+              _context50.next = 20;
+              break;
+
+            case 16:
+              _context50.prev = 16;
+              _context50.t0 = _context50["catch"](2);
+              console.log(_context50.t0);
+              dispatch(supportsFail(_context50.t0));
+
+            case 20:
+            case "end":
+              return _context50.stop();
+          }
+        }
+      }, _callee50, null, [[2, 16]]);
+    }));
+
+    return function (_x99, _x100) {
+      return _ref50.apply(this, arguments);
+    };
+  }();
+};
+var deleteSupports = function deleteSupports(id) {
+  return /*#__PURE__*/function () {
+    var _ref51 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee51(dispatch, getState) {
+      var role, page, show, search, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee51$(_context51) {
+        while (1) {
+          switch (_context51.prev = _context51.next) {
+            case 0:
+              dispatch(supportsStart());
+              role = getState().auth.role;
+              _context51.prev = 2;
+              page = document.getElementById('table-page').value;
+              show = document.getElementById('table-show').value;
+              search = document.getElementById('table-search').value;
+              token = localStorage.getItem('token');
+              _context51.next = 9;
+              return fetch("".concat(prefix + role, "/supports/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                method: 'DELETE',
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 9:
+              res = _context51.sent;
+              _context51.next = 12;
+              return res.json();
+
+            case 12:
+              resData = _context51.sent;
+
+              if (!(res.status === 422)) {
+                _context51.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              dispatch(supportsSuccess(resData));
+              _context51.next = 22;
+              break;
+
+            case 18:
+              _context51.prev = 18;
+              _context51.t0 = _context51["catch"](2);
+              console.log(_context51.t0);
+              dispatch(supportsFail(_context51.t0));
+
+            case 22:
+            case "end":
+              return _context51.stop();
+          }
+        }
+      }, _callee51, null, [[2, 18]]);
+    }));
+
+    return function (_x101, _x102) {
+      return _ref51.apply(this, arguments);
+    };
+  }();
+};
+var resetCurrencies = function resetCurrencies() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CURRENCIES_RESET
+  };
+};
+
+var currenciesStart = function currenciesStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CURRENCIES_START
+  };
+};
+
+var currenciesSuccess = function currenciesSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CURRENCIES_SUCCESS
+  }, data);
+};
+
+var currenciesFail = function currenciesFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.CURRENCIES_FAIL,
+    error: error
+  };
+};
+
+var getCurrencies = function getCurrencies() {
+  var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
+  var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+  return /*#__PURE__*/function () {
+    var _ref52 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee52(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee52$(_context52) {
+        while (1) {
+          switch (_context52.prev = _context52.next) {
+            case 0:
+              dispatch(currenciesStart());
+              role = getState().auth.role;
+              _context52.prev = 2;
+              token = localStorage.getItem('token');
+              _context52.next = 6;
+              return fetch("".concat(prefix + role, "/currencies?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context52.sent;
+              _context52.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context52.sent;
+              dispatch(currenciesSuccess(resData));
+              _context52.next = 17;
+              break;
+
+            case 13:
+              _context52.prev = 13;
+              _context52.t0 = _context52["catch"](2);
+              console.log(_context52.t0);
+              dispatch(currenciesFail(_context52.t0));
+
+            case 17:
+            case "end":
+              return _context52.stop();
+          }
+        }
+      }, _callee52, null, [[2, 13]]);
+    }));
+
+    return function (_x103, _x104) {
+      return _ref52.apply(this, arguments);
+    };
+  }();
+};
+var getCurrency = function getCurrency(id) {
+  return /*#__PURE__*/function () {
+    var _ref53 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee53(dispatch, getState) {
+      var role, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee53$(_context53) {
+        while (1) {
+          switch (_context53.prev = _context53.next) {
+            case 0:
+              dispatch(currenciesStart());
+              role = getState().auth.role;
+              _context53.prev = 2;
+              token = localStorage.getItem('token');
+              _context53.next = 6;
+              return fetch("".concat(prefix + role, "/currencies/").concat(id), {
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 6:
+              res = _context53.sent;
+              _context53.next = 9;
+              return res.json();
+
+            case 9:
+              resData = _context53.sent;
+              dispatch(currenciesSuccess(resData));
+              _context53.next = 17;
+              break;
+
+            case 13:
+              _context53.prev = 13;
+              _context53.t0 = _context53["catch"](2);
+              console.log(_context53.t0);
+              dispatch(currenciesFail(_context53.t0));
+
+            case 17:
+            case "end":
+              return _context53.stop();
+          }
+        }
+      }, _callee53, null, [[2, 13]]);
+    }));
+
+    return function (_x105, _x106) {
+      return _ref53.apply(this, arguments);
+    };
+  }();
+};
+var postCurrencies = function postCurrencies(data) {
+  return /*#__PURE__*/function () {
+    var _ref54 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee54(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee54$(_context54) {
+        while (1) {
+          switch (_context54.prev = _context54.next) {
+            case 0:
+              dispatch(currenciesStart());
+              role = getState().auth.role;
+              _context54.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context54.next = 7;
+              return fetch("".concat(prefix + role, "/currencies"), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context54.sent;
+              _context54.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context54.sent;
+
+              if (!(res.status === 422)) {
+                _context54.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context54.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(currenciesSuccess(resData));
+              _context54.next = 24;
+              break;
+
+            case 20:
+              _context54.prev = 20;
+              _context54.t0 = _context54["catch"](2);
+              console.log(_context54.t0);
+              dispatch(currenciesFail(_context54.t0));
+
+            case 24:
+            case "end":
+              return _context54.stop();
+          }
+        }
+      }, _callee54, null, [[2, 20]]);
+    }));
+
+    return function (_x107, _x108) {
+      return _ref54.apply(this, arguments);
+    };
+  }();
+};
+var patchCurrencies = function patchCurrencies(id, data) {
+  return /*#__PURE__*/function () {
+    var _ref55 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee55(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee55$(_context55) {
+        while (1) {
+          switch (_context55.prev = _context55.next) {
+            case 0:
+              dispatch(currenciesStart());
+              role = getState().auth.role;
+              _context55.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context55.next = 7;
+              return fetch("".concat(prefix + role, "/currencies/").concat(id), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context55.sent;
+              _context55.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context55.sent;
+
+              if (!(res.status === 422)) {
+                _context55.next = 13;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 13:
+              dispatch(currenciesSuccess(resData));
+              _context55.next = 20;
+              break;
+
+            case 16:
+              _context55.prev = 16;
+              _context55.t0 = _context55["catch"](2);
+              console.log(_context55.t0);
+              dispatch(currenciesFail(_context55.t0));
+
+            case 20:
+            case "end":
+              return _context55.stop();
+          }
+        }
+      }, _callee55, null, [[2, 16]]);
+    }));
+
+    return function (_x109, _x110) {
+      return _ref55.apply(this, arguments);
+    };
+  }();
+};
+var deleteCurrencies = function deleteCurrencies(id) {
+  return /*#__PURE__*/function () {
+    var _ref56 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee56(dispatch, getState) {
+      var role, page, show, search, token, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee56$(_context56) {
+        while (1) {
+          switch (_context56.prev = _context56.next) {
+            case 0:
+              dispatch(currenciesStart());
+              role = getState().auth.role;
+              _context56.prev = 2;
+              page = document.getElementById('table-page').value;
+              show = document.getElementById('table-show').value;
+              search = document.getElementById('table-search').value;
+              token = localStorage.getItem('token');
+              _context56.next = 9;
+              return fetch("".concat(prefix + role, "/currencies/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
+                method: 'DELETE',
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 9:
+              res = _context56.sent;
+              _context56.next = 12;
+              return res.json();
+
+            case 12:
+              resData = _context56.sent;
+
+              if (!(res.status === 422)) {
+                _context56.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              dispatch(currenciesSuccess(resData));
+              _context56.next = 22;
+              break;
+
+            case 18:
+              _context56.prev = 18;
+              _context56.t0 = _context56["catch"](2);
+              console.log(_context56.t0);
+              dispatch(currenciesFail(_context56.t0));
+
+            case 22:
+            case "end":
+              return _context56.stop();
+          }
+        }
+      }, _callee56, null, [[2, 18]]);
+    }));
+
+    return function (_x111, _x112) {
+      return _ref56.apply(this, arguments);
+    };
+  }();
+};
+var resetReport = function resetReport() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.REPORT_RESET
+  };
+};
+
+var reportStart = function reportStart() {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.REPORT_START
+  };
+};
+
+var reportSuccess = function reportSuccess(data) {
+  return _objectSpread({
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.REPORT_SUCCESS
+  }, data);
+};
+
+var reportFail = function reportFail(error) {
+  return {
+    type: _actionTypes__WEBPACK_IMPORTED_MODULE_1__.REPORT_FAIL,
+    error: error
+  };
+};
+
+var postReport = function postReport(data) {
+  return /*#__PURE__*/function () {
+    var _ref57 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee57(dispatch, getState) {
+      var role, token, form, res, resData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee57$(_context57) {
+        while (1) {
+          switch (_context57.prev = _context57.next) {
+            case 0:
+              dispatch(reportStart());
+              role = getState().auth.role;
+              _context57.prev = 2;
+              token = localStorage.getItem('token');
+              form = new FormData(data);
+              _context57.next = 7;
+              return fetch("".concat(prefix + role, "/report"), {
+                method: 'POST',
+                body: form,
+                headers: {
+                  Authorization: token
+                }
+              });
+
+            case 7:
+              res = _context57.sent;
+              _context57.next = 10;
+              return res.json();
+
+            case 10:
+              resData = _context57.sent;
+
+              if (!(res.status === 422)) {
+                _context57.next = 15;
+                break;
+              }
+
+              throw new Error(Object.values(resData.errors).join('\n'));
+
+            case 15:
+              if (!(res.status !== 200 && res.status !== 201)) {
+                _context57.next = 17;
+                break;
+              }
+
+              throw new Error(resData.error.message);
+
+            case 17:
+              dispatch(reportSuccess(resData));
+              _context57.next = 24;
+              break;
+
+            case 20:
+              _context57.prev = 20;
+              _context57.t0 = _context57["catch"](2);
+              console.log(_context57.t0);
+              dispatch(reportFail(_context57.t0));
+
+            case 24:
+            case "end":
+              return _context57.stop();
+          }
+        }
+      }, _callee57, null, [[2, 20]]);
+    }));
+
+    return function (_x113, _x114) {
+      return _ref57.apply(this, arguments);
     };
   }();
 };
@@ -18008,17 +20328,17 @@ var getLanguages = function getLanguages() {
   var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
   var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   return /*#__PURE__*/function () {
-    var _ref24 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee24(dispatch, getState) {
+    var _ref58 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee58(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee24$(_context24) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee58$(_context58) {
         while (1) {
-          switch (_context24.prev = _context24.next) {
+          switch (_context58.prev = _context58.next) {
             case 0:
               dispatch(languagesStart());
               role = getState().auth.role;
-              _context24.prev = 2;
+              _context58.prev = 2;
               token = localStorage.getItem('token');
-              _context24.next = 6;
+              _context58.next = 6;
               return fetch("".concat(prefix + role, "/languages?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 headers: {
                   Authorization: token
@@ -18026,48 +20346,48 @@ var getLanguages = function getLanguages() {
               });
 
             case 6:
-              res = _context24.sent;
-              _context24.next = 9;
+              res = _context58.sent;
+              _context58.next = 9;
               return res.json();
 
             case 9:
-              resData = _context24.sent;
+              resData = _context58.sent;
               dispatch(languagesSuccess(resData));
-              _context24.next = 17;
+              _context58.next = 17;
               break;
 
             case 13:
-              _context24.prev = 13;
-              _context24.t0 = _context24["catch"](2);
-              console.log(_context24.t0);
-              dispatch(languagesFail(_context24.t0));
+              _context58.prev = 13;
+              _context58.t0 = _context58["catch"](2);
+              console.log(_context58.t0);
+              dispatch(languagesFail(_context58.t0));
 
             case 17:
             case "end":
-              return _context24.stop();
+              return _context58.stop();
           }
         }
-      }, _callee24, null, [[2, 13]]);
+      }, _callee58, null, [[2, 13]]);
     }));
 
-    return function (_x47, _x48) {
-      return _ref24.apply(this, arguments);
+    return function (_x115, _x116) {
+      return _ref58.apply(this, arguments);
     };
   }();
 };
 var getLanguage = function getLanguage(id) {
   return /*#__PURE__*/function () {
-    var _ref25 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee25(dispatch, getState) {
+    var _ref59 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee59(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee25$(_context25) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee59$(_context59) {
         while (1) {
-          switch (_context25.prev = _context25.next) {
+          switch (_context59.prev = _context59.next) {
             case 0:
               dispatch(languagesStart());
               role = getState().auth.role;
-              _context25.prev = 2;
+              _context59.prev = 2;
               token = localStorage.getItem('token');
-              _context25.next = 6;
+              _context59.next = 6;
               return fetch("".concat(prefix + role, "/languages/").concat(id), {
                 headers: {
                   Authorization: token
@@ -18075,49 +20395,49 @@ var getLanguage = function getLanguage(id) {
               });
 
             case 6:
-              res = _context25.sent;
-              _context25.next = 9;
+              res = _context59.sent;
+              _context59.next = 9;
               return res.json();
 
             case 9:
-              resData = _context25.sent;
+              resData = _context59.sent;
               dispatch(languagesSuccess(resData));
-              _context25.next = 17;
+              _context59.next = 17;
               break;
 
             case 13:
-              _context25.prev = 13;
-              _context25.t0 = _context25["catch"](2);
-              console.log(_context25.t0);
-              dispatch(languagesFail(_context25.t0));
+              _context59.prev = 13;
+              _context59.t0 = _context59["catch"](2);
+              console.log(_context59.t0);
+              dispatch(languagesFail(_context59.t0));
 
             case 17:
             case "end":
-              return _context25.stop();
+              return _context59.stop();
           }
         }
-      }, _callee25, null, [[2, 13]]);
+      }, _callee59, null, [[2, 13]]);
     }));
 
-    return function (_x49, _x50) {
-      return _ref25.apply(this, arguments);
+    return function (_x117, _x118) {
+      return _ref59.apply(this, arguments);
     };
   }();
 };
 var postLanguages = function postLanguages(data) {
   return /*#__PURE__*/function () {
-    var _ref26 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee26(dispatch, getState) {
+    var _ref60 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee60(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee26$(_context26) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee60$(_context60) {
         while (1) {
-          switch (_context26.prev = _context26.next) {
+          switch (_context60.prev = _context60.next) {
             case 0:
               dispatch(languagesStart());
               role = getState().auth.role;
-              _context26.prev = 2;
+              _context60.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context26.next = 7;
+              _context60.next = 7;
               return fetch("".concat(prefix + role, "/languages"), {
                 method: 'POST',
                 body: form,
@@ -18127,15 +20447,15 @@ var postLanguages = function postLanguages(data) {
               });
 
             case 7:
-              res = _context26.sent;
-              _context26.next = 10;
+              res = _context60.sent;
+              _context60.next = 10;
               return res.json();
 
             case 10:
-              resData = _context26.sent;
+              resData = _context60.sent;
 
               if (!(res.status === 422)) {
-                _context26.next = 15;
+                _context60.next = 15;
                 break;
               }
 
@@ -18143,7 +20463,7 @@ var postLanguages = function postLanguages(data) {
 
             case 15:
               if (!(res.status !== 200 && res.status !== 201)) {
-                _context26.next = 17;
+                _context60.next = 17;
                 break;
               }
 
@@ -18151,42 +20471,42 @@ var postLanguages = function postLanguages(data) {
 
             case 17:
               dispatch(languagesSuccess(resData));
-              _context26.next = 24;
+              _context60.next = 24;
               break;
 
             case 20:
-              _context26.prev = 20;
-              _context26.t0 = _context26["catch"](2);
-              console.log(_context26.t0);
-              dispatch(languagesFail(_context26.t0));
+              _context60.prev = 20;
+              _context60.t0 = _context60["catch"](2);
+              console.log(_context60.t0);
+              dispatch(languagesFail(_context60.t0));
 
             case 24:
             case "end":
-              return _context26.stop();
+              return _context60.stop();
           }
         }
-      }, _callee26, null, [[2, 20]]);
+      }, _callee60, null, [[2, 20]]);
     }));
 
-    return function (_x51, _x52) {
-      return _ref26.apply(this, arguments);
+    return function (_x119, _x120) {
+      return _ref60.apply(this, arguments);
     };
   }();
 };
 var patchLanguages = function patchLanguages(id, data) {
   return /*#__PURE__*/function () {
-    var _ref27 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee27(dispatch, getState) {
+    var _ref61 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee61(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee27$(_context27) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee61$(_context61) {
         while (1) {
-          switch (_context27.prev = _context27.next) {
+          switch (_context61.prev = _context61.next) {
             case 0:
               dispatch(languagesStart());
               role = getState().auth.role;
-              _context27.prev = 2;
+              _context61.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context27.next = 7;
+              _context61.next = 7;
               return fetch("".concat(prefix + role, "/languages/").concat(id), {
                 method: 'POST',
                 body: form,
@@ -18196,15 +20516,15 @@ var patchLanguages = function patchLanguages(id, data) {
               });
 
             case 7:
-              res = _context27.sent;
-              _context27.next = 10;
+              res = _context61.sent;
+              _context61.next = 10;
               return res.json();
 
             case 10:
-              resData = _context27.sent;
+              resData = _context61.sent;
 
               if (!(res.status === 422)) {
-                _context27.next = 13;
+                _context61.next = 13;
                 break;
               }
 
@@ -18212,44 +20532,44 @@ var patchLanguages = function patchLanguages(id, data) {
 
             case 13:
               dispatch(languagesSuccess(resData));
-              _context27.next = 20;
+              _context61.next = 20;
               break;
 
             case 16:
-              _context27.prev = 16;
-              _context27.t0 = _context27["catch"](2);
-              console.log(_context27.t0);
-              dispatch(languagesFail(_context27.t0));
+              _context61.prev = 16;
+              _context61.t0 = _context61["catch"](2);
+              console.log(_context61.t0);
+              dispatch(languagesFail(_context61.t0));
 
             case 20:
             case "end":
-              return _context27.stop();
+              return _context61.stop();
           }
         }
-      }, _callee27, null, [[2, 16]]);
+      }, _callee61, null, [[2, 16]]);
     }));
 
-    return function (_x53, _x54) {
-      return _ref27.apply(this, arguments);
+    return function (_x121, _x122) {
+      return _ref61.apply(this, arguments);
     };
   }();
 };
 var deleteLanguages = function deleteLanguages(id) {
   return /*#__PURE__*/function () {
-    var _ref28 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee28(dispatch, getState) {
+    var _ref62 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee62(dispatch, getState) {
       var role, page, show, search, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee28$(_context28) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee62$(_context62) {
         while (1) {
-          switch (_context28.prev = _context28.next) {
+          switch (_context62.prev = _context62.next) {
             case 0:
               dispatch(languagesStart());
               role = getState().auth.role;
-              _context28.prev = 2;
+              _context62.prev = 2;
               page = document.getElementById('table-page').value;
               show = document.getElementById('table-show').value;
               search = document.getElementById('table-search').value;
               token = localStorage.getItem('token');
-              _context28.next = 9;
+              _context62.next = 9;
               return fetch("".concat(prefix + role, "/languages/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 method: 'DELETE',
                 headers: {
@@ -18258,15 +20578,15 @@ var deleteLanguages = function deleteLanguages(id) {
               });
 
             case 9:
-              res = _context28.sent;
-              _context28.next = 12;
+              res = _context62.sent;
+              _context62.next = 12;
               return res.json();
 
             case 12:
-              resData = _context28.sent;
+              resData = _context62.sent;
 
               if (!(res.status === 422)) {
-                _context28.next = 15;
+                _context62.next = 15;
                 break;
               }
 
@@ -18274,25 +20594,25 @@ var deleteLanguages = function deleteLanguages(id) {
 
             case 15:
               dispatch(languagesSuccess(resData));
-              _context28.next = 22;
+              _context62.next = 22;
               break;
 
             case 18:
-              _context28.prev = 18;
-              _context28.t0 = _context28["catch"](2);
-              console.log(_context28.t0);
-              dispatch(languagesFail(_context28.t0));
+              _context62.prev = 18;
+              _context62.t0 = _context62["catch"](2);
+              console.log(_context62.t0);
+              dispatch(languagesFail(_context62.t0));
 
             case 22:
             case "end":
-              return _context28.stop();
+              return _context62.stop();
           }
         }
-      }, _callee28, null, [[2, 18]]);
+      }, _callee62, null, [[2, 18]]);
     }));
 
-    return function (_x55, _x56) {
-      return _ref28.apply(this, arguments);
+    return function (_x123, _x124) {
+      return _ref62.apply(this, arguments);
     };
   }();
 };
@@ -18326,17 +20646,17 @@ var getPlatforms = function getPlatforms() {
   var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
   var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   return /*#__PURE__*/function () {
-    var _ref29 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee29(dispatch, getState) {
+    var _ref63 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee63(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee29$(_context29) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee63$(_context63) {
         while (1) {
-          switch (_context29.prev = _context29.next) {
+          switch (_context63.prev = _context63.next) {
             case 0:
               dispatch(platformsStart());
               role = getState().auth.role;
-              _context29.prev = 2;
+              _context63.prev = 2;
               token = localStorage.getItem('token');
-              _context29.next = 6;
+              _context63.next = 6;
               return fetch("".concat(prefix + role, "/platforms?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 headers: {
                   Authorization: token
@@ -18344,48 +20664,48 @@ var getPlatforms = function getPlatforms() {
               });
 
             case 6:
-              res = _context29.sent;
-              _context29.next = 9;
+              res = _context63.sent;
+              _context63.next = 9;
               return res.json();
 
             case 9:
-              resData = _context29.sent;
+              resData = _context63.sent;
               dispatch(platformsSuccess(resData));
-              _context29.next = 17;
+              _context63.next = 17;
               break;
 
             case 13:
-              _context29.prev = 13;
-              _context29.t0 = _context29["catch"](2);
-              console.log(_context29.t0);
-              dispatch(platformsFail(_context29.t0));
+              _context63.prev = 13;
+              _context63.t0 = _context63["catch"](2);
+              console.log(_context63.t0);
+              dispatch(platformsFail(_context63.t0));
 
             case 17:
             case "end":
-              return _context29.stop();
+              return _context63.stop();
           }
         }
-      }, _callee29, null, [[2, 13]]);
+      }, _callee63, null, [[2, 13]]);
     }));
 
-    return function (_x57, _x58) {
-      return _ref29.apply(this, arguments);
+    return function (_x125, _x126) {
+      return _ref63.apply(this, arguments);
     };
   }();
 };
 var getPlatform = function getPlatform(id) {
   return /*#__PURE__*/function () {
-    var _ref30 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee30(dispatch, getState) {
+    var _ref64 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee64(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee30$(_context30) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee64$(_context64) {
         while (1) {
-          switch (_context30.prev = _context30.next) {
+          switch (_context64.prev = _context64.next) {
             case 0:
               dispatch(platformsStart());
               role = getState().auth.role;
-              _context30.prev = 2;
+              _context64.prev = 2;
               token = localStorage.getItem('token');
-              _context30.next = 6;
+              _context64.next = 6;
               return fetch("".concat(prefix + role, "/platforms/").concat(id), {
                 headers: {
                   Authorization: token
@@ -18393,49 +20713,49 @@ var getPlatform = function getPlatform(id) {
               });
 
             case 6:
-              res = _context30.sent;
-              _context30.next = 9;
+              res = _context64.sent;
+              _context64.next = 9;
               return res.json();
 
             case 9:
-              resData = _context30.sent;
+              resData = _context64.sent;
               dispatch(platformsSuccess(resData));
-              _context30.next = 17;
+              _context64.next = 17;
               break;
 
             case 13:
-              _context30.prev = 13;
-              _context30.t0 = _context30["catch"](2);
-              console.log(_context30.t0);
-              dispatch(platformsFail(_context30.t0));
+              _context64.prev = 13;
+              _context64.t0 = _context64["catch"](2);
+              console.log(_context64.t0);
+              dispatch(platformsFail(_context64.t0));
 
             case 17:
             case "end":
-              return _context30.stop();
+              return _context64.stop();
           }
         }
-      }, _callee30, null, [[2, 13]]);
+      }, _callee64, null, [[2, 13]]);
     }));
 
-    return function (_x59, _x60) {
-      return _ref30.apply(this, arguments);
+    return function (_x127, _x128) {
+      return _ref64.apply(this, arguments);
     };
   }();
 };
 var postPlatforms = function postPlatforms(data) {
   return /*#__PURE__*/function () {
-    var _ref31 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee31(dispatch, getState) {
+    var _ref65 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee65(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee31$(_context31) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee65$(_context65) {
         while (1) {
-          switch (_context31.prev = _context31.next) {
+          switch (_context65.prev = _context65.next) {
             case 0:
               dispatch(platformsStart());
               role = getState().auth.role;
-              _context31.prev = 2;
+              _context65.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context31.next = 7;
+              _context65.next = 7;
               return fetch("".concat(prefix + role, "/platforms"), {
                 method: 'POST',
                 body: form,
@@ -18445,15 +20765,15 @@ var postPlatforms = function postPlatforms(data) {
               });
 
             case 7:
-              res = _context31.sent;
-              _context31.next = 10;
+              res = _context65.sent;
+              _context65.next = 10;
               return res.json();
 
             case 10:
-              resData = _context31.sent;
+              resData = _context65.sent;
 
               if (!(res.status === 422)) {
-                _context31.next = 15;
+                _context65.next = 15;
                 break;
               }
 
@@ -18461,7 +20781,7 @@ var postPlatforms = function postPlatforms(data) {
 
             case 15:
               if (!(res.status !== 200 && res.status !== 201)) {
-                _context31.next = 17;
+                _context65.next = 17;
                 break;
               }
 
@@ -18469,42 +20789,42 @@ var postPlatforms = function postPlatforms(data) {
 
             case 17:
               dispatch(platformsSuccess(resData));
-              _context31.next = 24;
+              _context65.next = 24;
               break;
 
             case 20:
-              _context31.prev = 20;
-              _context31.t0 = _context31["catch"](2);
-              console.log(_context31.t0);
-              dispatch(platformsFail(_context31.t0));
+              _context65.prev = 20;
+              _context65.t0 = _context65["catch"](2);
+              console.log(_context65.t0);
+              dispatch(platformsFail(_context65.t0));
 
             case 24:
             case "end":
-              return _context31.stop();
+              return _context65.stop();
           }
         }
-      }, _callee31, null, [[2, 20]]);
+      }, _callee65, null, [[2, 20]]);
     }));
 
-    return function (_x61, _x62) {
-      return _ref31.apply(this, arguments);
+    return function (_x129, _x130) {
+      return _ref65.apply(this, arguments);
     };
   }();
 };
 var patchPlatforms = function patchPlatforms(id, data) {
   return /*#__PURE__*/function () {
-    var _ref32 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee32(dispatch, getState) {
+    var _ref66 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee66(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee32$(_context32) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee66$(_context66) {
         while (1) {
-          switch (_context32.prev = _context32.next) {
+          switch (_context66.prev = _context66.next) {
             case 0:
               dispatch(platformsStart());
               role = getState().auth.role;
-              _context32.prev = 2;
+              _context66.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context32.next = 7;
+              _context66.next = 7;
               return fetch("".concat(prefix + role, "/platforms/").concat(id), {
                 method: 'POST',
                 body: form,
@@ -18514,15 +20834,15 @@ var patchPlatforms = function patchPlatforms(id, data) {
               });
 
             case 7:
-              res = _context32.sent;
-              _context32.next = 10;
+              res = _context66.sent;
+              _context66.next = 10;
               return res.json();
 
             case 10:
-              resData = _context32.sent;
+              resData = _context66.sent;
 
               if (!(res.status === 422)) {
-                _context32.next = 13;
+                _context66.next = 13;
                 break;
               }
 
@@ -18530,44 +20850,44 @@ var patchPlatforms = function patchPlatforms(id, data) {
 
             case 13:
               dispatch(platformsSuccess(resData));
-              _context32.next = 20;
+              _context66.next = 20;
               break;
 
             case 16:
-              _context32.prev = 16;
-              _context32.t0 = _context32["catch"](2);
-              console.log(_context32.t0);
-              dispatch(platformsFail(_context32.t0));
+              _context66.prev = 16;
+              _context66.t0 = _context66["catch"](2);
+              console.log(_context66.t0);
+              dispatch(platformsFail(_context66.t0));
 
             case 20:
             case "end":
-              return _context32.stop();
+              return _context66.stop();
           }
         }
-      }, _callee32, null, [[2, 16]]);
+      }, _callee66, null, [[2, 16]]);
     }));
 
-    return function (_x63, _x64) {
-      return _ref32.apply(this, arguments);
+    return function (_x131, _x132) {
+      return _ref66.apply(this, arguments);
     };
   }();
 };
 var deletePlatforms = function deletePlatforms(id) {
   return /*#__PURE__*/function () {
-    var _ref33 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee33(dispatch, getState) {
+    var _ref67 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee67(dispatch, getState) {
       var role, page, show, search, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee33$(_context33) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee67$(_context67) {
         while (1) {
-          switch (_context33.prev = _context33.next) {
+          switch (_context67.prev = _context67.next) {
             case 0:
               dispatch(platformsStart());
               role = getState().auth.role;
-              _context33.prev = 2;
+              _context67.prev = 2;
               page = document.getElementById('table-page').value;
               show = document.getElementById('table-show').value;
               search = document.getElementById('table-search').value;
               token = localStorage.getItem('token');
-              _context33.next = 9;
+              _context67.next = 9;
               return fetch("".concat(prefix + role, "/platforms/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 method: 'DELETE',
                 headers: {
@@ -18576,15 +20896,15 @@ var deletePlatforms = function deletePlatforms(id) {
               });
 
             case 9:
-              res = _context33.sent;
-              _context33.next = 12;
+              res = _context67.sent;
+              _context67.next = 12;
               return res.json();
 
             case 12:
-              resData = _context33.sent;
+              resData = _context67.sent;
 
               if (!(res.status === 422)) {
-                _context33.next = 15;
+                _context67.next = 15;
                 break;
               }
 
@@ -18592,25 +20912,25 @@ var deletePlatforms = function deletePlatforms(id) {
 
             case 15:
               dispatch(platformsSuccess(resData));
-              _context33.next = 22;
+              _context67.next = 22;
               break;
 
             case 18:
-              _context33.prev = 18;
-              _context33.t0 = _context33["catch"](2);
-              console.log(_context33.t0);
-              dispatch(platformsFail(_context33.t0));
+              _context67.prev = 18;
+              _context67.t0 = _context67["catch"](2);
+              console.log(_context67.t0);
+              dispatch(platformsFail(_context67.t0));
 
             case 22:
             case "end":
-              return _context33.stop();
+              return _context67.stop();
           }
         }
-      }, _callee33, null, [[2, 18]]);
+      }, _callee67, null, [[2, 18]]);
     }));
 
-    return function (_x65, _x66) {
-      return _ref33.apply(this, arguments);
+    return function (_x133, _x134) {
+      return _ref67.apply(this, arguments);
     };
   }();
 };
@@ -18644,17 +20964,17 @@ var getRoles = function getRoles() {
   var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
   var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   return /*#__PURE__*/function () {
-    var _ref34 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee34(dispatch, getState) {
+    var _ref68 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee68(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee34$(_context34) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee68$(_context68) {
         while (1) {
-          switch (_context34.prev = _context34.next) {
+          switch (_context68.prev = _context68.next) {
             case 0:
               dispatch(rolesStart());
               role = getState().auth.role;
-              _context34.prev = 2;
+              _context68.prev = 2;
               token = localStorage.getItem('token');
-              _context34.next = 6;
+              _context68.next = 6;
               return fetch("".concat(prefix + role, "/roles?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 headers: {
                   Authorization: token
@@ -18662,48 +20982,48 @@ var getRoles = function getRoles() {
               });
 
             case 6:
-              res = _context34.sent;
-              _context34.next = 9;
+              res = _context68.sent;
+              _context68.next = 9;
               return res.json();
 
             case 9:
-              resData = _context34.sent;
+              resData = _context68.sent;
               dispatch(rolesSuccess(resData));
-              _context34.next = 17;
+              _context68.next = 17;
               break;
 
             case 13:
-              _context34.prev = 13;
-              _context34.t0 = _context34["catch"](2);
-              console.log(_context34.t0);
-              dispatch(rolesFail(_context34.t0));
+              _context68.prev = 13;
+              _context68.t0 = _context68["catch"](2);
+              console.log(_context68.t0);
+              dispatch(rolesFail(_context68.t0));
 
             case 17:
             case "end":
-              return _context34.stop();
+              return _context68.stop();
           }
         }
-      }, _callee34, null, [[2, 13]]);
+      }, _callee68, null, [[2, 13]]);
     }));
 
-    return function (_x67, _x68) {
-      return _ref34.apply(this, arguments);
+    return function (_x135, _x136) {
+      return _ref68.apply(this, arguments);
     };
   }();
 };
 var getRole = function getRole(id) {
   return /*#__PURE__*/function () {
-    var _ref35 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee35(dispatch, getState) {
+    var _ref69 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee69(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee35$(_context35) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee69$(_context69) {
         while (1) {
-          switch (_context35.prev = _context35.next) {
+          switch (_context69.prev = _context69.next) {
             case 0:
               dispatch(rolesStart());
               role = getState().auth.role;
-              _context35.prev = 2;
+              _context69.prev = 2;
               token = localStorage.getItem('token');
-              _context35.next = 6;
+              _context69.next = 6;
               return fetch("".concat(prefix + role, "/roles/").concat(id), {
                 headers: {
                   Authorization: token
@@ -18711,48 +21031,48 @@ var getRole = function getRole(id) {
               });
 
             case 6:
-              res = _context35.sent;
-              _context35.next = 9;
+              res = _context69.sent;
+              _context69.next = 9;
               return res.json();
 
             case 9:
-              resData = _context35.sent;
+              resData = _context69.sent;
               dispatch(rolesSuccess(resData));
-              _context35.next = 17;
+              _context69.next = 17;
               break;
 
             case 13:
-              _context35.prev = 13;
-              _context35.t0 = _context35["catch"](2);
-              console.log(_context35.t0);
-              dispatch(rolesFail(_context35.t0));
+              _context69.prev = 13;
+              _context69.t0 = _context69["catch"](2);
+              console.log(_context69.t0);
+              dispatch(rolesFail(_context69.t0));
 
             case 17:
             case "end":
-              return _context35.stop();
+              return _context69.stop();
           }
         }
-      }, _callee35, null, [[2, 13]]);
+      }, _callee69, null, [[2, 13]]);
     }));
 
-    return function (_x69, _x70) {
-      return _ref35.apply(this, arguments);
+    return function (_x137, _x138) {
+      return _ref69.apply(this, arguments);
     };
   }();
 };
 var getRolesInfo = function getRolesInfo() {
   return /*#__PURE__*/function () {
-    var _ref36 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee36(dispatch, getState) {
+    var _ref70 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee70(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee36$(_context36) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee70$(_context70) {
         while (1) {
-          switch (_context36.prev = _context36.next) {
+          switch (_context70.prev = _context70.next) {
             case 0:
               dispatch(rolesStart());
               role = getState().auth.role;
-              _context36.prev = 2;
+              _context70.prev = 2;
               token = localStorage.getItem('token');
-              _context36.next = 6;
+              _context70.next = 6;
               return fetch("".concat(prefix + role, "/roles/info"), {
                 headers: {
                   Authorization: token
@@ -18760,49 +21080,49 @@ var getRolesInfo = function getRolesInfo() {
               });
 
             case 6:
-              res = _context36.sent;
-              _context36.next = 9;
+              res = _context70.sent;
+              _context70.next = 9;
               return res.json();
 
             case 9:
-              resData = _context36.sent;
+              resData = _context70.sent;
               dispatch(rolesSuccess(resData));
-              _context36.next = 17;
+              _context70.next = 17;
               break;
 
             case 13:
-              _context36.prev = 13;
-              _context36.t0 = _context36["catch"](2);
-              console.log(_context36.t0);
-              dispatch(rolesFail(_context36.t0));
+              _context70.prev = 13;
+              _context70.t0 = _context70["catch"](2);
+              console.log(_context70.t0);
+              dispatch(rolesFail(_context70.t0));
 
             case 17:
             case "end":
-              return _context36.stop();
+              return _context70.stop();
           }
         }
-      }, _callee36, null, [[2, 13]]);
+      }, _callee70, null, [[2, 13]]);
     }));
 
-    return function (_x71, _x72) {
-      return _ref36.apply(this, arguments);
+    return function (_x139, _x140) {
+      return _ref70.apply(this, arguments);
     };
   }();
 };
 var postRoles = function postRoles(data) {
   return /*#__PURE__*/function () {
-    var _ref37 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee37(dispatch, getState) {
+    var _ref71 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee71(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee37$(_context37) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee71$(_context71) {
         while (1) {
-          switch (_context37.prev = _context37.next) {
+          switch (_context71.prev = _context71.next) {
             case 0:
               dispatch(rolesStart());
               role = getState().auth.role;
-              _context37.prev = 2;
+              _context71.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context37.next = 7;
+              _context71.next = 7;
               return fetch("".concat(prefix + role, "/roles"), {
                 method: 'POST',
                 body: form,
@@ -18812,15 +21132,15 @@ var postRoles = function postRoles(data) {
               });
 
             case 7:
-              res = _context37.sent;
-              _context37.next = 10;
+              res = _context71.sent;
+              _context71.next = 10;
               return res.json();
 
             case 10:
-              resData = _context37.sent;
+              resData = _context71.sent;
 
               if (!(res.status === 422)) {
-                _context37.next = 15;
+                _context71.next = 15;
                 break;
               }
 
@@ -18828,7 +21148,7 @@ var postRoles = function postRoles(data) {
 
             case 15:
               if (!(res.status !== 200 && res.status !== 201)) {
-                _context37.next = 17;
+                _context71.next = 17;
                 break;
               }
 
@@ -18836,42 +21156,42 @@ var postRoles = function postRoles(data) {
 
             case 17:
               dispatch(rolesSuccess(resData));
-              _context37.next = 24;
+              _context71.next = 24;
               break;
 
             case 20:
-              _context37.prev = 20;
-              _context37.t0 = _context37["catch"](2);
-              console.log(_context37.t0);
-              dispatch(rolesFail(_context37.t0));
+              _context71.prev = 20;
+              _context71.t0 = _context71["catch"](2);
+              console.log(_context71.t0);
+              dispatch(rolesFail(_context71.t0));
 
             case 24:
             case "end":
-              return _context37.stop();
+              return _context71.stop();
           }
         }
-      }, _callee37, null, [[2, 20]]);
+      }, _callee71, null, [[2, 20]]);
     }));
 
-    return function (_x73, _x74) {
-      return _ref37.apply(this, arguments);
+    return function (_x141, _x142) {
+      return _ref71.apply(this, arguments);
     };
   }();
 };
 var patchRoles = function patchRoles(id, data) {
   return /*#__PURE__*/function () {
-    var _ref38 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee38(dispatch, getState) {
+    var _ref72 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee72(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee38$(_context38) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee72$(_context72) {
         while (1) {
-          switch (_context38.prev = _context38.next) {
+          switch (_context72.prev = _context72.next) {
             case 0:
               dispatch(rolesStart());
               role = getState().auth.role;
-              _context38.prev = 2;
+              _context72.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context38.next = 7;
+              _context72.next = 7;
               return fetch("".concat(prefix + role, "/roles/").concat(id), {
                 method: 'POST',
                 body: form,
@@ -18881,15 +21201,15 @@ var patchRoles = function patchRoles(id, data) {
               });
 
             case 7:
-              res = _context38.sent;
-              _context38.next = 10;
+              res = _context72.sent;
+              _context72.next = 10;
               return res.json();
 
             case 10:
-              resData = _context38.sent;
+              resData = _context72.sent;
 
               if (!(res.status === 422)) {
-                _context38.next = 13;
+                _context72.next = 13;
                 break;
               }
 
@@ -18897,44 +21217,44 @@ var patchRoles = function patchRoles(id, data) {
 
             case 13:
               dispatch(rolesSuccess(resData));
-              _context38.next = 20;
+              _context72.next = 20;
               break;
 
             case 16:
-              _context38.prev = 16;
-              _context38.t0 = _context38["catch"](2);
-              console.log(_context38.t0);
-              dispatch(rolesFail(_context38.t0));
+              _context72.prev = 16;
+              _context72.t0 = _context72["catch"](2);
+              console.log(_context72.t0);
+              dispatch(rolesFail(_context72.t0));
 
             case 20:
             case "end":
-              return _context38.stop();
+              return _context72.stop();
           }
         }
-      }, _callee38, null, [[2, 16]]);
+      }, _callee72, null, [[2, 16]]);
     }));
 
-    return function (_x75, _x76) {
-      return _ref38.apply(this, arguments);
+    return function (_x143, _x144) {
+      return _ref72.apply(this, arguments);
     };
   }();
 };
 var deleteRoles = function deleteRoles(id) {
   return /*#__PURE__*/function () {
-    var _ref39 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee39(dispatch, getState) {
+    var _ref73 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee73(dispatch, getState) {
       var role, page, show, search, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee39$(_context39) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee73$(_context73) {
         while (1) {
-          switch (_context39.prev = _context39.next) {
+          switch (_context73.prev = _context73.next) {
             case 0:
               dispatch(rolesStart());
               role = getState().auth.role;
-              _context39.prev = 2;
+              _context73.prev = 2;
               page = document.getElementById('table-page').value;
               show = document.getElementById('table-show').value;
               search = document.getElementById('table-search').value;
               token = localStorage.getItem('token');
-              _context39.next = 9;
+              _context73.next = 9;
               return fetch("".concat(prefix + role, "/roles/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 method: 'DELETE',
                 headers: {
@@ -18943,15 +21263,15 @@ var deleteRoles = function deleteRoles(id) {
               });
 
             case 9:
-              res = _context39.sent;
-              _context39.next = 12;
+              res = _context73.sent;
+              _context73.next = 12;
               return res.json();
 
             case 12:
-              resData = _context39.sent;
+              resData = _context73.sent;
 
               if (!(res.status === 422)) {
-                _context39.next = 15;
+                _context73.next = 15;
                 break;
               }
 
@@ -18959,25 +21279,25 @@ var deleteRoles = function deleteRoles(id) {
 
             case 15:
               dispatch(rolesSuccess(resData));
-              _context39.next = 22;
+              _context73.next = 22;
               break;
 
             case 18:
-              _context39.prev = 18;
-              _context39.t0 = _context39["catch"](2);
-              console.log(_context39.t0);
-              dispatch(rolesFail(_context39.t0));
+              _context73.prev = 18;
+              _context73.t0 = _context73["catch"](2);
+              console.log(_context73.t0);
+              dispatch(rolesFail(_context73.t0));
 
             case 22:
             case "end":
-              return _context39.stop();
+              return _context73.stop();
           }
         }
-      }, _callee39, null, [[2, 18]]);
+      }, _callee73, null, [[2, 18]]);
     }));
 
-    return function (_x77, _x78) {
-      return _ref39.apply(this, arguments);
+    return function (_x145, _x146) {
+      return _ref73.apply(this, arguments);
     };
   }();
 };
@@ -19011,17 +21331,17 @@ var getUsers = function getUsers() {
   var show = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10;
   var search = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   return /*#__PURE__*/function () {
-    var _ref40 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee40(dispatch, getState) {
+    var _ref74 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee74(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee40$(_context40) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee74$(_context74) {
         while (1) {
-          switch (_context40.prev = _context40.next) {
+          switch (_context74.prev = _context74.next) {
             case 0:
               dispatch(usersStart());
               role = getState().auth.role;
-              _context40.prev = 2;
+              _context74.prev = 2;
               token = localStorage.getItem('token');
-              _context40.next = 6;
+              _context74.next = 6;
               return fetch("".concat(prefix + role, "/users?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 headers: {
                   Authorization: token
@@ -19029,48 +21349,48 @@ var getUsers = function getUsers() {
               });
 
             case 6:
-              res = _context40.sent;
-              _context40.next = 9;
+              res = _context74.sent;
+              _context74.next = 9;
               return res.json();
 
             case 9:
-              resData = _context40.sent;
+              resData = _context74.sent;
               dispatch(usersSuccess(resData));
-              _context40.next = 17;
+              _context74.next = 17;
               break;
 
             case 13:
-              _context40.prev = 13;
-              _context40.t0 = _context40["catch"](2);
-              console.log(_context40.t0);
-              dispatch(usersFail(_context40.t0));
+              _context74.prev = 13;
+              _context74.t0 = _context74["catch"](2);
+              console.log(_context74.t0);
+              dispatch(usersFail(_context74.t0));
 
             case 17:
             case "end":
-              return _context40.stop();
+              return _context74.stop();
           }
         }
-      }, _callee40, null, [[2, 13]]);
+      }, _callee74, null, [[2, 13]]);
     }));
 
-    return function (_x79, _x80) {
-      return _ref40.apply(this, arguments);
+    return function (_x147, _x148) {
+      return _ref74.apply(this, arguments);
     };
   }();
 };
 var getUser = function getUser(id) {
   return /*#__PURE__*/function () {
-    var _ref41 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee41(dispatch, getState) {
+    var _ref75 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee75(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee41$(_context41) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee75$(_context75) {
         while (1) {
-          switch (_context41.prev = _context41.next) {
+          switch (_context75.prev = _context75.next) {
             case 0:
               dispatch(usersStart());
               role = getState().auth.role;
-              _context41.prev = 2;
+              _context75.prev = 2;
               token = localStorage.getItem('token');
-              _context41.next = 6;
+              _context75.next = 6;
               return fetch("".concat(prefix + role, "/users/").concat(id), {
                 headers: {
                   Authorization: token
@@ -19078,48 +21398,48 @@ var getUser = function getUser(id) {
               });
 
             case 6:
-              res = _context41.sent;
-              _context41.next = 9;
+              res = _context75.sent;
+              _context75.next = 9;
               return res.json();
 
             case 9:
-              resData = _context41.sent;
+              resData = _context75.sent;
               dispatch(usersSuccess(resData));
-              _context41.next = 17;
+              _context75.next = 17;
               break;
 
             case 13:
-              _context41.prev = 13;
-              _context41.t0 = _context41["catch"](2);
-              console.log(_context41.t0);
-              dispatch(usersFail(_context41.t0));
+              _context75.prev = 13;
+              _context75.t0 = _context75["catch"](2);
+              console.log(_context75.t0);
+              dispatch(usersFail(_context75.t0));
 
             case 17:
             case "end":
-              return _context41.stop();
+              return _context75.stop();
           }
         }
-      }, _callee41, null, [[2, 13]]);
+      }, _callee75, null, [[2, 13]]);
     }));
 
-    return function (_x81, _x82) {
-      return _ref41.apply(this, arguments);
+    return function (_x149, _x150) {
+      return _ref75.apply(this, arguments);
     };
   }();
 };
 var getUsersInfo = function getUsersInfo() {
   return /*#__PURE__*/function () {
-    var _ref42 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee42(dispatch, getState) {
+    var _ref76 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee76(dispatch, getState) {
       var role, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee42$(_context42) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee76$(_context76) {
         while (1) {
-          switch (_context42.prev = _context42.next) {
+          switch (_context76.prev = _context76.next) {
             case 0:
               dispatch(usersStart());
               role = getState().auth.role;
-              _context42.prev = 2;
+              _context76.prev = 2;
               token = localStorage.getItem('token');
-              _context42.next = 6;
+              _context76.next = 6;
               return fetch("".concat(prefix + role, "/users/info"), {
                 headers: {
                   Authorization: token
@@ -19127,49 +21447,49 @@ var getUsersInfo = function getUsersInfo() {
               });
 
             case 6:
-              res = _context42.sent;
-              _context42.next = 9;
+              res = _context76.sent;
+              _context76.next = 9;
               return res.json();
 
             case 9:
-              resData = _context42.sent;
+              resData = _context76.sent;
               dispatch(usersSuccess(resData));
-              _context42.next = 17;
+              _context76.next = 17;
               break;
 
             case 13:
-              _context42.prev = 13;
-              _context42.t0 = _context42["catch"](2);
-              console.log(_context42.t0);
-              dispatch(usersFail(_context42.t0));
+              _context76.prev = 13;
+              _context76.t0 = _context76["catch"](2);
+              console.log(_context76.t0);
+              dispatch(usersFail(_context76.t0));
 
             case 17:
             case "end":
-              return _context42.stop();
+              return _context76.stop();
           }
         }
-      }, _callee42, null, [[2, 13]]);
+      }, _callee76, null, [[2, 13]]);
     }));
 
-    return function (_x83, _x84) {
-      return _ref42.apply(this, arguments);
+    return function (_x151, _x152) {
+      return _ref76.apply(this, arguments);
     };
   }();
 };
 var postUsers = function postUsers(data) {
   return /*#__PURE__*/function () {
-    var _ref43 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee43(dispatch, getState) {
+    var _ref77 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee77(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee43$(_context43) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee77$(_context77) {
         while (1) {
-          switch (_context43.prev = _context43.next) {
+          switch (_context77.prev = _context77.next) {
             case 0:
               dispatch(usersStart());
               role = getState().auth.role;
-              _context43.prev = 2;
+              _context77.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context43.next = 7;
+              _context77.next = 7;
               return fetch("".concat(prefix + role, "/users"), {
                 method: 'POST',
                 body: form,
@@ -19179,15 +21499,15 @@ var postUsers = function postUsers(data) {
               });
 
             case 7:
-              res = _context43.sent;
-              _context43.next = 10;
+              res = _context77.sent;
+              _context77.next = 10;
               return res.json();
 
             case 10:
-              resData = _context43.sent;
+              resData = _context77.sent;
 
               if (!(res.status === 422)) {
-                _context43.next = 15;
+                _context77.next = 15;
                 break;
               }
 
@@ -19195,7 +21515,7 @@ var postUsers = function postUsers(data) {
 
             case 15:
               if (!(res.status !== 200 && res.status !== 201)) {
-                _context43.next = 17;
+                _context77.next = 17;
                 break;
               }
 
@@ -19203,42 +21523,42 @@ var postUsers = function postUsers(data) {
 
             case 17:
               dispatch(usersSuccess(resData));
-              _context43.next = 24;
+              _context77.next = 24;
               break;
 
             case 20:
-              _context43.prev = 20;
-              _context43.t0 = _context43["catch"](2);
-              console.log(_context43.t0);
-              dispatch(usersFail(_context43.t0));
+              _context77.prev = 20;
+              _context77.t0 = _context77["catch"](2);
+              console.log(_context77.t0);
+              dispatch(usersFail(_context77.t0));
 
             case 24:
             case "end":
-              return _context43.stop();
+              return _context77.stop();
           }
         }
-      }, _callee43, null, [[2, 20]]);
+      }, _callee77, null, [[2, 20]]);
     }));
 
-    return function (_x85, _x86) {
-      return _ref43.apply(this, arguments);
+    return function (_x153, _x154) {
+      return _ref77.apply(this, arguments);
     };
   }();
 };
 var patchUsers = function patchUsers(id, data) {
   return /*#__PURE__*/function () {
-    var _ref44 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee44(dispatch, getState) {
+    var _ref78 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee78(dispatch, getState) {
       var role, token, form, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee44$(_context44) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee78$(_context78) {
         while (1) {
-          switch (_context44.prev = _context44.next) {
+          switch (_context78.prev = _context78.next) {
             case 0:
               dispatch(usersStart());
               role = getState().auth.role;
-              _context44.prev = 2;
+              _context78.prev = 2;
               token = localStorage.getItem('token');
               form = new FormData(data);
-              _context44.next = 7;
+              _context78.next = 7;
               return fetch("".concat(prefix + role, "/users/").concat(id), {
                 method: 'POST',
                 body: form,
@@ -19248,15 +21568,15 @@ var patchUsers = function patchUsers(id, data) {
               });
 
             case 7:
-              res = _context44.sent;
-              _context44.next = 10;
+              res = _context78.sent;
+              _context78.next = 10;
               return res.json();
 
             case 10:
-              resData = _context44.sent;
+              resData = _context78.sent;
 
               if (!(res.status === 422)) {
-                _context44.next = 13;
+                _context78.next = 13;
                 break;
               }
 
@@ -19264,44 +21584,44 @@ var patchUsers = function patchUsers(id, data) {
 
             case 13:
               dispatch(usersSuccess(resData));
-              _context44.next = 20;
+              _context78.next = 20;
               break;
 
             case 16:
-              _context44.prev = 16;
-              _context44.t0 = _context44["catch"](2);
-              console.log(_context44.t0);
-              dispatch(usersFail(_context44.t0));
+              _context78.prev = 16;
+              _context78.t0 = _context78["catch"](2);
+              console.log(_context78.t0);
+              dispatch(usersFail(_context78.t0));
 
             case 20:
             case "end":
-              return _context44.stop();
+              return _context78.stop();
           }
         }
-      }, _callee44, null, [[2, 16]]);
+      }, _callee78, null, [[2, 16]]);
     }));
 
-    return function (_x87, _x88) {
-      return _ref44.apply(this, arguments);
+    return function (_x155, _x156) {
+      return _ref78.apply(this, arguments);
     };
   }();
 };
 var deleteUsers = function deleteUsers(id) {
   return /*#__PURE__*/function () {
-    var _ref45 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee45(dispatch, getState) {
+    var _ref79 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee79(dispatch, getState) {
       var role, page, show, search, token, res, resData;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee45$(_context45) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee79$(_context79) {
         while (1) {
-          switch (_context45.prev = _context45.next) {
+          switch (_context79.prev = _context79.next) {
             case 0:
               dispatch(usersStart());
               role = getState().auth.role;
-              _context45.prev = 2;
+              _context79.prev = 2;
               page = document.getElementById('table-page').value;
               show = document.getElementById('table-show').value;
               search = document.getElementById('table-search').value;
               token = localStorage.getItem('token');
-              _context45.next = 9;
+              _context79.next = 9;
               return fetch("".concat(prefix + role, "/users/").concat(id, "?page=").concat(page, "&show=").concat(show, "&search=").concat(search), {
                 method: 'DELETE',
                 headers: {
@@ -19310,15 +21630,15 @@ var deleteUsers = function deleteUsers(id) {
               });
 
             case 9:
-              res = _context45.sent;
-              _context45.next = 12;
+              res = _context79.sent;
+              _context79.next = 12;
               return res.json();
 
             case 12:
-              resData = _context45.sent;
+              resData = _context79.sent;
 
               if (!(res.status === 422)) {
-                _context45.next = 15;
+                _context79.next = 15;
                 break;
               }
 
@@ -19326,25 +21646,25 @@ var deleteUsers = function deleteUsers(id) {
 
             case 15:
               dispatch(usersSuccess(resData));
-              _context45.next = 22;
+              _context79.next = 22;
               break;
 
             case 18:
-              _context45.prev = 18;
-              _context45.t0 = _context45["catch"](2);
-              console.log(_context45.t0);
-              dispatch(usersFail(_context45.t0));
+              _context79.prev = 18;
+              _context79.t0 = _context79["catch"](2);
+              console.log(_context79.t0);
+              dispatch(usersFail(_context79.t0));
 
             case 22:
             case "end":
-              return _context45.stop();
+              return _context79.stop();
           }
         }
-      }, _callee45, null, [[2, 18]]);
+      }, _callee79, null, [[2, 18]]);
     }));
 
-    return function (_x89, _x90) {
-      return _ref45.apply(this, arguments);
+    return function (_x157, _x158) {
+      return _ref79.apply(this, arguments);
     };
   }();
 };
@@ -19534,21 +21854,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "deleteCms": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteCms,
 /* harmony export */   "resetDashboard": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetDashboard,
 /* harmony export */   "getDashboard": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getDashboard,
-/* harmony export */   "postDashboardIssuesMark": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postDashboardIssuesMark,
 /* harmony export */   "resetFeatures": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetFeatures,
 /* harmony export */   "getFeatures": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getFeatures,
 /* harmony export */   "getFeature": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getFeature,
 /* harmony export */   "postFeatures": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postFeatures,
 /* harmony export */   "patchFeatures": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchFeatures,
 /* harmony export */   "deleteFeatures": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteFeatures,
-/* harmony export */   "resetIssues": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetIssues,
-/* harmony export */   "getIssues": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getIssues,
-/* harmony export */   "getIssuesInfo": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getIssuesInfo,
-/* harmony export */   "postIssuesMark": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postIssuesMark,
-/* harmony export */   "getIssue": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getIssue,
-/* harmony export */   "postIssues": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postIssues,
-/* harmony export */   "patchIssues": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchIssues,
-/* harmony export */   "deleteIssues": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteIssues,
+/* harmony export */   "resetClaims": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetClaims,
+/* harmony export */   "getClaims": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getClaims,
+/* harmony export */   "getClaimsInfo": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getClaimsInfo,
+/* harmony export */   "getClaim": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getClaim,
+/* harmony export */   "postClaims": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postClaims,
+/* harmony export */   "patchClaims": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchClaims,
+/* harmony export */   "deleteClaims": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteClaims,
+/* harmony export */   "resetDebts": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetDebts,
+/* harmony export */   "getDebts": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getDebts,
+/* harmony export */   "getDebtsInfo": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getDebtsInfo,
+/* harmony export */   "getDebt": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getDebt,
+/* harmony export */   "postDebts": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postDebts,
+/* harmony export */   "patchDebts": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchDebts,
+/* harmony export */   "deleteDebts": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteDebts,
+/* harmony export */   "resetEntries": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetEntries,
+/* harmony export */   "getEntries": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getEntries,
+/* harmony export */   "getEntriesInfo": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getEntriesInfo,
+/* harmony export */   "getEntry": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getEntry,
+/* harmony export */   "postEntries": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postEntries,
+/* harmony export */   "patchEntries": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchEntries,
+/* harmony export */   "deleteEntries": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteEntries,
+/* harmony export */   "resetExpenses": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetExpenses,
+/* harmony export */   "getExpenses": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getExpenses,
+/* harmony export */   "getExpensesInfo": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getExpensesInfo,
+/* harmony export */   "getExpense": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getExpense,
+/* harmony export */   "postExpenses": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postExpenses,
+/* harmony export */   "patchExpenses": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchExpenses,
+/* harmony export */   "deleteExpenses": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteExpenses,
+/* harmony export */   "resetInvestments": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetInvestments,
+/* harmony export */   "getInvestments": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getInvestments,
+/* harmony export */   "getInvestmentsInfo": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getInvestmentsInfo,
+/* harmony export */   "getInvestment": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getInvestment,
+/* harmony export */   "postInvestments": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postInvestments,
+/* harmony export */   "patchInvestments": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchInvestments,
+/* harmony export */   "deleteInvestments": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteInvestments,
+/* harmony export */   "resetSupports": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetSupports,
+/* harmony export */   "getSupports": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getSupports,
+/* harmony export */   "getSupportsInfo": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getSupportsInfo,
+/* harmony export */   "getSupport": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getSupport,
+/* harmony export */   "postSupports": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postSupports,
+/* harmony export */   "patchSupports": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchSupports,
+/* harmony export */   "deleteSupports": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteSupports,
+/* harmony export */   "resetCurrencies": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetCurrencies,
+/* harmony export */   "getCurrencies": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getCurrencies,
+/* harmony export */   "getCurrency": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getCurrency,
+/* harmony export */   "postCurrencies": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postCurrencies,
+/* harmony export */   "patchCurrencies": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.patchCurrencies,
+/* harmony export */   "deleteCurrencies": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.deleteCurrencies,
+/* harmony export */   "resetReport": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetReport,
+/* harmony export */   "postReport": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.postReport,
 /* harmony export */   "resetLanguages": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.resetLanguages,
 /* harmony export */   "getLanguages": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getLanguages,
 /* harmony export */   "getLanguage": () => /* reexport safe */ _backend__WEBPACK_IMPORTED_MODULE_2__.getLanguage,
@@ -19795,15 +22156,7 @@ var initialState = {
     loading: false,
     error: null
   },
-  issues: {
-    loading: false,
-    error: null
-  },
   languages: {
-    loading: false,
-    error: null
-  },
-  platforms: {
     loading: false,
     error: null
   },
@@ -19812,6 +22165,38 @@ var initialState = {
     error: null
   },
   users: {
+    loading: false,
+    error: null
+  },
+  claims: {
+    loading: false,
+    error: null
+  },
+  debts: {
+    loading: false,
+    error: null
+  },
+  entries: {
+    loading: false,
+    error: null
+  },
+  expenses: {
+    loading: false,
+    error: null
+  },
+  investments: {
+    loading: false,
+    error: null
+  },
+  supports: {
+    loading: false,
+    error: null
+  },
+  currencies: {
+    loading: false,
+    error: null
+  },
+  report: {
     loading: false,
     error: null
   }
@@ -19945,38 +22330,6 @@ var featuresFail = function featuresFail(state, action) {
   });
 };
 
-var issuesReset = function issuesReset(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    issues: initialState.issues
-  });
-};
-
-var issuesStart = function issuesStart(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    issues: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.issues, {
-      loading: true,
-      message: null
-    })
-  });
-};
-
-var issuesSuccess = function issuesSuccess(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    issues: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.issues, _objectSpread({
-      loading: false,
-      error: null
-    }, action))
-  });
-};
-
-var issuesFail = function issuesFail(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    issues: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.issues, _objectSpread({
-      loading: false
-    }, action))
-  });
-};
-
 var languagesReset = function languagesReset(state, action) {
   return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
     languages: initialState.languages
@@ -20004,38 +22357,6 @@ var languagesSuccess = function languagesSuccess(state, action) {
 var languagesFail = function languagesFail(state, action) {
   return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
     languages: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.languages, _objectSpread({
-      loading: false
-    }, action))
-  });
-};
-
-var platformsReset = function platformsReset(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    platforms: initialState.platforms
-  });
-};
-
-var platformsStart = function platformsStart(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    platforms: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.platforms, {
-      loading: true,
-      message: null
-    })
-  });
-};
-
-var platformsSuccess = function platformsSuccess(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    platforms: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.platforms, _objectSpread({
-      loading: false,
-      error: null
-    }, action))
-  });
-};
-
-var platformsFail = function platformsFail(state, action) {
-  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
-    platforms: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.platforms, _objectSpread({
       loading: false
     }, action))
   });
@@ -20105,6 +22426,262 @@ var usersFail = function usersFail(state, action) {
   });
 };
 
+var claimsReset = function claimsReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    claims: initialState.claims
+  });
+};
+
+var claimsStart = function claimsStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    claims: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.claims, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var claimsSuccess = function claimsSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    claims: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.claims, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var claimsFail = function claimsFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    claims: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.claims, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
+var debtsReset = function debtsReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    debts: initialState.debts
+  });
+};
+
+var debtsStart = function debtsStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    debts: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.debts, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var debtsSuccess = function debtsSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    debts: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.debts, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var debtsFail = function debtsFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    debts: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.debts, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
+var entriesReset = function entriesReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    entries: initialState.entries
+  });
+};
+
+var entriesStart = function entriesStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    entries: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.entries, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var entriesSuccess = function entriesSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    entries: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.entries, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var entriesFail = function entriesFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    entries: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.entries, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
+var expensesReset = function expensesReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    expenses: initialState.expenses
+  });
+};
+
+var expensesStart = function expensesStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    expenses: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.expenses, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var expensesSuccess = function expensesSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    expenses: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.expenses, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var expensesFail = function expensesFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    expenses: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.expenses, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
+var investmentsReset = function investmentsReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    investments: initialState.investments
+  });
+};
+
+var investmentsStart = function investmentsStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    investments: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.investments, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var investmentsSuccess = function investmentsSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    investments: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.investments, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var investmentsFail = function investmentsFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    investments: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.investments, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
+var supportsReset = function supportsReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    supports: initialState.supports
+  });
+};
+
+var supportsStart = function supportsStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    supports: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.supports, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var supportsSuccess = function supportsSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    supports: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.supports, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var supportsFail = function supportsFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    supports: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.supports, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
+var currenciesReset = function currenciesReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    currencies: initialState.currencies
+  });
+};
+
+var currenciesStart = function currenciesStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    currencies: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.currencies, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var currenciesSuccess = function currenciesSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    currencies: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.currencies, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var currenciesFail = function currenciesFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    currencies: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.currencies, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
+var reportReset = function reportReset(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    report: initialState.report
+  });
+};
+
+var reportStart = function reportStart(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    report: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.report, {
+      loading: true,
+      message: null
+    })
+  });
+};
+
+var reportSuccess = function reportSuccess(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    report: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.report, _objectSpread({
+      loading: false,
+      error: null
+    }, action))
+  });
+};
+
+var reportFail = function reportFail(state, action) {
+  return (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state, {
+    report: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_1__.updateObject)(state.report, _objectSpread({
+      loading: false
+    }, action))
+  });
+};
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
@@ -20158,18 +22735,6 @@ var usersFail = function usersFail(state, action) {
     case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.FEATURES_FAIL:
       return featuresFail(state, action);
 
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ISSUES_RESET:
-      return issuesReset(state, action);
-
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ISSUES_START:
-      return issuesStart(state, action);
-
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ISSUES_SUCCESS:
-      return issuesSuccess(state, action);
-
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ISSUES_FAIL:
-      return issuesFail(state, action);
-
     case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.LANGUAGES_RESET:
       return languagesReset(state, action);
 
@@ -20181,18 +22746,6 @@ var usersFail = function usersFail(state, action) {
 
     case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.LANGUAGES_FAIL:
       return languagesFail(state, action);
-
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.PLATFORMS_RESET:
-      return platformsReset(state, action);
-
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.PLATFORMS_START:
-      return platformsStart(state, action);
-
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.PLATFORMS_SUCCESS:
-      return platformsSuccess(state, action);
-
-    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.PLATFORMS_FAIL:
-      return platformsFail(state, action);
 
     case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ROLES_RESET:
       return rolesReset(state, action);
@@ -20217,6 +22770,102 @@ var usersFail = function usersFail(state, action) {
 
     case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.USERS_FAIL:
       return usersFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CLAIMS_RESET:
+      return claimsReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CLAIMS_START:
+      return claimsStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CLAIMS_SUCCESS:
+      return claimsSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CLAIMS_FAIL:
+      return claimsFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.DEBTS_RESET:
+      return debtsReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.DEBTS_START:
+      return debtsStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.DEBTS_SUCCESS:
+      return debtsSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.DEBTS_FAIL:
+      return debtsFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ENTRIES_RESET:
+      return entriesReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ENTRIES_START:
+      return entriesStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ENTRIES_SUCCESS:
+      return entriesSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.ENTRIES_FAIL:
+      return entriesFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.EXPENSES_RESET:
+      return expensesReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.EXPENSES_START:
+      return expensesStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.EXPENSES_SUCCESS:
+      return expensesSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.EXPENSES_FAIL:
+      return expensesFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.INVESTMENTS_RESET:
+      return investmentsReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.INVESTMENTS_START:
+      return investmentsStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.INVESTMENTS_SUCCESS:
+      return investmentsSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.INVESTMENTS_FAIL:
+      return investmentsFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.SUPPORTS_RESET:
+      return supportsReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.SUPPORTS_START:
+      return supportsStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.SUPPORTS_SUCCESS:
+      return supportsSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.SUPPORTS_FAIL:
+      return supportsFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CURRENCIES_RESET:
+      return currenciesReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CURRENCIES_START:
+      return currenciesStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CURRENCIES_SUCCESS:
+      return currenciesSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.CURRENCIES_FAIL:
+      return currenciesFail(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.REPORT_RESET:
+      return reportReset(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.REPORT_START:
+      return reportStart(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.REPORT_SUCCESS:
+      return reportSuccess(state, action);
+
+    case _actions_actionTypes__WEBPACK_IMPORTED_MODULE_0__.REPORT_FAIL:
+      return reportFail(state, action);
 
     default:
       return state;
@@ -95878,7 +98527,7 @@ module.exports = warning;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_src_containers_Backend_User_Cms_Global_js":1,"resources_js_src_containers_Backend_User_Cms_General_js":1,"resources_js_src_containers_Backend_User_Cms_Messages_js":1,"resources_js_src_containers_Backend_User_Cms_Components_js":1,"resources_js_src_containers_Backend_User_Cms_Auth_js":1,"resources_js_src_containers_Backend_User_Cms_Backend_js":1,"resources_js_src_containers_Backend_User_Dashboard_Dashboard_js":1,"resources_js_src_containers_Backend_User_Features_index_js":1,"resources_js_src_containers_Backend_User_Features_Add_js":1,"resources_js_src_containers_Backend_User_Features_Edit_js":1,"resources_js_src_containers_Backend_User_Issues_index_js":1,"resources_js_src_containers_Backend_User_Issues_Add_js":1,"resources_js_src_containers_Backend_User_Issues_Edit_js":1,"resources_js_src_containers_Backend_User_Languages_index_js":1,"resources_js_src_containers_Backend_User_Languages_Add_js":1,"resources_js_src_containers_Backend_User_Languages_Edit_js":1,"resources_js_src_containers_Backend_User_Platforms_index_js":1,"resources_js_src_containers_Backend_User_Platforms_Add_js":1,"resources_js_src_containers_Backend_User_Platforms_Edit_js":1,"resources_js_src_containers_Backend_User_Roles_index_js":1,"resources_js_src_containers_Backend_User_Roles_Add_js":1,"resources_js_src_containers_Backend_User_Roles_Edit_js":1,"resources_js_src_containers_Backend_User_Settings_Language_js":1,"resources_js_src_containers_Backend_User_Users_index_js":1,"resources_js_src_containers_Backend_User_Users_Add_js":1,"resources_js_src_containers_Backend_User_Users_Edit_js":1,"resources_js_src_containers_Backend_Admin_Admins_index_js":1,"resources_js_src_containers_Backend_Admin_Admins_Add_js":1,"resources_js_src_containers_Backend_Admin_Admins_Edit_js":1,"resources_js_src_containers_Backend_Admin_Cms_Global_js":1,"resources_js_src_containers_Backend_Admin_Cms_General_js":1,"resources_js_src_containers_Backend_Admin_Cms_Messages_js":1,"resources_js_src_containers_Backend_Admin_Cms_Components_js":1,"resources_js_src_containers_Backend_Admin_Cms_Auth_js":1,"resources_js_src_containers_Backend_Admin_Cms_Backend_js":1,"resources_js_src_containers_Backend_Admin_Dashboard_Dashboard_js":1,"resources_js_src_containers_Backend_Admin_Features_index_js":1,"resources_js_src_containers_Backend_Admin_Features_Add_js":1,"resources_js_src_containers_Backend_Admin_Features_Edit_js":1,"resources_js_src_containers_Backend_Admin_Languages_index_js":1,"resources_js_src_containers_Backend_Admin_Languages_Add_js":1,"resources_js_src_containers_Backend_Admin_Languages_Edit_js":1,"resources_js_src_containers_Backend_Admin_Roles_index_js":1,"resources_js_src_containers_Backend_Admin_Roles_Add_js":1,"resources_js_src_containers_Backend_Admin_Roles_Edit_js":1,"resources_js_src_containers_Backend_Admin_Settings_Language_js":1,"resources_js_src_containers_Backend_Admin_Users_index_js":1,"resources_js_src_containers_Backend_Admin_Users_Add_js":1,"resources_js_src_containers_Backend_Admin_Users_Edit_js":1,"resources_js_src_containers_Auth_User_Login_Login_js":1,"resources_js_src_containers_Auth_Admin_Login_Login_js":1,"resources_js_src_containers_Auth_Admin_Verify_Verify_js":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_src_containers_Backend_User_Cms_Global_js":1,"resources_js_src_containers_Backend_User_Cms_General_js":1,"resources_js_src_containers_Backend_User_Cms_Messages_js":1,"resources_js_src_containers_Backend_User_Cms_Components_js":1,"resources_js_src_containers_Backend_User_Cms_Auth_js":1,"resources_js_src_containers_Backend_User_Cms_Backend_js":1,"resources_js_src_containers_Backend_User_Dashboard_Dashboard_js":1,"resources_js_src_containers_Backend_User_Features_index_js":1,"resources_js_src_containers_Backend_User_Features_Add_js":1,"resources_js_src_containers_Backend_User_Features_Edit_js":1,"resources_js_src_containers_Backend_User_Languages_index_js":1,"resources_js_src_containers_Backend_User_Languages_Add_js":1,"resources_js_src_containers_Backend_User_Languages_Edit_js":1,"resources_js_src_containers_Backend_User_Roles_index_js":1,"resources_js_src_containers_Backend_User_Roles_Add_js":1,"resources_js_src_containers_Backend_User_Roles_Edit_js":1,"resources_js_src_containers_Backend_User_Settings_Language_js":1,"resources_js_src_containers_Backend_User_Users_index_js":1,"resources_js_src_containers_Backend_User_Users_Add_js":1,"resources_js_src_containers_Backend_User_Users_Edit_js":1,"resources_js_src_containers_Backend_User_Claims_index_js":1,"resources_js_src_containers_Backend_User_Claims_Add_js":1,"resources_js_src_containers_Backend_User_Claims_Edit_js":1,"resources_js_src_containers_Backend_User_Debts_index_js":1,"resources_js_src_containers_Backend_User_Debts_Add_js":1,"resources_js_src_containers_Backend_User_Debts_Edit_js":1,"resources_js_src_containers_Backend_User_Entries_index_js":1,"resources_js_src_containers_Backend_User_Entries_Add_js":1,"resources_js_src_containers_Backend_User_Entries_Edit_js":1,"resources_js_src_containers_Backend_User_Expenses_index_js":1,"resources_js_src_containers_Backend_User_Expenses_Add_js":1,"resources_js_src_containers_Backend_User_Expenses_Edit_js":1,"resources_js_src_containers_Backend_User_Investments_index_js":1,"resources_js_src_containers_Backend_User_Investments_Add_js":1,"resources_js_src_containers_Backend_User_Investments_Edit_js":1,"resources_js_src_containers_Backend_User_Supports_index_js":1,"resources_js_src_containers_Backend_User_Supports_Add_js":1,"resources_js_src_containers_Backend_User_Supports_Edit_js":1,"resources_js_src_containers_Backend_User_Currencies_index_js":1,"resources_js_src_containers_Backend_User_Currencies_Add_js":1,"resources_js_src_containers_Backend_User_Currencies_Edit_js":1,"resources_js_src_containers_Backend_User_Report_index_js":1,"resources_js_src_containers_Backend_Admin_Admins_index_js":1,"resources_js_src_containers_Backend_Admin_Admins_Add_js":1,"resources_js_src_containers_Backend_Admin_Admins_Edit_js":1,"resources_js_src_containers_Backend_Admin_Cms_Global_js":1,"resources_js_src_containers_Backend_Admin_Cms_General_js":1,"resources_js_src_containers_Backend_Admin_Cms_Messages_js":1,"resources_js_src_containers_Backend_Admin_Cms_Components_js":1,"resources_js_src_containers_Backend_Admin_Cms_Auth_js":1,"resources_js_src_containers_Backend_Admin_Cms_Backend_js":1,"resources_js_src_containers_Backend_Admin_Dashboard_Dashboard_js":1,"resources_js_src_containers_Backend_Admin_Features_index_js":1,"resources_js_src_containers_Backend_Admin_Features_Add_js":1,"resources_js_src_containers_Backend_Admin_Features_Edit_js":1,"resources_js_src_containers_Backend_Admin_Languages_index_js":1,"resources_js_src_containers_Backend_Admin_Languages_Add_js":1,"resources_js_src_containers_Backend_Admin_Languages_Edit_js":1,"resources_js_src_containers_Backend_Admin_Roles_index_js":1,"resources_js_src_containers_Backend_Admin_Roles_Add_js":1,"resources_js_src_containers_Backend_Admin_Roles_Edit_js":1,"resources_js_src_containers_Backend_Admin_Settings_Language_js":1,"resources_js_src_containers_Backend_Admin_Users_index_js":1,"resources_js_src_containers_Backend_Admin_Users_Add_js":1,"resources_js_src_containers_Backend_Admin_Users_Edit_js":1,"resources_js_src_containers_Auth_User_Login_Login_js":1,"resources_js_src_containers_Auth_Admin_Login_Login_js":1,"resources_js_src_containers_Auth_Admin_Verify_Verify_js":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

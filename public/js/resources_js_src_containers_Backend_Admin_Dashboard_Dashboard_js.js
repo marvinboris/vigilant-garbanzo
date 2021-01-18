@@ -414,7 +414,8 @@ __webpack_require__.r(__webpack_exports__);
       className = _ref$className === void 0 ? '' : _ref$className,
       title = _ref.title,
       icon = _ref.icon,
-      dark = _ref.dark,
+      _ref$dark = _ref.dark,
+      dark = _ref$dark === void 0 ? true : _ref$dark,
       borderless = _ref.borderless,
       _ref$innerClassName = _ref.innerClassName,
       innerClassName = _ref$innerClassName === void 0 ? '' : _ref$innerClassName,
@@ -459,14 +460,16 @@ __webpack_require__.r(__webpack_exports__);
         type: "checkbox",
         value: item._id
       })
-    }, 'secondary' + index));
+    }, 'white' + index));
     fields.forEach(function (_ref3) {
       var key = _ref3.key,
-          minWidth = _ref3.minWidth;
+          minWidth = _ref3.minWidth,
+          maxWidth = _ref3.maxWidth;
       inside.push( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("td", {
-        className: "align-middle text-nowrap",
+        className: "align-middle text-nowrap text-truncate",
         style: {
-          minWidth: minWidth
+          minWidth: minWidth,
+          maxWidth: maxWidth
         },
         children: item[key]
       }, key));
@@ -482,14 +485,14 @@ __webpack_require__.r(__webpack_exports__);
     md: md,
     lg: lg,
     xl: xl,
-    className: outerClassName,
+    className: "pb-4 ".concat(outerClassName),
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-      className: "d-flex flex-column h-100 " + (dark ? "text-secondary " : " ") + className,
+      className: "d-flex flex-column h-100 " + (dark ? "text-light " : " ") + className,
       style: style,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "p-3 border-bottom border-soft text-700 text-brokenblue d-flex position-relative",
+        className: "p-3 border-bottom border-border text-700 text-brokenblue d-flex position-relative",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-          className: "d-inline-flex align-items-center",
+          className: "d-inline-flex text-orange align-items-center",
           children: [icon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {
             fixedWidth: true,
             className: "mr-2 text-orange",
@@ -497,7 +500,7 @@ __webpack_require__.r(__webpack_exports__);
             size: "lg"
           }) : null, title]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          className: "ml-auto d-none d-lg-flex justify-content-end align-items-center text-secondary position-absolute",
+          className: "ml-auto d-none d-lg-flex justify-content-end align-items-center text-light position-absolute",
           style: {
             top: '50%',
             right: 16,
@@ -506,7 +509,7 @@ __webpack_require__.r(__webpack_exports__);
           children: [searchable ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(reactstrap__WEBPACK_IMPORTED_MODULE_4__.default, {
             type: "search",
             placeholder: "Search here...",
-            className: "small bg-soft rounded-0 border-0 text-secondary mr-3"
+            className: "small bg-darkblue rounded-0 border-0 text-light mr-3"
           }) : null, draggable ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {
             icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.faArrowsAlt,
             size: "lg",
@@ -526,12 +529,12 @@ __webpack_require__.r(__webpack_exports__);
             borderless: borderless,
             className: innerClassName,
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("thead", {
-              className: "bg-soft text-secondary",
+              className: "bg-darkblue text-light",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("tr", {
                 children: titles
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("tbody", {
-              className: "bg-soft-50 text-secondary",
+              className: "bg-darklight-50 text-light",
               children: content
             })]
           })

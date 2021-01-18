@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { Redirect, withRouter } from 'react-router-dom';
 import { Col, Row } from 'reactstrap';
-import { faBorderNone, faTint } from '@fortawesome/free-solid-svg-icons';
+import { faDollarSign, faExchangeAlt } from '@fortawesome/free-solid-svg-icons';
 import { faSave } from '@fortawesome/free-regular-svg-icons';
 
 // Components
@@ -14,6 +14,7 @@ import CustomSpinner from '../../../../components/UI/CustomSpinner/CustomSpinner
 import Form from '../../../../components/Backend/UI/Form/Form';
 import FormInput from '../../../../components/Backend/UI/Input/Input';
 import FormButton from '../../../../components/UI/Button/BetweenButton/BetweenButton';
+import TitleWrapper from '../../../../components/Backend/UI/TitleWrapper';
 import Feedback from '../../../../components/Feedback/Feedback';
 
 import * as actions from '../../../../store/actions';
@@ -22,29 +23,31 @@ import { updateObject } from '../../../../shared/utility';
 class Add extends Component {
     state = {
         name: '',
-        color: '',
+        abbr: '',
+        exchange_rate: '',
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
-        if (nextProps.backend.platforms.platform && prevState.name === '') {
-            const { backend: { platforms: { platform } } } = nextProps;
-            return updateObject(prevState, { ...platform });
+        if (nextProps.backend.currencies.currency && prevState.name === '') {
+            const { backend: { currencies: { currency } } } = nextProps;
+            return updateObject(prevState, { ...currency });
         }
         return prevState;
     }
 
-    async componentDidMount() {
+    componentDidMount() {
         this.props.reset();
-        this.props.get(this.props.match.params.platformId);
+        if (this.props.edit) this.props.get(this.props.match.params.currencyId);
     }
 
     componentWillUnmount() {
         this.props.reset();
     }
 
-    submitHandler = async e => {
+    submitHandler = e => {
         e.preventDefault();
-        await this.props.patch(this.props.match.params.platformId, e.target);
+        if (this.props.edit) this.props.patch(this.props.match.params.currencyId, e.target);
+        else this.props.post(e.target);
     }
 
     inputChangeHandler = e => {
@@ -56,18 +59,18 @@ class Add extends Component {
         let {
             content: {
                 cms: {
-                    pages: { components: { form: { save } }, backend: { pages: { platforms: { title, edit, index, form } } } }
+                    pages: { components: { form: { save } }, backend: { pages: { currencies: { title, add, edit, index, form } } } }
                 }
             },
-            backend: { platforms: { loading, error, message } },
+            backend: { currencies: { loading, error, message } },
             auth: { data: { role: { features } } }
         } = this.props;
-        let { name, color } = this.state;
-        let content = null;
+        let { name, abbr, exchange_rate } = this.state;
+        let content;
         let errors = null;
 
-        const feature = features.find(f => f.prefix === 'platforms');
-        const redirect = !(feature && JSON.parse(feature.permissions).includes('u')) && <Redirect to="/user/dashboard" />;
+        const feature = features.find(f => f.prefix === 'currencies');
+        const redirect = !(feature && JSON.parse(feature.permissions).includes(this.props.edit ? 'u' : 'c')) && <Redirect to="/user/dashboard" />;
 
         if (loading) content = <Col xs={12}>
             <CustomSpinner />
@@ -79,14 +82,15 @@ class Add extends Component {
             content = (
                 <>
                     <Row>
-                        <Form onSubmit={this.submitHandler} icon={faBorderNone} title={edit} list={index} link="/user/platforms" innerClassName="row" className="shadow-sm">
+                        <Form onSubmit={this.submitHandler} icon={faDollarSign} title={this.props.edit ? edit : add} list={index} link="/user/currencies" innerClassName="row" className="shadow-sm">
                             <Col lg={8}>
                                 <Feedback message={message} />
                                 <Row>
-                                    <input type="hidden" name="_method" defaultValue="PATCH" />
+                                    {this.props.edit && <input type="hidden" name="_method" defaultValue="PATCH" />}
 
-                                    <FormInput type="text" className="col-md-6" icon={faBorderNone} onChange={this.inputChangeHandler} value={name} name="name" required placeholder={form.name} />
-                                    <FormInput type="text" className="col-md-6" icon={faTint} onChange={this.inputChangeHandler} value={color} name="color" required placeholder={form.color} />
+                                    <FormInput type="text" className="col-md-6" icon={faDollarSign} onChange={this.inputChangeHandler} value={name} name="name" required placeholder={form.name} />
+                                    <FormInput type="text" className="col-md-6" icon={faDollarSign} onChange={this.inputChangeHandler} value={abbr} name="abbr" required placeholder={form.abbr} />
+                                    <FormInput type="number" className="col-md-6" icon={faExchangeAlt} onChange={this.inputChangeHandler} value={exchange_rate} name="exchange_rate" required placeholder={form.exchange_rate} />
 
                                     <div className="col-12">
                                         <FormButton color="green" icon={faSave}>{save}</FormButton>
@@ -101,11 +105,11 @@ class Add extends Component {
 
         return (
             <>
-                <div className="bg-soft py-4 pl-5 pr-4 position-relative">
-                    <Breadcrumb items={[{ to: '/user/platforms', content: index }]} main={edit} icon={faBorderNone} />
-                    <SpecialTitle user icon={faBorderNone}>{title}</SpecialTitle>
-                    <Subtitle user>{edit}</Subtitle>
-                </div>
+                <TitleWrapper>
+                    <Breadcrumb items={this.props.edit && [{ to: '/user/currencies', content: index }]} main={this.props.edit ? edit : add} icon={faDollarSign} />
+                    <SpecialTitle user icon={faDollarSign}>{title}</SpecialTitle>
+                    <Subtitle user>{this.props.edit ? edit : add}</Subtitle>
+                </TitleWrapper>
                 <div className="p-4 pb-0">
                     {redirect}
                     {errors}
@@ -119,9 +123,10 @@ class Add extends Component {
 const mapStateToProps = state => ({ ...state });
 
 const mapDispatchToProps = dispatch => ({
-    get: id => dispatch(actions.getPlatform(id)),
-    patch: (id, data) => dispatch(actions.patchPlatforms(id, data)),
-    reset: () => dispatch(actions.resetPlatforms()),
+    get: id => dispatch(actions.getCurrency(id)),
+    post: data => dispatch(actions.postCurrencies(data)),
+    patch: (id, data) => dispatch(actions.patchCurrencies(id, data)),
+    reset: () => dispatch(actions.resetCurrencies()),
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Add));

@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import { Row } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEdit, faTrash, faBorderNone } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEdit, faTrash, faWallet, faMoneyBillWaveAlt } from '@fortawesome/free-solid-svg-icons';
 
 // Components
 import Breadcrumb from '../../../../components/Backend/UI/Breadcrumb/Breadcrumb';
+import TitleWrapper from '../../../../components/Backend/UI/TitleWrapper';
 import SpecialTitle from '../../../../components/UI/Titles/SpecialTitle/SpecialTitle';
 import Subtitle from '../../../../components/UI/Titles/Subtitle/Subtitle';
 import List from '../../../../components/Backend/UI/List/List';
@@ -30,14 +31,14 @@ class Index extends Component {
         let {
             content: {
                 cms: {
-                    pages: { components: { list: { action } }, backend: { pages: { platforms: { title, add, index, form: { name, color } } } } }
+                    pages: { components: { list: { action } }, backend: { pages: { debts: { title, add, index, form } } } }
                 }
             },
-            backend: { platforms: { loading, error, message, platforms, total } },
+            backend: { debts: { loading, error, message, debts, total } },
             auth: { data: { role: { features } } }
         } = this.props;
 
-        const feature = features.find(f => f.prefix === 'platforms');
+        const feature = features.find(f => f.prefix === 'debts');
         const redirect = !feature && <Redirect to="/user/dashboard" />;
 
         const errors = <>
@@ -45,17 +46,17 @@ class Index extends Component {
         </>;
         const feedback = <Feedback message={message} />;
 
-        if (!platforms) platforms = [];
-        const data = platforms.map(platform => {
-            return updateObject(platform, {
+        if (!debts) debts = [];
+        const data = debts.map(claim => {
+            return updateObject(claim, {
                 action: <div className="text-center">
-                    <Link to={`/user/platforms/${platform.id}`} className="mr-2">
+                    <Link to={`/user/debts/${claim.id}`} className="mr-2">
                         <FontAwesomeIcon icon={faEye} className="text-green" fixedWidth />
                     </Link>
-                    {JSON.parse(feature.permissions).includes('u') && <Link to={`/user/platforms/${platform.id}/edit`} className="mx-1">
-                        <FontAwesomeIcon icon={faEdit} className="text-brokenblue" fixedWidth />
+                    {JSON.parse(feature.permissions).includes('u') && <Link to={`/user/debts/${claim.id}/edit`} className="mx-1">
+                        <FontAwesomeIcon icon={faEdit} className="text-blue" fixedWidth />
                     </Link>}
-                    {JSON.parse(feature.permissions).includes('d') && <span className="mx-1"><Delete deleteAction={() => this.props.delete(platform.id)}><FontAwesomeIcon icon={faTrash} className="text-red" fixedWidth /></Delete></span>}
+                    {JSON.parse(feature.permissions).includes('d') && <span className="mx-1"><Delete deleteAction={() => this.props.delete(claim.id)}><FontAwesomeIcon icon={faTrash} className="text-red" fixedWidth /></Delete></span>}
                 </div>,
             });
         });
@@ -63,10 +64,14 @@ class Index extends Component {
         const content = (
             <>
                 <Row>
-                    <List array={data} loading={loading} data={JSON.stringify(platforms)} get={this.props.get} total={total} bordered add={add} link="/user/platforms/add" icon={faBorderNone} title={index} className="shadow-sm"
+                    <List array={data} loading={loading} data={JSON.stringify(debts)} get={this.props.get} total={total} bordered add={add} link="/user/debts/add" icon={faMoneyBillWaveAlt} title={index} className="shadow-sm"
                         fields={[
-                            { name, key: 'name' },
-                            { name: color, key: 'color' },
+                            { name: form.start_date, key: 'start_date' },
+                            { name: form.end_date, key: 'end_date' },
+                            { name: form.amount, key: 'amount' },
+                            { name: form.comment, key: 'comment' },
+                            { name: form.support, key: 'support' },
+                            { name: form.currency, key: 'currency' },
                             { name: action, key: 'action', fixed: true }
                         ]} />
                 </Row>
@@ -75,11 +80,11 @@ class Index extends Component {
 
         return (
             <>
-                <div className="bg-soft py-4 pl-5 pr-4 position-relative">
-                    <Breadcrumb main={index} icon={faBorderNone} />
-                    <SpecialTitle user icon={faBorderNone}>{title}</SpecialTitle>
+                <TitleWrapper>
+                    <Breadcrumb main={index} icon={faMoneyBillWaveAlt} />
+                    <SpecialTitle user icon={faMoneyBillWaveAlt}>{title}</SpecialTitle>
                     <Subtitle user>{index}</Subtitle>
-                </div>
+                </TitleWrapper>
                 <div className="p-4 pb-0">
                     {redirect}
                     {errors}
@@ -94,9 +99,9 @@ class Index extends Component {
 const mapStateToProps = state => ({ ...state });
 
 const mapDispatchToProps = dispatch => ({
-    get: (page, show, search) => dispatch(actions.getPlatforms(page, show, search)),
-    delete: id => dispatch(actions.deletePlatforms(id)),
-    reset: () => dispatch(actions.resetPlatforms()),
+    get: (page, show, search) => dispatch(actions.getDebts(page, show, search)),
+    delete: id => dispatch(actions.deleteDebts(id)),
+    reset: () => dispatch(actions.resetDebts()),
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Index));

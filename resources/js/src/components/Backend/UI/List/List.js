@@ -126,7 +126,7 @@ class List extends Component {
 
     render() {
         const {
-            fields, array, loading = false, total = 0, limit, bordered, xs = 12, sm = 12, md = 12, lg = 12, xl = 12, icon, title, add, link, className = '', dark, borderless, innerClassName = '', outerClassName = '', p0, select, children, selectHandler, style,
+            fields, array, loading = false, total = 0, limit, bordered, xs = 12, sm = 12, md = 12, lg = 12, xl = 12, icon, title, add, link, className = '', dark = true, borderless, innerClassName = '', outerClassName = '', p0, select, children, selectHandler, style,
             content: {
                 cms: {
                     pages: { components: { list: { all, first, last, loading: loading_, print, pdf, csv, excel, search: search_, show: show_, sl, showing, from, entries: { singular, plural } } } }
@@ -135,7 +135,7 @@ class List extends Component {
         } = this.props;
         const { show, search, page, pageFirst, pageSecond, pageLast, pageNumber } = this.state;
 
-        const titles = fields.map(({ name, fixed }) => <th className="align-middle text-nowrap bg-soft" style={fixed ? { position: 'sticky', right: 0 } : {}} key={name}>{name}</th>);
+        const titles = fields.map(({ name, fixed }) => <th className="align-middle text-nowrap bg-darkblue" style={fixed ? { position: 'sticky', right: 0 } : {}} key={name}>{name}</th>);
         titles.unshift(<th className="text-center align-middle" key="#">{sl}</th>);
         if (select) titles.unshift(<th className="align-middle text-center" key="select_all">
             <input type="checkbox" onClick={selectHandler} className="select_all" />
@@ -151,7 +151,7 @@ class List extends Component {
                 <input type="checkbox" value={item._id} />
             </th>);
             fields.forEach(({ key, minWidth, fixed }) => {
-                inside.push(<td className="align-middle text-nowrap" style={updateObject({ minWidth, borderColor: '#DEE2E6' }, fixed ? { position: 'sticky', right: 0, backgroundColor: '#F4F4F4' } : {})} key={key}>{item[key]}</td>);
+                inside.push(<td className="align-middle text-nowrap" style={updateObject({ minWidth, borderColor: '#606060' }, fixed ? { position: 'sticky', right: 0, backgroundColor: '#1B223F' } : {})} key={key}>{item[key]}</td>);
             });
 
             return <tr className="align-middle" key={index + 1}>{inside}</tr>;
@@ -166,24 +166,26 @@ class List extends Component {
                 <input type="hidden" id="table-page" value={page} />
                 <input type="hidden" id="table-search" value={search} />
 
-                <div className={`rounded-4 d-flex justify-content-between align-items-center mb-5 mt-3 py-4 px-4 text-large bg-greenblue-10 ${className}`}>
-                    <span className="d-inline-flex align-items-center text-700 text-greenblue">{icon ? <FontAwesomeIcon fixedWidth className="mr-2" icon={icon} size="lg" /> : null}<span className="text-dark">{title}</span></span>
+                <div className={`rounded-4 d-flex justify-content-between align-items-center mb-5 mt-3 py-4 px-4 text-large bg-grayblue ${className}`}>
+                    <span className="d-inline-flex align-items-center text-700 text-blue">{icon ? <FontAwesomeIcon fixedWidth className="mr-2" icon={icon} size="lg" /> : null}<span className="text-light">{title}</span></span>
 
                     {add ? <Link to={link}>
-                        <Button color="greenblue" size="lg" className="rounded-2">
+                        <Button color="green" size="lg" className="rounded-2">
                             <FontAwesomeIcon icon={faPlusCircle} fixedWidth className="mr-2" />
                             {add}
                         </Button>
                     </Link> : null}
                 </div>
 
-                <div className={`d-flex flex-column ${dark ? "text-light " : " "}${className}`} style={style}>
-                    <div className="p-4 border-bottom border-soft text-greenblue text-700 position-relative">
+                <div className={`d-flex flex-column bg-grayblue ${dark ? "text-light " : " "}${className}`} style={style}>
+                    <div className="p-4 border-bottom border-border text-blue text-700 position-relative">
                         <Row className="align-items-center justify-content-between">
                             <div className="col-6 pb-2 pb-lg-0 col-lg-2">
-                                <div className="d-flex align-items-center text-secondary rounded-2">
-                                    <div className="px-3 py-2 font-weight-bold h-100 border-bottom border-soft bg-soft">{show_}</div>
-                                    <Input type="select" name="show" onChange={this.inputChangedHandler} className="px-3 py-2 text-center rounded-0 h-100 d-block text-reset border-top-0 border-right-0 border-bottom-0 border-black-20 bg-soft" style={{ width: '5rem' }}>
+                                <div className="d-flex align-items-center text-light rounded-2">
+                                    <div className="border-right border-border-50">
+                                        <div className="px-3 py-2 font-weight-bold h-100 bg-darkblue">{show_}</div>
+                                    </div>
+                                    <Input type="select" name="show" onChange={this.inputChangedHandler} className="px-3 py-2 text-center rounded-0 h-100 d-block text-reset border-bottom-0 border-darkblue bg-darkblue" style={{ width: '5rem' }}>
                                         <option value="10">10</option>
                                         <option value="25">25</option>
                                         <option value="50">50</option>
@@ -194,12 +196,12 @@ class List extends Component {
                             </div>
 
                             <div className="col-6 d-lg-none pb-2 pb-lg-0">
-                                <Input type="search" name="search" onChange={this.inputChangedHandler} className="bg-soft border-0 rounded-2" placeholder="Search..." />
+                                <Input type="search" name="search" onChange={this.inputChangedHandler} className="bg-darkblue border-0 rounded-2" placeholder="Search..." />
                             </div>
 
                             <div className="col-lg-4 pb-2 pb-lg-0 rounded-2 overflow-hidden">
-                                <div className="bg-soft d-flex text-secondary justify-content-around align-items-center font-weight-bold py-3">
-                                    <a href="/api/export/xlsx" onClick={this.onClick} className="px-2 export text-decoration-none text-reset"><FontAwesomeIcon icon={faFileExcel} className="text-darkblue mr-2" />{excel}</a>
+                                <div className="bg-darkblue d-flex text-light justify-content-around align-items-center font-weight-bold py-3">
+                                    <a href="/api/export/xlsx" onClick={this.onClick} className="px-2 export text-decoration-none text-reset"><FontAwesomeIcon icon={faFileExcel} className="text-white mr-2" />{excel}</a>
                                     <a href="/api/export/pdf" onClick={this.onClick} className="px-2 export text-decoration-none text-reset"><FontAwesomeIcon icon={faFilePdf} className="text-danger mr-2" />{pdf}</a>
                                     <a href="/api/export/csv" onClick={this.onClick} className="px-2 export text-decoration-none text-reset"><FontAwesomeIcon icon={faFileCsv} className="text-green mr-2" />{csv}</a>
                                     <a href="/api/export/pdf" onClick={this.onClick} className="px-2 export text-decoration-none text-reset"><FontAwesomeIcon icon={faPrint} className="text-primary mr-2" />{print}</a>
@@ -207,16 +209,16 @@ class List extends Component {
                             </div>
 
                             <div className="col-lg-2 d-none d-lg-block">
-                                <Input type="search" name="search" onChange={this.inputChangedHandler} className="bg-soft border-0 rounded-2" placeholder={`${search_}...`} />
+                                <Input type="search" name="search" onChange={this.inputChangedHandler} className="bg-darkblue border-0 rounded-2" placeholder={`${search_}...`} />
                             </div>
                         </Row>
                     </div>
 
                     <div className={"flex-fill d-flex flex-column " + (!p0 ? "p-4" : "p-0")}>
                         <div className="table-responsive flex-fill">
-                            <Table dark={dark} bordered={bordered} hover borderless={borderless} className={innerClassName}>
-                                <thead className="bg-soft text-secondary"><tr>{titles}</tr></thead>
-                                <tbody className="bg-soft-50 text-secondary">{!loading && content}</tbody>
+                            <Table dark={dark} bordered={bordered} hover borderless={borderless} className={`bg-darkblue ${innerClassName}`}>
+                                <thead className="text-light"><tr>{titles}</tr></thead>
+                                <tbody className="bg-darklight-50 text-light">{!loading && content}</tbody>
                             </Table>
                         </div>
 

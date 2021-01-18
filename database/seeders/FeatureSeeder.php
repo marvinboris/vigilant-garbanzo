@@ -17,12 +17,24 @@ class FeatureSeeder extends Seeder
     {
         $features = [
             [
-                'name' => "Issues",
-                'prefix' => 'issues',
+                'name' => "Claims",
+                'prefix' => 'claims',
             ],
             [
-                'name' => "Platforms",
-                'prefix' => 'platforms',
+                'name' => "Debts",
+                'prefix' => 'debts',
+            ],
+            [
+                'name' => "Entries",
+                'prefix' => 'entries',
+            ],
+            [
+                'name' => "Expenses",
+                'prefix' => 'expenses',
+            ],
+            [
+                'name' => "Investments",
+                'prefix' => 'investments',
             ],
             [
                 'name' => "Languages",

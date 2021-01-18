@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, Redirect, withRouter } from 'react-router-dom';
 import { Row } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEdit, faTrash, faUserTag, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEdit, faTrash, faBorderNone } from '@fortawesome/free-solid-svg-icons';
 
 // Components
 import Breadcrumb from '../../../../components/Backend/UI/Breadcrumb/Breadcrumb';
@@ -12,12 +12,11 @@ import Subtitle from '../../../../components/UI/Titles/Subtitle/Subtitle';
 import List from '../../../../components/Backend/UI/List/List';
 import Error from '../../../../components/Error/Error';
 import Feedback from '../../../../components/Feedback/Feedback';
+import TitleWrapper from '../../../../components/Backend/UI/TitleWrapper';
 import Delete from '../../../../components/Backend/UI/Delete/Delete';
-import View from '../../../../components/Backend/UI/View/View';
-
 
 import * as actions from '../../../../store/actions';
-import { updateObject } from '../../../../shared/utility';
+import { updateObject, convertDate } from '../../../../shared/utility';
 
 class Index extends Component {
     componentDidMount() {
@@ -32,14 +31,14 @@ class Index extends Component {
         let {
             content: {
                 cms: {
-                    pages: { components: { list: { action } }, backend: { pages: { issues: { title, add, index, form: { title: title_, description, issid, platform } } } } }
+                    pages: { components: { list: { action } }, backend: { pages: { supports: { title, add, index, form } } } }
                 }
             },
-            backend: { issues: { loading, error, message, issues, total } },
+            backend: { supports: { loading, error, message, supports, total } },
             auth: { data: { role: { features } } }
         } = this.props;
 
-        const feature = features.find(f => f.prefix === 'issues');
+        const feature = features.find(f => f.prefix === 'supports');
         const redirect = !feature && <Redirect to="/user/dashboard" />;
 
         const errors = <>
@@ -47,17 +46,18 @@ class Index extends Component {
         </>;
         const feedback = <Feedback message={message} />;
 
-        if (!issues) issues = [];
-        const data = issues.map(issue => {
-            return updateObject(issue, {
+        if (!supports) supports = [];
+        const data = supports.map(support => {
+            return updateObject(support, {
+                created_at: convertDate(support.created_at),
                 action: <div className="text-center">
-                    <Link to={`/user/issues/${issue.id}`} className="mr-2">
+                    <Link to={`/user/supports/${support.id}`} className="mr-2">
                         <FontAwesomeIcon icon={faEye} className="text-green" fixedWidth />
                     </Link>
-                    {JSON.parse(feature.permissions).includes('u') && <Link to={`/user/issues/${issue.id}/edit`} className="mx-1">
+                    {JSON.parse(feature.permissions).includes('u') && <Link to={`/user/supports/${support.id}/edit`} className="mr-2">
                         <FontAwesomeIcon icon={faEdit} className="text-brokenblue" fixedWidth />
                     </Link>}
-                    {JSON.parse(feature.permissions).includes('d') && <span className="mx-1"><Delete deleteAction={() => this.props.delete(issue.id)}><FontAwesomeIcon icon={faTrash} className="text-red" fixedWidth /></Delete></span>}
+                    {JSON.parse(feature.permissions).includes('d') && <span className="mx-1"><Delete deleteAction={() => this.props.delete(support.id)}><FontAwesomeIcon icon={faTrash} className="text-red" fixedWidth /></Delete></span>}
                 </div>,
             });
         });
@@ -65,12 +65,11 @@ class Index extends Component {
         const content = (
             <>
                 <Row>
-                    <List array={data} loading={loading} data={JSON.stringify(issues)} get={this.props.get} total={total} bordered add={add} link="/user/issues/add" icon={faExclamationCircle} title={index} className="shadow-sm"
+                    <List array={data} loading={loading} data={JSON.stringify(supports)} get={this.props.get} total={total} bordered add={add} link="/user/supports/add" icon={faBorderNone} title={index} className="shadow-sm"
                         fields={[
-                            { name: issid, key: 'issid' },
-                            { name: title_, key: 'title' },
-                            { name: description, key: 'description' },
-                            { name: platform, key: 'platform' },
+                            { name: form.name, key: 'name' },
+                            { name: form.abbr, key: 'abbr' },
+                            { name: form.created_at, key: 'created_at' },
                             { name: action, key: 'action', fixed: true }
                         ]} />
                 </Row>
@@ -79,11 +78,11 @@ class Index extends Component {
 
         return (
             <>
-                <div className="bg-soft py-4 pl-5 pr-4 position-relative">
-                    <Breadcrumb main={index} icon={faExclamationCircle} />
-                    <SpecialTitle user icon={faExclamationCircle}>{title}</SpecialTitle>
+                <TitleWrapper>
+                    <Breadcrumb main={index} icon={faBorderNone} />
+                    <SpecialTitle user icon={faBorderNone}>{title}</SpecialTitle>
                     <Subtitle user>{index}</Subtitle>
-                </div>
+                </TitleWrapper>
                 <div className="p-4 pb-0">
                     {redirect}
                     {errors}
@@ -98,9 +97,9 @@ class Index extends Component {
 const mapStateToProps = state => ({ ...state });
 
 const mapDispatchToProps = dispatch => ({
-    get: (page, show, search) => dispatch(actions.getIssues(page, show, search)),
-    delete: id => dispatch(actions.deleteIssues(id)),
-    reset: () => dispatch(actions.resetIssues()),
+    get: (page, show, search) => dispatch(actions.getSupports(page, show, search)),
+    delete: id => dispatch(actions.deleteSupports(id)),
+    reset: () => dispatch(actions.resetSupports()),
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Index));

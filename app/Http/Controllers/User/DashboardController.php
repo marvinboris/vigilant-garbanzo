@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\UtilController;
 use App\Models\Claim;
 use App\Models\Debt;
 use App\Models\Entry;
@@ -17,11 +18,55 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $totalExpensesNumber = Expense::count();
-        $totalEntriesNumber = Entry::count();
-        $totalClaimsNumber = Claim::count();
-        $totalDebtsNumber = Debt::count();
-        
+        $user = UtilController::get(request());
+
+        $totalExpensesNumber = $user->expenses()->count();
+        $totalEntriesNumber = $user->entries()->count();
+        $totalClaimsNumber = $user->claims()->count();
+        $totalDebtsNumber = $user->debts()->count();
+
+        $totalExpenses = [];
+        $totalEntries = [];
+        $totalClaims = [];
+        $totalDebts = [];
+        $totalInvestments = [];
+
+        foreach ($user->expenses()->latest()->limit(5)->get() as $expense) {
+            $totalExpenses[] = $expense->toArray() + [
+                'support' => $expense->support->abbr,
+                'currency' => $expense->currency->abbr,
+            ];
+        }
+        foreach ($user->entries()->latest()->limit(5)->get() as $entry) {
+            $totalEntries[] = $entry->toArray() + [
+                'support' => $entry->support->abbr,
+                'currency' => $entry->currency->abbr,
+            ];
+        }
+        foreach ($user->claims()->latest()->limit(5)->get() as $claim) {
+            $totalClaims[] = $claim->toArray() + [
+                'support' => $claim->support->abbr,
+                'currency' => $claim->currency->abbr,
+            ];
+        }
+        foreach ($user->debts()->latest()->limit(5)->get() as $debt) {
+            $totalDebts[] = $debt->toArray() + [
+                'support' => $debt->support->abbr,
+                'currency' => $debt->currency->abbr,
+            ];
+        }
+        foreach ($user->investments()->latest()->limit(5)->get() as $investment) {
+            $totalInvestments[] = $investment->toArray() + [
+                'support' => $investment->support->abbr,
+                'currency' => $investment->currency->abbr,
+            ];
+        }
+
+        $currencies = [];
+        foreach ($user->currencies as $currency) {
+            $currencies[$currency->abbr] = $currency->toArray();
+        }
+
         $financeTrackerData = [];
         $days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         $dayOfWeek = Carbon::today()->dayOfWeek;
@@ -29,31 +74,46 @@ class DashboardController extends Controller
             for ($i = 1; $i <= $dayOfWeek; $i++) {
                 $subDays = $dayOfWeek - $i;
                 $data = [];
-                foreach (Support::all() as $support) {
+                foreach ($user->supports as $support) {
+                    $data[$support->abbr] = [];
                     foreach ($support->currencies as $currency) {
                         $result = 0;
+                        $check = false;
 
-                        foreach (Expense::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->expenses()->where('support_id', $support->id)->whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Entry::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->entries()->where('support_id', $support->id)->whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result += $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Claim::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->claims()->where('support_id', $support->id)->whereDate('start_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
+                        }
+                        foreach ($currency->claims()->where('support_id', $support->id)->whereDate('end_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result += $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Debt::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->debts()->where('support_id', $support->id)->whereDate('start_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result += $transaction->amount * $currency->exchange_rate;
+                            $check = true;
+                        }
+                        foreach ($currency->debts()->where('support_id', $support->id)->whereDate('end_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Investment::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->investments()->where('support_id', $support->id)->whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        $data[$support->slug][$currency->abbr] = $result;
+                        if ($check) $data[$support->abbr][$currency->abbr] = $result;
                     }
                 }
                 $financeTrackerData[] = [
@@ -66,11 +126,12 @@ class DashboardController extends Controller
                 $day = $i;
                 if ($i === 7) $day = 0;
                 $data = [];
-                foreach (Support::all() as $support) {
+                foreach ($user->supports as $support) {
+                    $data[$support->abbr] = [];
                     foreach ($support->currencies as $currency) {
                         $result = 0;
-                        
-                        $data[$support->slug][$currency->abbr] = $result;
+
+                        if (array_key_exists($currency->abbr, $financeTrackerData[0]['data'][$support->abbr])) $data[$support->abbr][$currency->abbr] = $result;
                     }
                 }
                 $financeTrackerData[] = ['name' => $days[$day], 'data' => $data];
@@ -79,31 +140,47 @@ class DashboardController extends Controller
             for ($i = 0; $i < 7; $i++) {
                 $subDays = 6 - $i;
                 $data = [];
-                foreach (Support::all() as $support) {
+                foreach ($user->supports as $support) {
+                    $data[$support->abbr] = [];
                     foreach ($support->currencies as $currency) {
                         $result = 0;
+                        $check = false;
 
-                        foreach (Expense::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->expenses()->where('support_id', $support->id)->whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Entry::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->entries()->where('support_id', $support->id)->whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result += $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Claim::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->claims()->where('support_id', $support->id)->whereDate('start_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
+                        }
+                        foreach ($currency->claims()->where('support_id', $support->id)->whereDate('end_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result += $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Debt::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->debts()->where('support_id', $support->id)->whereDate('start_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result += $transaction->amount * $currency->exchange_rate;
+                            $check = true;
+                        }
+                        foreach ($currency->debts()->where('support_id', $support->id)->whereDate('end_date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        foreach (Investment::whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
-                            $result -= $transaction->amount;
+                        foreach ($currency->investments()->where('support_id', $support->id)->whereDate('date', Carbon::today()->subDays($subDays))->get() as $transaction) {
+                            $result -= $transaction->amount * $currency->exchange_rate;
+                            $check = true;
                         }
 
-                        $data[$support->slug][$currency->abbr] = $result;
+                        if ($check) $data[$support->abbr][$currency->abbr] = $result;
+                        // $data[$support->abbr][$currency->abbr] = $result;
                     }
                 }
                 $day = $i;
@@ -122,7 +199,16 @@ class DashboardController extends Controller
                 'totalClaims' => $totalClaimsNumber,
                 'totalDebts' => $totalDebtsNumber,
             ],
+
             'financeTrackerData' => $financeTrackerData,
+
+            'totalExpenses' => $totalExpenses,
+            'totalEntries' => $totalEntries,
+            'totalClaims' => $totalClaims,
+            'totalDebts' => $totalDebts,
+            'totalInvestments' => $totalInvestments,
+
+            'currencies' => $currencies,
         ]);
     }
 }

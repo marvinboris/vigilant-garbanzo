@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Col, Row } from 'reactstrap';
-import { faTachometerAlt, faEnvelope, faClock, faLandmark, faStopwatch, faArrowsAlt, faTimes, faTasks, faEye, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTachometerAlt, faEnvelope, faClock, faLandmark, faStopwatch, faArrowsAlt, faTimes, faTasks, faEye, faEdit, faTrash, faMoneyCheck, faMoneyCheckAlt, faMoneyBillWaveAlt, faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Components
 import Breadcrumb from '../../../../components/Backend/UI/Breadcrumb/Breadcrumb';
+import Table from '../../../../components/Backend/UI/Table/Table';
 import SpecialTitle from '../../../../components/UI/Titles/SpecialTitle/SpecialTitle';
 import Subtitle from '../../../../components/UI/Titles/Subtitle/Subtitle';
 import Card from '../../../../components/Backend/Dashboard/Card/Card';
@@ -32,10 +33,10 @@ class Dashboard extends Component {
         let {
             content: {
                 cms: {
-                    pages: { backend: { pages: { dashboard: { user: { title, subtitle, blocks: { total_issues, pending_issues, solved_issues, today_issues } } } } } }
+                    pages: { backend: { pages: { dashboard: { user: { title, subtitle, blocks: { total_expenses, total_entries, total_debts, total_claims } } } } } }
                 }
             },
-            backend: { dashboard: { loading, error, blocksData, financeTrackerData } },
+            backend: { dashboard: { loading, error, blocksData, financeTrackerData, totalExpenses, totalEntries, totalClaims, totalDebts, totalInvestments, currencies } },
         } = this.props;
 
         let content = null;
@@ -51,45 +52,45 @@ class Dashboard extends Component {
             if (blocksData) {
                 const data = [
                     {
-                        title: total_issues.title,
+                        title: total_expenses.title,
                         children: blocksData.totalExpenses,
-                        icon: faClock,
+                        icon: faMoneyCheck,
                         link: '/user/expenses/',
                         color: 'blue',
-                        details: total_issues.description,
+                        details: total_expenses.description,
                         titleColor: 'white',
                         circleColor: 'white',
                         circleBorder: 'white'
                     },
                     {
-                        title: pending_issues.title,
+                        title: total_entries.title,
                         children: blocksData.totalEntries,
-                        icon: faLandmark,
+                        icon: faMoneyCheckAlt,
                         link: '/user/entries/',
                         color: 'orange',
-                        details: pending_issues.description,
+                        details: total_entries.description,
                         titleColor: 'white',
                         circleColor: 'blue',
                         circleBorder: 'white'
                     },
                     {
-                        title: solved_issues.title,
+                        title: total_debts.title,
                         children: blocksData.totalDebts,
-                        icon: faEnvelope,
+                        icon: faMoneyBillWaveAlt,
                         link: '/user/debts/',
                         color: 'gold',
-                        details: solved_issues.description,
+                        details: total_debts.description,
                         titleColor: 'white',
                         circleColor: 'blue',
                         circleBorder: 'white'
                     },
                     {
-                        title: today_issues.title,
+                        title: total_claims.title,
                         children: blocksData.totalClaims,
-                        icon: faStopwatch,
+                        icon: faHandHoldingUsd,
                         link: '/user/claims/',
                         color: 'green',
-                        details: today_issues.description,
+                        details: total_claims.description,
                         titleColor: 'white',
                         circleColor: 'white',
                         circleBorder: 'white',
@@ -147,19 +148,19 @@ class Dashboard extends Component {
                         </div>
 
                         <Row className="mt-5">
-                            <Table array={expensesData} searchable draggable closable title="Total Expenses" dark icon={faTasks} bordered limit={5} lg={6} innerClassName="bg-darkblue" className="bg-darklight shadow-sm"
+                            <Table array={expensesData} searchable draggable closable title="Total Expenses" dark icon={faTasks} bordered limit={5} lg={5} innerClassName="bg-darkblue" className="bg-darklight shadow-sm"
                                 fields={[
                                     { name: 'Date', key: 'date' },
                                     { name: 'Amount', key: 'amount' },
                                     { name: 'Currency', key: 'currency' },
                                     { name: 'Support', key: 'support' },
-                                    { name: 'Comment', key: 'comment' },
+                                    { name: 'Comment', key: 'comment', maxWidth: 150 },
                                     { name: 'Action', key: 'action' }
                                 ]}>
                                 <Link to="/user/expenses" className="text-white">{'View full expense list | >'}</Link>
                             </Table>
 
-                            <Col lg={6} className="pt-3 pt-sm-0">
+                            <Col lg={7} className="pt-3 pt-sm-0 pb-4">
                                 <div className="bg-darklight shadow-sm text-white h-100 d-flex flex-column">
                                     <div className="p-3 border-bottom border-border text-orange text-700 position-relative d-flex">
                                         <span className="d-inline-flex align-items-center"><FontAwesomeIcon size="lg" className="mr-2" fixedWidth icon={faTasks} />Finance Tracker</span>
@@ -172,25 +173,25 @@ class Dashboard extends Component {
                                     </div>
 
                                     <Row className="p-3 flex-fill">
-                                        <Col xs={12} lg={11}>
-                                            <FinanceTracker data={financeTrackerData} />
+                                        <Col xs={12} lg={11} style={{ minHeight: 300 }}>
+                                            <FinanceTracker data={financeTrackerData} currencies={currencies || {}} />
                                         </Col>
                                     </Row>
                                 </div>
                             </Col>
-                            
+
                             <Table array={entriesData} searchable draggable closable title="Total Entries" dark icon={faTasks} bordered limit={5} lg={6} innerClassName="bg-darkblue" className="bg-darklight shadow-sm"
                                 fields={[
                                     { name: 'Date', key: 'date' },
                                     { name: 'Amount', key: 'amount' },
                                     { name: 'Currency', key: 'currency' },
                                     { name: 'Support', key: 'support' },
-                                    { name: 'Comment', key: 'comment' },
+                                    { name: 'Comment', key: 'comment', maxWidth: 150 },
                                     { name: 'Action', key: 'action' }
                                 ]}>
                                 <Link to="/user/entries" className="text-white">{'View full entry list | >'}</Link>
                             </Table>
-                            
+
                             <Table array={investmentsData} searchable draggable closable title="Total Investments" dark icon={faTasks} bordered limit={5} lg={6} innerClassName="bg-darkblue" className="bg-darklight shadow-sm"
                                 fields={[
                                     { name: 'Date', key: 'date' },
@@ -199,12 +200,12 @@ class Dashboard extends Component {
                                     { name: 'Currency', key: 'currency' },
                                     { name: 'Rate', key: 'rate' },
                                     { name: 'Support', key: 'support' },
-                                    { name: 'Comment', key: 'comment' },
+                                    { name: 'Comment', key: 'comment', maxWidth: 150 },
                                     { name: 'Action', key: 'action' }
                                 ]}>
                                 <Link to="/user/investments" className="text-white">{'View full investment list | >'}</Link>
                             </Table>
-                            
+
                             <Table array={claimsData} searchable draggable closable title="Total Claims" dark icon={faTasks} bordered limit={5} lg={6} innerClassName="bg-darkblue" className="bg-darklight shadow-sm"
                                 fields={[
                                     { name: 'Start Date', key: 'start_date' },
@@ -212,12 +213,12 @@ class Dashboard extends Component {
                                     { name: 'Amount', key: 'amount' },
                                     { name: 'Currency', key: 'currency' },
                                     { name: 'Support', key: 'support' },
-                                    { name: 'Comment', key: 'comment' },
+                                    { name: 'Comment', key: 'comment', maxWidth: 150 },
                                     { name: 'Action', key: 'action' }
                                 ]}>
                                 <Link to="/user/claims" className="text-white">{'View full claim list | >'}</Link>
                             </Table>
-                            
+
                             <Table array={debtsData} searchable draggable closable title="Total Debts" dark icon={faTasks} bordered limit={5} lg={6} innerClassName="bg-darkblue" className="bg-darklight shadow-sm"
                                 fields={[
                                     { name: 'Start Date', key: 'start_date' },
@@ -225,7 +226,7 @@ class Dashboard extends Component {
                                     { name: 'Amount', key: 'amount' },
                                     { name: 'Currency', key: 'currency' },
                                     { name: 'Support', key: 'support' },
-                                    { name: 'Comment', key: 'comment' },
+                                    { name: 'Comment', key: 'comment', maxWidth: 150 },
                                     { name: 'Action', key: 'action' }
                                 ]}>
                                 <Link to="/user/debts" className="text-white">{'View full debt list | >'}</Link>

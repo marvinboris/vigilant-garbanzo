@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Badge, Collapse } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTachometerAlt, faCog, faUserTag, faTools, faUser, faUserCog, faLanguage, faBell, faWrench, faBorderNone, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTachometerAlt, faCog, faUserTag, faTools, faUser, faUserCog, faLanguage, faBell, faWrench, faBorderNone, faExclamationCircle, faWallet, faHandHoldingUsd, faMoneyBillWaveAlt, faMoneyCheckAlt, faMoneyCheck, faSearchDollar, faDollarSign, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 import SideDrawerItem from './SideDrawerItem/SideDrawerItem';
@@ -21,7 +21,7 @@ export default ({ data, role = 'user', notifications = [], toggle, isOpen, selec
             backend: {
                 sidebar: {
                     user, admin,
-                    menu: { dashboard, admins, users, roles, features, languages, platforms, issues, cms: cms_, notifications: notifications_, settings, }
+                    menu: { dashboard, admins, users, roles, features, languages, claims, debts, entries, expenses, investments, supports, currencies, report, cms: cms_, notifications: notifications_, settings, }
                 }
             }
         }
@@ -75,8 +75,14 @@ export default ({ data, role = 'user', notifications = [], toggle, isOpen, selec
                 {sideDrawerItem(false, null, roles, faUserTag, "/user/roles")}
                 {sideDrawerItem(false, null, features, faTools, "/user/features")}
                 {sideDrawerItem(false, null, languages, faLanguage, "/user/languages")}
-                {sideDrawerItem(false, null, platforms, faBorderNone, "/user/platforms")}
-                {sideDrawerItem(false, null, issues, faExclamationCircle, "/user/issues")}
+                {sideDrawerItem(false, null, claims, faHandHoldingUsd, "/user/claims")}
+                {sideDrawerItem(false, null, debts, faMoneyBillWaveAlt, "/user/debts")}
+                {sideDrawerItem(false, null, entries, faMoneyCheckAlt, "/user/entries")}
+                {sideDrawerItem(false, null, expenses, faMoneyCheck, "/user/expenses")}
+                {sideDrawerItem(false, null, investments, faSearchDollar, "/user/investments")}
+                {sideDrawerItem(false, null, supports, faBorderNone, "/user/supports")}
+                {sideDrawerItem(false, null, currencies, faDollarSign, "/user/currencies")}
+                {sideDrawerItem(false, report, null, faFile, "/user/report")}
                 {sideDrawerItem(false, null, cms_, faWrench, "/user/cms", [
                     { link: '/global', text: cms_.global },
                     { link: '/general', text: cms_.general },
@@ -103,8 +109,14 @@ export default ({ data, role = 'user', notifications = [], toggle, isOpen, selec
                 {sideDrawerItem(true, null, roles, faUserTag, "/admin/roles")}
                 {sideDrawerItem(true, null, features, faTools, "/admin/features")}
                 {sideDrawerItem(true, null, languages, faLanguage, "/admin/languages")}
-                {sideDrawerItem(true, null, platforms, faBorderNone, "/admin/platforms")}
-                {sideDrawerItem(true, null, issues, faExclamationCircle, "/admin/issues")}
+                {sideDrawerItem(true, null, claims, faHandHoldingUsd, "/admin/claims")}
+                {sideDrawerItem(true, null, debts, faMoneyBillWaveAlt, "/admin/debts")}
+                {sideDrawerItem(true, null, entries, faMoneyCheckAlt, "/admin/entries")}
+                {sideDrawerItem(true, null, expenses, faMoneyCheck, "/admin/expenses")}
+                {sideDrawerItem(true, null, investments, faSearchDollar, "/admin/investments")}
+                {sideDrawerItem(true, null, supports, faBorderNone, "/admin/supports")}
+                {sideDrawerItem(true, null, currencies, faDollarSign, "/admin/currencies")}
+                {sideDrawerItem(true, report, null, faFile, "/admin/report")}
                 {sideDrawerItem(true, null, cms_, faWrench, "/admin/cms", [
                     { link: '/global', text: cms_.global },
                     { link: '/general', text: cms_.general },

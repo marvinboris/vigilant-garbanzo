@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->integer('role_id')->unsigned()->index();
             $table->integer('language_id')->unsigned()->index();
+            $table->integer('currency_id')->unsigned()->index()->nullable();
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

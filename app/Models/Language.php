@@ -12,4 +12,14 @@ class Language extends Model
     protected $fillable = [
         'name', 'abbr', 'flag',
     ];
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
+
+    public function admins()
+    {
+        return $this->hasMany(Admin::class);
+    }
 }

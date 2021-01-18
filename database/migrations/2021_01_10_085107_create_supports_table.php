@@ -15,8 +15,10 @@ class CreateSupportsTable extends Migration
     {
         Schema::create('supports', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
+            $table->integer('user_id')->unsigned()->index();
+            $table->string('name');
             $table->float('balance')->default(0);
+            $table->string('abbr');
             $table->timestamps();
         });
     }

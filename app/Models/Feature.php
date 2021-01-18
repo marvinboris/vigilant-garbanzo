@@ -15,7 +15,7 @@ class Feature extends Model
 
     public function roles()
     {
-        return $this->belongsToMany('App\Models\Role', 'feature_role')->withPivot(['access']);
+        return $this->belongsToMany(Role::class, 'feature_role')->withPivot(['access']);
     }
 
     public function getAccessAttribute($value)

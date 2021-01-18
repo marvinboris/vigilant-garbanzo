@@ -524,7 +524,8 @@ var List = /*#__PURE__*/function (_Component) {
           link = _this$props2.link,
           _this$props2$classNam = _this$props2.className,
           className = _this$props2$classNam === void 0 ? '' : _this$props2$classNam,
-          dark = _this$props2.dark,
+          _this$props2$dark = _this$props2.dark,
+          dark = _this$props2$dark === void 0 ? true : _this$props2$dark,
           borderless = _this$props2.borderless,
           _this$props2$innerCla = _this$props2.innerClassName,
           innerClassName = _this$props2$innerCla === void 0 ? '' : _this$props2$innerCla,
@@ -564,7 +565,7 @@ var List = /*#__PURE__*/function (_Component) {
         var name = _ref2.name,
             fixed = _ref2.fixed;
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("th", {
-          className: "align-middle text-nowrap bg-soft",
+          className: "align-middle text-nowrap bg-darkblue",
           style: fixed ? {
             position: 'sticky',
             right: 0
@@ -607,11 +608,11 @@ var List = /*#__PURE__*/function (_Component) {
             className: "align-middle text-nowrap",
             style: (0,_shared_utility__WEBPACK_IMPORTED_MODULE_4__.updateObject)({
               minWidth: minWidth,
-              borderColor: '#DEE2E6'
+              borderColor: '#606060'
             }, fixed ? {
               position: 'sticky',
               right: 0,
-              backgroundColor: '#F4F4F4'
+              backgroundColor: '#1B223F'
             } : {}),
             children: item[key]
           }, key));
@@ -643,22 +644,22 @@ var List = /*#__PURE__*/function (_Component) {
           id: "table-search",
           value: search
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          className: "rounded-4 d-flex justify-content-between align-items-center mb-5 mt-3 py-4 px-4 text-large bg-greenblue-10 ".concat(className),
+          className: "rounded-4 d-flex justify-content-between align-items-center mb-5 mt-3 py-4 px-4 text-large bg-grayblue ".concat(className),
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-            className: "d-inline-flex align-items-center text-700 text-greenblue",
+            className: "d-inline-flex align-items-center text-700 text-blue",
             children: [icon ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__.FontAwesomeIcon, {
               fixedWidth: true,
               className: "mr-2",
               icon: icon,
               size: "lg"
             }) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-              className: "text-dark",
+              className: "text-light",
               children: title
             })]
           }), add ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Link, {
             to: link,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(reactstrap__WEBPACK_IMPORTED_MODULE_8__.default, {
-              color: "greenblue",
+              color: "green",
               size: "lg",
               className: "rounded-2",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__.FontAwesomeIcon, {
@@ -669,24 +670,27 @@ var List = /*#__PURE__*/function (_Component) {
             })
           }) : null]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-          className: "d-flex flex-column ".concat(dark ? "text-light " : " ").concat(className),
+          className: "d-flex flex-column bg-grayblue ".concat(dark ? "text-light " : " ").concat(className),
           style: style,
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-            className: "p-4 border-bottom border-soft text-greenblue text-700 position-relative",
+            className: "p-4 border-bottom border-border text-blue text-700 position-relative",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(reactstrap__WEBPACK_IMPORTED_MODULE_10__.default, {
               className: "align-items-center justify-content-between",
               children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
                 className: "col-6 pb-2 pb-lg-0 col-lg-2",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                  className: "d-flex align-items-center text-secondary rounded-2",
+                  className: "d-flex align-items-center text-light rounded-2",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-                    className: "px-3 py-2 font-weight-bold h-100 border-bottom border-soft bg-soft",
-                    children: show_
+                    className: "border-right border-border-50",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                      className: "px-3 py-2 font-weight-bold h-100 bg-darkblue",
+                      children: show_
+                    })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(reactstrap__WEBPACK_IMPORTED_MODULE_11__.default, {
                     type: "select",
                     name: "show",
                     onChange: this.inputChangedHandler,
-                    className: "px-3 py-2 text-center rounded-0 h-100 d-block text-reset border-top-0 border-right-0 border-bottom-0 border-black-20 bg-soft",
+                    className: "px-3 py-2 text-center rounded-0 h-100 d-block text-reset border-bottom-0 border-darkblue bg-darkblue",
                     style: {
                       width: '5rem'
                     },
@@ -714,20 +718,20 @@ var List = /*#__PURE__*/function (_Component) {
                   type: "search",
                   name: "search",
                   onChange: this.inputChangedHandler,
-                  className: "bg-soft border-0 rounded-2",
+                  className: "bg-darkblue border-0 rounded-2",
                   placeholder: "Search..."
                 })
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
                 className: "col-lg-4 pb-2 pb-lg-0 rounded-2 overflow-hidden",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                  className: "bg-soft d-flex text-secondary justify-content-around align-items-center font-weight-bold py-3",
+                  className: "bg-darkblue d-flex text-light justify-content-around align-items-center font-weight-bold py-3",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                     href: "/api/export/xlsx",
                     onClick: this.onClick,
                     className: "px-2 export text-decoration-none text-reset",
                     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__.FontAwesomeIcon, {
                       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_9__.faFileExcel,
-                      className: "text-darkblue mr-2"
+                      className: "text-white mr-2"
                     }), excel]
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                     href: "/api/export/pdf",
@@ -761,7 +765,7 @@ var List = /*#__PURE__*/function (_Component) {
                   type: "search",
                   name: "search",
                   onChange: this.inputChangedHandler,
-                  className: "bg-soft border-0 rounded-2",
+                  className: "bg-darkblue border-0 rounded-2",
                   placeholder: "".concat(search_, "...")
                 })
               })]
@@ -775,14 +779,14 @@ var List = /*#__PURE__*/function (_Component) {
                 bordered: bordered,
                 hover: true,
                 borderless: borderless,
-                className: innerClassName,
+                className: "bg-darkblue ".concat(innerClassName),
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("thead", {
-                  className: "bg-soft text-secondary",
+                  className: "text-light",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("tr", {
                     children: titles
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("tbody", {
-                  className: "bg-soft-50 text-secondary",
+                  className: "bg-darklight-50 text-light",
                   children: !loading && content
                 })]
               })

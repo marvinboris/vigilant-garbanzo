@@ -24,17 +24,9 @@ const asyncUserFeatures = asyncComponent(() => import('./containers/Backend/User
 const asyncUserFeaturesAdd = asyncComponent(() => import('./containers/Backend/User/Features/Add'));
 const asyncUserFeaturesEdit = asyncComponent(() => import('./containers/Backend/User/Features/Edit'));
 
-const asyncUserIssues = asyncComponent(() => import('./containers/Backend/User/Issues'));
-const asyncUserIssuesAdd = asyncComponent(() => import('./containers/Backend/User/Issues/Add'));
-const asyncUserIssuesEdit = asyncComponent(() => import('./containers/Backend/User/Issues/Edit'));
-
 const asyncUserLanguages = asyncComponent(() => import('./containers/Backend/User/Languages'));
 const asyncUserLanguagesAdd = asyncComponent(() => import('./containers/Backend/User/Languages/Add'));
 const asyncUserLanguagesEdit = asyncComponent(() => import('./containers/Backend/User/Languages/Edit'));
-
-const asyncUserPlatforms = asyncComponent(() => import('./containers/Backend/User/Platforms'));
-const asyncUserPlatformsAdd = asyncComponent(() => import('./containers/Backend/User/Platforms/Add'));
-const asyncUserPlatformsEdit = asyncComponent(() => import('./containers/Backend/User/Platforms/Edit'));
 
 const asyncUserRoles = asyncComponent(() => import('./containers/Backend/User/Roles'));
 const asyncUserRolesAdd = asyncComponent(() => import('./containers/Backend/User/Roles/Add'));
@@ -45,6 +37,38 @@ const asyncUserSettingsLanguage = asyncComponent(() => import('./containers/Back
 const asyncUserUsers = asyncComponent(() => import('./containers/Backend/User/Users'));
 const asyncUserUsersAdd = asyncComponent(() => import('./containers/Backend/User/Users/Add'));
 const asyncUserUsersEdit = asyncComponent(() => import('./containers/Backend/User/Users/Edit'));
+
+
+
+const asyncUserClaims = asyncComponent(() => import('./containers/Backend/User/Claims'));
+const asyncUserClaimsAdd = asyncComponent(() => import('./containers/Backend/User/Claims/Add'));
+const asyncUserClaimsEdit = asyncComponent(() => import('./containers/Backend/User/Claims/Edit'));
+
+const asyncUserDebts = asyncComponent(() => import('./containers/Backend/User/Debts'));
+const asyncUserDebtsAdd = asyncComponent(() => import('./containers/Backend/User/Debts/Add'));
+const asyncUserDebtsEdit = asyncComponent(() => import('./containers/Backend/User/Debts/Edit'));
+
+const asyncUserEntries = asyncComponent(() => import('./containers/Backend/User/Entries'));
+const asyncUserEntriesAdd = asyncComponent(() => import('./containers/Backend/User/Entries/Add'));
+const asyncUserEntriesEdit = asyncComponent(() => import('./containers/Backend/User/Entries/Edit'));
+
+const asyncUserExpenses = asyncComponent(() => import('./containers/Backend/User/Expenses'));
+const asyncUserExpensesAdd = asyncComponent(() => import('./containers/Backend/User/Expenses/Add'));
+const asyncUserExpensesEdit = asyncComponent(() => import('./containers/Backend/User/Expenses/Edit'));
+
+const asyncUserInvestments = asyncComponent(() => import('./containers/Backend/User/Investments'));
+const asyncUserInvestmentsAdd = asyncComponent(() => import('./containers/Backend/User/Investments/Add'));
+const asyncUserInvestmentsEdit = asyncComponent(() => import('./containers/Backend/User/Investments/Edit'));
+
+const asyncUserSupports = asyncComponent(() => import('./containers/Backend/User/Supports'));
+const asyncUserSupportsAdd = asyncComponent(() => import('./containers/Backend/User/Supports/Add'));
+const asyncUserSupportsEdit = asyncComponent(() => import('./containers/Backend/User/Supports/Edit'));
+
+const asyncUserCurrencies = asyncComponent(() => import('./containers/Backend/User/Currencies'));
+const asyncUserCurrenciesAdd = asyncComponent(() => import('./containers/Backend/User/Currencies/Add'));
+const asyncUserCurrenciesEdit = asyncComponent(() => import('./containers/Backend/User/Currencies/Edit'));
+
+const asyncUserReport = asyncComponent(() => import('./containers/Backend/User/Report'));
 
 // Admin routes
 const asyncAdminAdmins = asyncComponent(() => import('./containers/Backend/Admin/Admins'));
@@ -124,17 +148,39 @@ class App extends Component {
                     <Route path="/user/features/add" component={asyncUserFeaturesAdd} />
                     <Route path="/user/features" component={asyncUserFeatures} />
 
-                    <Route path="/user/issues/:issueId/edit" component={asyncUserIssuesEdit} />
-                    <Route path="/user/issues/add" component={asyncUserIssuesAdd} />
-                    <Route path="/user/issues" component={asyncUserIssues} />
+                    <Route path="/user/claims/:claimId/edit" component={asyncUserClaimsEdit} />
+                    <Route path="/user/claims/add" component={asyncUserClaimsAdd} />
+                    <Route path="/user/claims" component={asyncUserClaims} />
+
+                    <Route path="/user/debts/:debtId/edit" component={asyncUserDebtsEdit} />
+                    <Route path="/user/debts/add" component={asyncUserDebtsAdd} />
+                    <Route path="/user/debts" component={asyncUserDebts} />
+
+                    <Route path="/user/entries/:entryId/edit" component={asyncUserEntriesEdit} />
+                    <Route path="/user/entries/add" component={asyncUserEntriesAdd} />
+                    <Route path="/user/entries" component={asyncUserEntries} />
+
+                    <Route path="/user/expenses/:expenseId/edit" component={asyncUserExpensesEdit} />
+                    <Route path="/user/expenses/add" component={asyncUserExpensesAdd} />
+                    <Route path="/user/expenses" component={asyncUserExpenses} />
+
+                    <Route path="/user/investments/:investmentId/edit" component={asyncUserInvestmentsEdit} />
+                    <Route path="/user/investments/add" component={asyncUserInvestmentsAdd} />
+                    <Route path="/user/investments" component={asyncUserInvestments} />
+
+                    <Route path="/user/supports/:supportId/edit" component={asyncUserSupportsEdit} />
+                    <Route path="/user/supports/add" component={asyncUserSupportsAdd} />
+                    <Route path="/user/supports" component={asyncUserSupports} />
+
+                    <Route path="/user/currencies/:currencyId/edit" component={asyncUserCurrenciesEdit} />
+                    <Route path="/user/currencies/add" component={asyncUserCurrenciesAdd} />
+                    <Route path="/user/currencies" component={asyncUserCurrencies} />
+                    
+                    <Route path="/user/report" component={asyncUserReport} />
 
                     <Route path="/user/languages/:languageId/edit" component={asyncUserLanguagesEdit} />
                     <Route path="/user/languages/add" component={asyncUserLanguagesAdd} />
                     <Route path="/user/languages" component={asyncUserLanguages} />
-
-                    <Route path="/user/platforms/:platformId/edit" component={asyncUserPlatformsEdit} />
-                    <Route path="/user/platforms/add" component={asyncUserPlatformsAdd} />
-                    <Route path="/user/platforms" component={asyncUserPlatforms} />
 
                     <Route path="/user/roles/:roleId/edit" component={asyncUserRolesEdit} />
                     <Route path="/user/roles/add" component={asyncUserRolesAdd} />

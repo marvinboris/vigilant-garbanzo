@@ -18,15 +18,7 @@ const initialState = {
         loading: false,
         error: null
     },
-    issues: {
-        loading: false,
-        error: null
-    },
     languages: {
-        loading: false,
-        error: null
-    },
-    platforms: {
         loading: false,
         error: null
     },
@@ -35,6 +27,40 @@ const initialState = {
         error: null
     },
     users: {
+        loading: false,
+        error: null
+    },
+
+    
+    claims: {
+        loading: false,
+        error: null
+    },
+    debts: {
+        loading: false,
+        error: null
+    },
+    entries: {
+        loading: false,
+        error: null
+    },
+    expenses: {
+        loading: false,
+        error: null
+    },
+    investments: {
+        loading: false,
+        error: null
+    },
+    supports: {
+        loading: false,
+        error: null
+    },
+    currencies: {
+        loading: false,
+        error: null
+    },
+    report: {
         loading: false,
         error: null
     },
@@ -60,20 +86,10 @@ const featuresStart = (state, action) => updateObject(state, { features: updateO
 const featuresSuccess = (state, action) => updateObject(state, { features: updateObject(state.features, { loading: false, error: null, ...action }) });
 const featuresFail = (state, action) => updateObject(state, { features: updateObject(state.features, { loading: false, ...action }) });
 
-const issuesReset = (state, action) => updateObject(state, { issues: initialState.issues });
-const issuesStart = (state, action) => updateObject(state, { issues: updateObject(state.issues, { loading: true, message: null }) });
-const issuesSuccess = (state, action) => updateObject(state, { issues: updateObject(state.issues, { loading: false, error: null, ...action }) });
-const issuesFail = (state, action) => updateObject(state, { issues: updateObject(state.issues, { loading: false, ...action }) });
-
 const languagesReset = (state, action) => updateObject(state, { languages: initialState.languages });
 const languagesStart = (state, action) => updateObject(state, { languages: updateObject(state.languages, { loading: true, message: null }) });
 const languagesSuccess = (state, action) => updateObject(state, { languages: updateObject(state.languages, { loading: false, error: null, ...action }) });
 const languagesFail = (state, action) => updateObject(state, { languages: updateObject(state.languages, { loading: false, ...action }) });
-
-const platformsReset = (state, action) => updateObject(state, { platforms: initialState.platforms });
-const platformsStart = (state, action) => updateObject(state, { platforms: updateObject(state.platforms, { loading: true, message: null }) });
-const platformsSuccess = (state, action) => updateObject(state, { platforms: updateObject(state.platforms, { loading: false, error: null, ...action }) });
-const platformsFail = (state, action) => updateObject(state, { platforms: updateObject(state.platforms, { loading: false, ...action }) });
 
 const rolesReset = (state, action) => updateObject(state, { roles: initialState.roles });
 const rolesStart = (state, action) => updateObject(state, { roles: updateObject(state.roles, { loading: true, message: null }) });
@@ -84,6 +100,48 @@ const usersReset = (state, action) => updateObject(state, { users: initialState.
 const usersStart = (state, action) => updateObject(state, { users: updateObject(state.users, { loading: true, message: null }) });
 const usersSuccess = (state, action) => updateObject(state, { users: updateObject(state.users, { loading: false, error: null, ...action }) });
 const usersFail = (state, action) => updateObject(state, { users: updateObject(state.users, { loading: false, ...action }) });
+
+
+
+const claimsReset = (state, action) => updateObject(state, { claims: initialState.claims });
+const claimsStart = (state, action) => updateObject(state, { claims: updateObject(state.claims, { loading: true, message: null }) });
+const claimsSuccess = (state, action) => updateObject(state, { claims: updateObject(state.claims, { loading: false, error: null, ...action }) });
+const claimsFail = (state, action) => updateObject(state, { claims: updateObject(state.claims, { loading: false, ...action }) });
+
+const debtsReset = (state, action) => updateObject(state, { debts: initialState.debts });
+const debtsStart = (state, action) => updateObject(state, { debts: updateObject(state.debts, { loading: true, message: null }) });
+const debtsSuccess = (state, action) => updateObject(state, { debts: updateObject(state.debts, { loading: false, error: null, ...action }) });
+const debtsFail = (state, action) => updateObject(state, { debts: updateObject(state.debts, { loading: false, ...action }) });
+
+const entriesReset = (state, action) => updateObject(state, { entries: initialState.entries });
+const entriesStart = (state, action) => updateObject(state, { entries: updateObject(state.entries, { loading: true, message: null }) });
+const entriesSuccess = (state, action) => updateObject(state, { entries: updateObject(state.entries, { loading: false, error: null, ...action }) });
+const entriesFail = (state, action) => updateObject(state, { entries: updateObject(state.entries, { loading: false, ...action }) });
+
+const expensesReset = (state, action) => updateObject(state, { expenses: initialState.expenses });
+const expensesStart = (state, action) => updateObject(state, { expenses: updateObject(state.expenses, { loading: true, message: null }) });
+const expensesSuccess = (state, action) => updateObject(state, { expenses: updateObject(state.expenses, { loading: false, error: null, ...action }) });
+const expensesFail = (state, action) => updateObject(state, { expenses: updateObject(state.expenses, { loading: false, ...action }) });
+
+const investmentsReset = (state, action) => updateObject(state, { investments: initialState.investments });
+const investmentsStart = (state, action) => updateObject(state, { investments: updateObject(state.investments, { loading: true, message: null }) });
+const investmentsSuccess = (state, action) => updateObject(state, { investments: updateObject(state.investments, { loading: false, error: null, ...action }) });
+const investmentsFail = (state, action) => updateObject(state, { investments: updateObject(state.investments, { loading: false, ...action }) });
+
+const supportsReset = (state, action) => updateObject(state, { supports: initialState.supports });
+const supportsStart = (state, action) => updateObject(state, { supports: updateObject(state.supports, { loading: true, message: null }) });
+const supportsSuccess = (state, action) => updateObject(state, { supports: updateObject(state.supports, { loading: false, error: null, ...action }) });
+const supportsFail = (state, action) => updateObject(state, { supports: updateObject(state.supports, { loading: false, ...action }) });
+
+const currenciesReset = (state, action) => updateObject(state, { currencies: initialState.currencies });
+const currenciesStart = (state, action) => updateObject(state, { currencies: updateObject(state.currencies, { loading: true, message: null }) });
+const currenciesSuccess = (state, action) => updateObject(state, { currencies: updateObject(state.currencies, { loading: false, error: null, ...action }) });
+const currenciesFail = (state, action) => updateObject(state, { currencies: updateObject(state.currencies, { loading: false, ...action }) });
+
+const reportReset = (state, action) => updateObject(state, { report: initialState.report });
+const reportStart = (state, action) => updateObject(state, { report: updateObject(state.report, { loading: true, message: null }) });
+const reportSuccess = (state, action) => updateObject(state, { report: updateObject(state.report, { loading: false, error: null, ...action }) });
+const reportFail = (state, action) => updateObject(state, { report: updateObject(state.report, { loading: false, ...action }) });
 
 export default (state = initialState, action) => {
     switch (action.type) {
@@ -107,20 +165,10 @@ export default (state = initialState, action) => {
         case actionTypes.FEATURES_SUCCESS: return featuresSuccess(state, action);
         case actionTypes.FEATURES_FAIL: return featuresFail(state, action);
 
-        case actionTypes.ISSUES_RESET: return issuesReset(state, action);
-        case actionTypes.ISSUES_START: return issuesStart(state, action);
-        case actionTypes.ISSUES_SUCCESS: return issuesSuccess(state, action);
-        case actionTypes.ISSUES_FAIL: return issuesFail(state, action);
-
         case actionTypes.LANGUAGES_RESET: return languagesReset(state, action);
         case actionTypes.LANGUAGES_START: return languagesStart(state, action);
         case actionTypes.LANGUAGES_SUCCESS: return languagesSuccess(state, action);
         case actionTypes.LANGUAGES_FAIL: return languagesFail(state, action);
-
-        case actionTypes.PLATFORMS_RESET: return platformsReset(state, action);
-        case actionTypes.PLATFORMS_START: return platformsStart(state, action);
-        case actionTypes.PLATFORMS_SUCCESS: return platformsSuccess(state, action);
-        case actionTypes.PLATFORMS_FAIL: return platformsFail(state, action);
 
         case actionTypes.ROLES_RESET: return rolesReset(state, action);
         case actionTypes.ROLES_START: return rolesStart(state, action);
@@ -131,6 +179,48 @@ export default (state = initialState, action) => {
         case actionTypes.USERS_START: return usersStart(state, action);
         case actionTypes.USERS_SUCCESS: return usersSuccess(state, action);
         case actionTypes.USERS_FAIL: return usersFail(state, action);
+
+        
+
+        case actionTypes.CLAIMS_RESET: return claimsReset(state, action);
+        case actionTypes.CLAIMS_START: return claimsStart(state, action);
+        case actionTypes.CLAIMS_SUCCESS: return claimsSuccess(state, action);
+        case actionTypes.CLAIMS_FAIL: return claimsFail(state, action);
+
+        case actionTypes.DEBTS_RESET: return debtsReset(state, action);
+        case actionTypes.DEBTS_START: return debtsStart(state, action);
+        case actionTypes.DEBTS_SUCCESS: return debtsSuccess(state, action);
+        case actionTypes.DEBTS_FAIL: return debtsFail(state, action);
+
+        case actionTypes.ENTRIES_RESET: return entriesReset(state, action);
+        case actionTypes.ENTRIES_START: return entriesStart(state, action);
+        case actionTypes.ENTRIES_SUCCESS: return entriesSuccess(state, action);
+        case actionTypes.ENTRIES_FAIL: return entriesFail(state, action);
+
+        case actionTypes.EXPENSES_RESET: return expensesReset(state, action);
+        case actionTypes.EXPENSES_START: return expensesStart(state, action);
+        case actionTypes.EXPENSES_SUCCESS: return expensesSuccess(state, action);
+        case actionTypes.EXPENSES_FAIL: return expensesFail(state, action);
+
+        case actionTypes.INVESTMENTS_RESET: return investmentsReset(state, action);
+        case actionTypes.INVESTMENTS_START: return investmentsStart(state, action);
+        case actionTypes.INVESTMENTS_SUCCESS: return investmentsSuccess(state, action);
+        case actionTypes.INVESTMENTS_FAIL: return investmentsFail(state, action);
+
+        case actionTypes.SUPPORTS_RESET: return supportsReset(state, action);
+        case actionTypes.SUPPORTS_START: return supportsStart(state, action);
+        case actionTypes.SUPPORTS_SUCCESS: return supportsSuccess(state, action);
+        case actionTypes.SUPPORTS_FAIL: return supportsFail(state, action);
+
+        case actionTypes.CURRENCIES_RESET: return currenciesReset(state, action);
+        case actionTypes.CURRENCIES_START: return currenciesStart(state, action);
+        case actionTypes.CURRENCIES_SUCCESS: return currenciesSuccess(state, action);
+        case actionTypes.CURRENCIES_FAIL: return currenciesFail(state, action);
+
+        case actionTypes.REPORT_RESET: return reportReset(state, action);
+        case actionTypes.REPORT_START: return reportStart(state, action);
+        case actionTypes.REPORT_SUCCESS: return reportSuccess(state, action);
+        case actionTypes.REPORT_FAIL: return reportFail(state, action);
 
         default: return state;
     }

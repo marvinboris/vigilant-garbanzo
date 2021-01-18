@@ -15,11 +15,11 @@ class Claim extends Model
 
     public function support()
     {
-        return $this->belongsTo('App\Models\Support');
+        return $this->belongsTo(Support::class);
     }
 
     public function currency()
     {
-        return $this->belongsTo('App\Models\Currency');
+        return $this->belongsTo(Currency::class);
     }
 }

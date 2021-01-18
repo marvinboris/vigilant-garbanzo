@@ -4,18 +4,20 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\UtilController;
-use App\Models\Platform;
 use Illuminate\Http\Request;
 
-class PlatformController extends Controller
+class CurrencyController extends Controller
 {
     private $rules = [
         'name' => 'required|string',
-        'color' => 'required|string',
+        'abbr' => 'required|string',
+        'exchange_rate' => 'required|numeric',
     ];
 
     private function data()
     {
+        $user = UtilController::get(request());
+
         $page = +request()->page;
         $show = request()->show;
         $search = request()->search;
@@ -23,14 +25,15 @@ class PlatformController extends Controller
         $total = 0;
 
         $data = [];
-        $filteredData = Platform::latest();
+        $filteredData = $user->currencies()->latest();
 
         $filteredData = $filteredData
+            ->select('currencies.*')
             ->when($search, function ($query, $search) {
                 if ($search !== "")
                     $query
                         ->where('name', 'LIKE', "%$search%")
-                        ->orWhere('color', 'LIKE', "%$search%");
+                        ->orWhere('abbr', 'LIKE', "%$search%");
             });
 
         $total = $filteredData->count();
@@ -39,12 +42,12 @@ class PlatformController extends Controller
 
         $filteredData = $filteredData->get();
 
-        foreach ($filteredData as $platform) {
-            $data[] = array_merge($platform->toArray(), []);
+        foreach ($filteredData as $currency) {
+            $data[] = array_merge($currency->toArray(), []);
         }
 
         return [
-            'platforms' => $data,
+            'currencies' => $data,
             'total' => $total,
         ];
     }
@@ -55,11 +58,11 @@ class PlatformController extends Controller
     {
         $data = $this->data();
 
-        $platforms = $data['platforms'];
+        $currencies = $data['currencies'];
         $total = $data['total'];
 
         return response()->json([
-            'platforms' => $platforms,
+            'currencies' => $currencies,
             'total' => $total,
         ]);
     }
@@ -69,15 +72,13 @@ class PlatformController extends Controller
         $cms = UtilController::cms();
         $user = UtilController::get(request());
 
-        $platform = Platform::find($id);
-        if (!$platform) return response()->json([
-            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['platforms']['not_found'], 'danger'),
+        $currency = $user->currencies()->find($id);
+        if (!$currency) return response()->json([
+            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['currencies']['not_found'], 'danger'),
         ]);
 
-        $platform = $platform->toArray();
-
         return response()->json([
-            'platform' => $platform,
+            'currency' => $currency,
         ]);
     }
 
@@ -90,10 +91,10 @@ class PlatformController extends Controller
 
         $input = $request->all();
 
-        Platform::create($input);
+        $user->currencies()->create($input);
 
         return response()->json([
-            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['platforms']['created'], 'success'),
+            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['currencies']['created'], 'success'),
         ]);
     }
 
@@ -102,23 +103,21 @@ class PlatformController extends Controller
         $cms = UtilController::cms();
         $user = UtilController::get(request());
 
-        $platform = Platform::find($id);
-        if (!$platform) return response()->json([
-            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['platforms']['not_found'], 'danger'),
+        $currency = $user->currencies()->find($id);
+        if (!$currency) return response()->json([
+            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['currencies']['not_found'], 'danger'),
         ]);
 
-        $rules = $this->rules;
-
-        $request->validate($rules);
+        $request->validate($this->rules);
 
         $input = $request->all();
 
-        $platform->update($input);
+        $currency->update($input);
 
         return response()->json([
             'message' => [
                 'type' => 'success',
-                'content' => $cms['pages'][$user->language->abbr]['messages']['platforms']['updated']
+                'content' => $cms['pages'][$user->language->abbr]['messages']['currencies']['updated']
             ],
         ]);
     }
@@ -128,21 +127,21 @@ class PlatformController extends Controller
         $cms = UtilController::cms();
         $user = UtilController::get(request());
 
-        $platform = Platform::find($id);
-        if (!$platform) return response()->json([
-            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['platforms']['not_found'], 'danger'),
+        $currency = $user->currencies()->find($id);
+        if (!$currency) return response()->json([
+            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['currencies']['not_found'], 'danger'),
         ]);
 
-        $platform->delete();
+        $currency->delete();
 
         $data = $this->data();
 
-        $platforms = $data['platforms'];
+        $currencies = $data['currencies'];
         $total = $data['total'];
 
         return response()->json([
-            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['platforms']['deleted'], 'success'),
-            'platforms' => $platforms,
+            'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['currencies']['deleted'], 'success'),
+            'currencies' => $currencies,
             'total' => $total,
         ]);
     }

@@ -15,11 +15,11 @@ class LanguageSeeder extends Seeder
     public function run()
     {
         $languages = [
-            [
-                'name' => 'Français',
-                'abbr' => 'fr',
-                'flag' => 'FR'
-            ],
+            // [
+            //     'name' => 'Français',
+            //     'abbr' => 'fr',
+            //     'flag' => 'FR'
+            // ],
             [
                 'name' => 'English',
                 'abbr' => 'en',
